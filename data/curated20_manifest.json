@@ -1,0 +1,1872 @@
+{
+  "source": "Curated from 100 MP3D A/B/C candidates generated with Matterport3DSimulator skyboxes.",
+  "reviewed_candidate_count": 100,
+  "input_batches": [
+    "outputs/mp3d_abc_view_candidates_diverse50_v3_20260624",
+    "outputs/mp3d_abc_view_candidates_diverse50_v4_20260624"
+  ],
+  "selection_basis": "Automated novelty/quality ranking followed by visual review for C-only semantic evidence.",
+  "usage": "Show only View A, View B, and question_for_model. Hide View C and hidden_oracle_answer until evaluation.",
+  "records": [
+    {
+      "item_id": "1LXtFkjw3qL_000",
+      "scan_id": "1LXtFkjw3qL",
+      "start_viewpoint": "fc94c2a0445640028200b2f96e1fe90c",
+      "hidden_viewpoint": "7d01dee740ef4288b111dc65f449ca22",
+      "start_position": [
+        -3.026900053024292,
+        -8.693099975585938,
+        1.3665000200271606
+      ],
+      "hidden_position": [
+        -3.9242000579833984,
+        -8.995699882507324,
+        1.3276000022888184
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 0.9477841854095459,
+        "rel_heading_rad_from_start_heading_0": -1.8961066007614136,
+        "rel_elevation_rad": -0.04099120364050932
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_000/view_A.png",
+          "viewpoint": "fc94c2a0445640028200b2f96e1fe90c",
+          "heading_rad": 2.816282379623276
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_000/view_B.png",
+          "viewpoint": "fc94c2a0445640028200b2f96e1fe90c",
+          "heading_rad": -0.325310273966517
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_000/view_C_hidden_oracle.png",
+          "viewpoint": "7d01dee740ef4288b111dc65f449ca22",
+          "heading_rad": -1.8961066007614136
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_000/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 104.25975036621094,
+          "std": 68.5415267944336,
+          "dark_fraction": 0.033893229166666664
+        },
+        "B": {
+          "mean": 124.79338836669922,
+          "std": 70.48213958740234,
+          "dark_fraction": 0.019348958333333333
+        },
+        "C": {
+          "mean": 112.20279693603516,
+          "std": 89.13607025146484,
+          "dark_fraction": 0.03166015625
+        },
+        "mean_abs_delta_A_C": 111.66252495659722,
+        "mean_abs_delta_B_C": 106.040673828125,
+        "mean_abs_delta_A_B": 84.67815104166667,
+        "selection_quality_score": 125.00261120796203
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 166.8468605772654,
+      "selected_rank": 2,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\contact_sheet.png"
+      },
+      "curated_rank": 1,
+      "source_selected40_rank": 2,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals an outdoor terrace or balcony with a dining table and chairs among trees.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000\\metadata.json"
+      }
+    },
+    {
+      "item_id": "5q7pvUzZiYa_001",
+      "scan_id": "5q7pvUzZiYa",
+      "start_viewpoint": "8a86473cfb6a4039bd774ddc71378f2c",
+      "hidden_viewpoint": "f08482ae99a841d882f8d40ce2646f62",
+      "start_position": [
+        14.90839958190918,
+        0.5630000233650208,
+        4.764599800109863
+      ],
+      "hidden_position": [
+        15.357799530029297,
+        -1.3950999975204468,
+        4.755899906158447
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.009052038192749,
+        "rel_heading_rad_from_start_heading_0": 2.915994167327881,
+        "rel_elevation_rad": -0.004340329638054721
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_001/view_A.png",
+          "viewpoint": "8a86473cfb6a4039bd774ddc71378f2c",
+          "heading_rad": 1.3451978405329843
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_001/view_B.png",
+          "viewpoint": "8a86473cfb6a4039bd774ddc71378f2c",
+          "heading_rad": -1.7963948130568088
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_001/view_C_hidden_oracle.png",
+          "viewpoint": "f08482ae99a841d882f8d40ce2646f62",
+          "heading_rad": 2.915994167327881
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_001/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 128.50872802734375,
+          "std": 59.769046783447266,
+          "dark_fraction": 0.002916666666666667
+        },
+        "B": {
+          "mean": 116.9976577758789,
+          "std": 62.67523193359375,
+          "dark_fraction": 0.019814453125
+        },
+        "C": {
+          "mean": 123.63935089111328,
+          "std": 94.05360412597656,
+          "dark_fraction": 0.029173177083333335
+        },
+        "mean_abs_delta_A_C": 98.0767795138889,
+        "mean_abs_delta_B_C": 98.2987109375,
+        "mean_abs_delta_A_B": 67.46958984375,
+        "selection_quality_score": 118.17100201182896
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 154.2418182044559,
+      "selected_rank": 6,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\06_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\06_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\06_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\06_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\contact_sheet.png"
+      },
+      "curated_rank": 2,
+      "source_selected40_rank": 6,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view opens from the kitchen area toward an outdoor balcony/railing with hills and greenery beyond.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001\\metadata.json"
+      }
+    },
+    {
+      "item_id": "5q7pvUzZiYa_002",
+      "scan_id": "5q7pvUzZiYa",
+      "start_viewpoint": "74ab065a407340d2a67a66e54d64d309",
+      "hidden_viewpoint": "8fcfcd2540414736b7d56cf70c62ecf9",
+      "start_position": [
+        24.22800064086914,
+        6.309500217437744,
+        1.5650999546051025
+      ],
+      "hidden_position": [
+        22.94499969482422,
+        6.259099960327148,
+        1.5671000480651855
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.2839906215667725,
+        "rel_heading_rad_from_start_heading_0": -1.6100280284881592,
+        "rel_elevation_rad": 0.0015966184181040518
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_right_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_002/view_A.png",
+          "viewpoint": "74ab065a407340d2a67a66e54d64d309",
+          "heading_rad": 3.1023609518965305
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_002/view_B.png",
+          "viewpoint": "74ab065a407340d2a67a66e54d64d309",
+          "heading_rad": -0.03923170169326262
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_002/view_C_hidden_oracle.png",
+          "viewpoint": "8fcfcd2540414736b7d56cf70c62ecf9",
+          "heading_rad": -2.3954261918856075
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5q7pvUzZiYa/5q7pvUzZiYa_002/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 98.66413879394531,
+          "std": 80.62552642822266,
+          "dark_fraction": 0.0019466145833333334
+        },
+        "B": {
+          "mean": 110.85136413574219,
+          "std": 68.55830383300781,
+          "dark_fraction": 0.0305859375
+        },
+        "C": {
+          "mean": 93.44657135009766,
+          "std": 70.85279083251953,
+          "dark_fraction": 0.03123046875
+        },
+        "mean_abs_delta_A_C": 93.94771158854167,
+        "mean_abs_delta_B_C": 95.19893120659722,
+        "mean_abs_delta_A_B": 93.6180078125,
+        "selection_quality_score": 114.00234534899394
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 153.74467994372048,
+      "selected_rank": 7,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\07_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\07_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\07_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\07_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\contact_sheet.png"
+      },
+      "curated_rank": 3,
+      "source_selected40_rank": 7,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals built-in closet cabinetry with shelves, drawers, folded items, and hanging clothes.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002\\metadata.json"
+      }
+    },
+    {
+      "item_id": "5q7pvUzZiYa_000",
+      "scan_id": "5q7pvUzZiYa",
+      "start_viewpoint": "12027c1e43dd4e808d58137ddb8e293b",
+      "hidden_viewpoint": "2f78f0c5a7714e29a93fe5cb72bea6bc",
+      "start_position": [
+        4.126200199127197,
+        3.869999885559082,
+        4.7947998046875
+      ],
+      "hidden_position": [
+        3.4700000286102295,
+        1.6597000360488892,
+        4.766200065612793
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.305844306945801,
+        "rel_heading_rad_from_start_heading_0": -2.8530185222625732,
+        "rel_elevation_rad": -0.012368726795804228
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5q7pvUzZiYa/5q7pvUzZiYa_000/view_A.png",
+          "viewpoint": "12027c1e43dd4e808d58137ddb8e293b",
+          "heading_rad": 1.8593704581221164
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5q7pvUzZiYa/5q7pvUzZiYa_000/view_B.png",
+          "viewpoint": "12027c1e43dd4e808d58137ddb8e293b",
+          "heading_rad": -1.2822221954676767
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5q7pvUzZiYa/5q7pvUzZiYa_000/view_C_hidden_oracle.png",
+          "viewpoint": "2f78f0c5a7714e29a93fe5cb72bea6bc",
+          "heading_rad": -2.8530185222625732
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5q7pvUzZiYa/5q7pvUzZiYa_000/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 120.54236602783203,
+          "std": 60.08113098144531,
+          "dark_fraction": 0.00587890625
+        },
+        "B": {
+          "mean": 119.8849105834961,
+          "std": 57.198822021484375,
+          "dark_fraction": 0.012880859375
+        },
+        "C": {
+          "mean": 131.90074157714844,
+          "std": 84.87548065185547,
+          "dark_fraction": 0.03930013020833333
+        },
+        "mean_abs_delta_A_C": 94.54589626736112,
+        "mean_abs_delta_B_C": 100.53139539930555,
+        "mean_abs_delta_A_B": 63.30839409722222,
+        "selection_quality_score": 114.58413078731961
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 148.49298590342204,
+      "selected_rank": 10,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\10_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\10_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\10_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\10_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\contact_sheet.png"
+      },
+      "curated_rank": 4,
+      "source_selected40_rank": 10,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a window-side sitting or desk area with a plant, tripod/telescope-like object, and open landscape beyond.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000\\metadata.json"
+      }
+    },
+    {
+      "item_id": "5LpN3gDmAk7_000",
+      "scan_id": "5LpN3gDmAk7",
+      "start_viewpoint": "6536cc05bf45478aa2aceaa3bc575b61",
+      "hidden_viewpoint": "0c589847582145febe410715c1cf3866",
+      "start_position": [
+        11.023699760437012,
+        0.28220000863075256,
+        0.250900000333786
+      ],
+      "hidden_position": [
+        13.15060043334961,
+        -0.9383999705314636,
+        0.21529999375343323
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.452544927597046,
+        "rel_heading_rad_from_start_heading_0": 2.0918140411376953,
+        "rel_elevation_rad": -0.01450054513786435
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_left_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5LpN3gDmAk7/5LpN3gDmAk7_000/view_A.png",
+          "viewpoint": "6536cc05bf45478aa2aceaa3bc575b61",
+          "heading_rad": 0.5210177143427988
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5LpN3gDmAk7/5LpN3gDmAk7_000/view_B.png",
+          "viewpoint": "6536cc05bf45478aa2aceaa3bc575b61",
+          "heading_rad": -2.6205749392469944
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5LpN3gDmAk7/5LpN3gDmAk7_000/view_C_hidden_oracle.png",
+          "viewpoint": "0c589847582145febe410715c1cf3866",
+          "heading_rad": 2.8772122045351436
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/5LpN3gDmAk7/5LpN3gDmAk7_000/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 146.0520782470703,
+          "std": 63.46730041503906,
+          "dark_fraction": 0.008453776041666666
+        },
+        "B": {
+          "mean": 127.52471160888672,
+          "std": 64.16938018798828,
+          "dark_fraction": 0.025924479166666667
+        },
+        "C": {
+          "mean": 118.80799102783203,
+          "std": 72.93913269042969,
+          "dark_fraction": 0.004352213541666667
+        },
+        "mean_abs_delta_A_C": 94.183544921875,
+        "mean_abs_delta_B_C": 88.99389756944444,
+        "mean_abs_delta_A_B": 66.53175455729166,
+        "selection_quality_score": 111.44062308099535
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 143.71155305332607,
+      "selected_rank": 14,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\14_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\14_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\14_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\14_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\contact_sheet.png"
+      },
+      "curated_rank": 5,
+      "source_selected40_rank": 14,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a high outdoor terrace view with city/hillside scenery and a telescope or spotting scope.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000\\metadata.json"
+      }
+    },
+    {
+      "item_id": "2t7WUuJeko7_005",
+      "scan_id": "2t7WUuJeko7",
+      "start_viewpoint": "c2e11b94c07a4d6c85cc60286f586a02",
+      "hidden_viewpoint": "994c3fd765cb4a1c9b38e0bf66c20fb1",
+      "start_position": [
+        2.9419000148773193,
+        0.8395000100135803,
+        1.6735999584197998
+      ],
+      "hidden_position": [
+        0.7429999709129333,
+        0.6122000217437744,
+        1.6937999725341797
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.2107090950012207,
+        "rel_heading_rad_from_start_heading_0": -1.673828125,
+        "rel_elevation_rad": 0.009164652453444562
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_005/view_A.png",
+          "viewpoint": "c2e11b94c07a4d6c85cc60286f586a02",
+          "heading_rad": 3.0385608553846897
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_005/view_B.png",
+          "viewpoint": "c2e11b94c07a4d6c85cc60286f586a02",
+          "heading_rad": -0.10303179820510344
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_005/view_C_hidden_oracle.png",
+          "viewpoint": "994c3fd765cb4a1c9b38e0bf66c20fb1",
+          "heading_rad": -1.673828125
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_005/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 119.50792694091797,
+          "std": 59.92605972290039,
+          "dark_fraction": 0.02369140625
+        },
+        "B": {
+          "mean": 102.84187316894531,
+          "std": 61.23174285888672,
+          "dark_fraction": 0.020621744791666667
+        },
+        "C": {
+          "mean": 123.12352752685547,
+          "std": 81.23387908935547,
+          "dark_fraction": 0.003997395833333334
+        },
+        "mean_abs_delta_A_C": 90.78136501736111,
+        "mean_abs_delta_B_C": 94.3352517361111,
+        "mean_abs_delta_A_B": 43.365963541666666,
+        "selection_quality_score": 111.68426504558987
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 142.08948350058662,
+      "selected_rank": 17,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\contact_sheet.png"
+      },
+      "curated_rank": 6,
+      "source_selected40_rank": 17,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals more of a bedroom or sitting room, including tall windows, a plant, antique wooden furniture, and a bed/headboard area.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005\\metadata.json"
+      }
+    },
+    {
+      "item_id": "2t7WUuJeko7_002",
+      "scan_id": "2t7WUuJeko7",
+      "start_viewpoint": "548d13fef345430ba0ca030f8edf4543",
+      "hidden_viewpoint": "1e6b606b44df4a6086c0f97e826d4d15",
+      "start_position": [
+        3.5485999584198,
+        -2.1140999794006348,
+        1.6849000453948975
+      ],
+      "hidden_position": [
+        3.5978000164031982,
+        -0.8374000191688538,
+        1.6887999773025513
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.2777148485183716,
+        "rel_heading_rad_from_start_heading_0": 0.03846108913421631,
+        "rel_elevation_rad": 0.003060206067342772
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_left_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/view_A.png",
+          "viewpoint": "548d13fef345430ba0ca030f8edf4543",
+          "heading_rad": -1.5323352376606802
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/view_B.png",
+          "viewpoint": "548d13fef345430ba0ca030f8edf4543",
+          "heading_rad": 1.6092574159291129
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/view_C_hidden_oracle.png",
+          "viewpoint": "1e6b606b44df4a6086c0f97e826d4d15",
+          "heading_rad": 0.8238592525316646
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 81.15904998779297,
+          "std": 72.83159637451172,
+          "dark_fraction": 0.0035579427083333335
+        },
+        "B": {
+          "mean": 99.31442260742188,
+          "std": 65.884521484375,
+          "dark_fraction": 0.009677734375
+        },
+        "C": {
+          "mean": 124.8769760131836,
+          "std": 70.2259750366211,
+          "dark_fraction": 0.03635416666666667
+        },
+        "mean_abs_delta_A_C": 91.86013888888888,
+        "mean_abs_delta_B_C": 87.05156684027777,
+        "mean_abs_delta_A_B": 77.50111328125,
+        "selection_quality_score": 106.26521675692663
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 141.13614937411415,
+      "selected_rank": 19,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\contact_sheet.png"
+      },
+      "curated_rank": 7,
+      "source_selected40_rank": 19,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a dining/sitting room with a fireplace or mantel, chandelier, windows, and older wooden furniture.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\metadata.json"
+      }
+    },
+    {
+      "item_id": "1LXtFkjw3qL_002",
+      "scan_id": "1LXtFkjw3qL",
+      "start_viewpoint": "6c15ae9a3fc24613b9fcedb3da80aee5",
+      "hidden_viewpoint": "3eb5c4d7ad9a4805b0470cf5f9e3b17c",
+      "start_position": [
+        3.239000082015991,
+        -4.047500133514404,
+        1.3645999431610107
+      ],
+      "hidden_position": [
+        3.3134000301361084,
+        -2.0536999702453613,
+        1.3693000078201294
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.9952136278152466,
+        "rel_heading_rad_from_start_heading_0": 0.03730298578739166,
+        "rel_elevation_rad": 0.002340615641299997
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "look_back_toward_start",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_002/view_A.png",
+          "viewpoint": "6c15ae9a3fc24613b9fcedb3da80aee5",
+          "heading_rad": -1.533493341007505
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_002/view_B.png",
+          "viewpoint": "6c15ae9a3fc24613b9fcedb3da80aee5",
+          "heading_rad": 1.6080993125822882
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_002/view_C_hidden_oracle.png",
+          "viewpoint": "3eb5c4d7ad9a4805b0470cf5f9e3b17c",
+          "heading_rad": -3.1042896678024015
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1LXtFkjw3qL/1LXtFkjw3qL_002/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 155.75257873535156,
+          "std": 49.46894073486328,
+          "dark_fraction": 9.440104166666666e-05
+        },
+        "B": {
+          "mean": 146.8405303955078,
+          "std": 80.01066589355469,
+          "dark_fraction": 6.510416666666667e-06
+        },
+        "C": {
+          "mean": 124.5667724609375,
+          "std": 73.13069152832031,
+          "dark_fraction": 0.007340494791666667
+        },
+        "mean_abs_delta_A_C": 80.78504231770833,
+        "mean_abs_delta_B_C": 81.01388454861112,
+        "mean_abs_delta_A_B": 81.24848415798611,
+        "selection_quality_score": 98.91770354111989
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 137.6831830400891,
+      "selected_rank": 21,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\21_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\21_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\21_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\21_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\contact_sheet.png"
+      },
+      "curated_rank": 8,
+      "source_selected40_rank": 21,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a long interior hallway with doors and ceiling lights extending away from the start.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002\\metadata.json"
+      }
+    },
+    {
+      "item_id": "1pXnuDYAj8r_003",
+      "scan_id": "1pXnuDYAj8r",
+      "start_viewpoint": "5cd8a7aa73d841a4b540b19cf91de719",
+      "hidden_viewpoint": "a55dab7d921b47d59b1391d69fa7e464",
+      "start_position": [
+        6.25570011138916,
+        5.55109977722168,
+        4.820300102233887
+      ],
+      "hidden_position": [
+        5.023600101470947,
+        5.4679999351501465,
+        4.822299957275391
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.2348881959915161,
+        "rel_heading_rad_from_start_heading_0": -1.6381086111068726,
+        "rel_elevation_rad": 0.0016356809767683624
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_right_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1pXnuDYAj8r/1pXnuDYAj8r_003/view_A.png",
+          "viewpoint": "5cd8a7aa73d841a4b540b19cf91de719",
+          "heading_rad": 3.074280369277817
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1pXnuDYAj8r/1pXnuDYAj8r_003/view_B.png",
+          "viewpoint": "5cd8a7aa73d841a4b540b19cf91de719",
+          "heading_rad": -0.067312284311976
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1pXnuDYAj8r/1pXnuDYAj8r_003/view_C_hidden_oracle.png",
+          "viewpoint": "a55dab7d921b47d59b1391d69fa7e464",
+          "heading_rad": -2.423506774504321
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/1pXnuDYAj8r/1pXnuDYAj8r_003/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 113.2369384765625,
+          "std": 59.894893646240234,
+          "dark_fraction": 0.014202473958333333
+        },
+        "B": {
+          "mean": 136.839599609375,
+          "std": 50.140132904052734,
+          "dark_fraction": 0.00013997395833333334
+        },
+        "C": {
+          "mean": 75.98302459716797,
+          "std": 76.33159637451172,
+          "dark_fraction": 0.06190755208333333
+        },
+        "mean_abs_delta_A_C": 94.44167643229167,
+        "mean_abs_delta_B_C": 93.16837239583333,
+        "mean_abs_delta_A_B": 62.73075846354167,
+        "selection_quality_score": 107.55084364732106
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 134.04710671901702,
+      "selected_rank": 23,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\23_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\23_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\23_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\23_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\contact_sheet.png"
+      },
+      "curated_rank": 9,
+      "source_selected40_rank": 23,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a closet or dressing area with shelves, drawers, and a hanging garment bag.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003\\metadata.json"
+      }
+    },
+    {
+      "item_id": "759xd9YjKW5_001",
+      "scan_id": "759xd9YjKW5",
+      "start_viewpoint": "14af8cbc71694b0ab5ca408ceb1c2cdb",
+      "hidden_viewpoint": "99fcb9869e0b4a7a9f825d70d6f67efc",
+      "start_position": [
+        -1.7954000234603882,
+        5.106500148773193,
+        1.6123000383377075
+      ],
+      "hidden_position": [
+        0.2020999938249588,
+        5.236100196838379,
+        1.634600043296814
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.001844644546509,
+        "rel_heading_rad_from_start_heading_0": 1.5059818029403687,
+        "rel_elevation_rad": 0.011159909063829429
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_001/view_A.png",
+          "viewpoint": "14af8cbc71694b0ab5ca408ceb1c2cdb",
+          "heading_rad": -0.0648145238545279
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_001/view_B.png",
+          "viewpoint": "14af8cbc71694b0ab5ca408ceb1c2cdb",
+          "heading_rad": 3.076778129735265
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_001/view_C_hidden_oracle.png",
+          "viewpoint": "99fcb9869e0b4a7a9f825d70d6f67efc",
+          "heading_rad": 1.5059818029403687
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_001/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 107.8088607788086,
+          "std": 65.73467254638672,
+          "dark_fraction": 0.03365885416666667
+        },
+        "B": {
+          "mean": 128.84259033203125,
+          "std": 56.228267669677734,
+          "dark_fraction": 0.009016927083333333
+        },
+        "C": {
+          "mean": 117.8701171875,
+          "std": 74.73463439941406,
+          "dark_fraction": 0.007607421875
+        },
+        "mean_abs_delta_A_C": 80.745009765625,
+        "mean_abs_delta_B_C": 78.34046766493056,
+        "mean_abs_delta_A_B": 64.83180121527778,
+        "selection_quality_score": 97.39330289098952
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 131.8273754787445,
+      "selected_rank": 26,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\26_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\26_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\26_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\26_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\contact_sheet.png"
+      },
+      "curated_rank": 10,
+      "source_selected40_rank": 26,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals the sink/window side of the kitchen with stained-glass decoration and bottles on the sill.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001\\metadata.json"
+      }
+    },
+    {
+      "item_id": "5LpN3gDmAk7_002",
+      "scan_id": "5LpN3gDmAk7",
+      "start_viewpoint": "d28afd8227934d9e9845a151839f2501",
+      "hidden_viewpoint": "9231543c6c484c939a501338ad8c1db4",
+      "start_position": [
+        7.788599967956543,
+        -10.096099853515625,
+        4.4868998527526855
+      ],
+      "hidden_position": [
+        7.166299819946289,
+        -9.192899703979492,
+        4.4928998947143555
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.0968035459518433,
+        "rel_heading_rad_from_start_heading_0": -0.6032819151878357,
+        "rel_elevation_rad": 0.005470507571793983
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "look_back_toward_start",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5LpN3gDmAk7/5LpN3gDmAk7_002/view_A.png",
+          "viewpoint": "d28afd8227934d9e9845a151839f2501",
+          "heading_rad": -2.1740782419827323
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5LpN3gDmAk7/5LpN3gDmAk7_002/view_B.png",
+          "viewpoint": "d28afd8227934d9e9845a151839f2501",
+          "heading_rad": 0.9675144116070609
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5LpN3gDmAk7/5LpN3gDmAk7_002/view_C_hidden_oracle.png",
+          "viewpoint": "9231543c6c484c939a501338ad8c1db4",
+          "heading_rad": 2.5383107384019574
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/5LpN3gDmAk7/5LpN3gDmAk7_002/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 146.22866821289062,
+          "std": 70.05516815185547,
+          "dark_fraction": 0.018828125
+        },
+        "B": {
+          "mean": 129.19126892089844,
+          "std": 68.66551971435547,
+          "dark_fraction": 0.010869140625
+        },
+        "C": {
+          "mean": 132.42185974121094,
+          "std": 60.830692291259766,
+          "dark_fraction": 0.0101171875
+        },
+        "mean_abs_delta_A_C": 80.41543294270834,
+        "mean_abs_delta_B_C": 75.06974066840277,
+        "mean_abs_delta_A_B": 74.87807291666667,
+        "selection_quality_score": 93.00298062907325
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 131.75894981649185,
+      "selected_rank": 27,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\27_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\27_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\27_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\27_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\contact_sheet.png"
+      },
+      "curated_rank": 11,
+      "source_selected40_rank": 27,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a bedroom area with a large bed, bedside furniture, and broad windows or an open terrace view.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002\\metadata.json"
+      }
+    },
+    {
+      "item_id": "2t7WUuJeko7_006",
+      "scan_id": "2t7WUuJeko7",
+      "start_viewpoint": "d92842ea395c4a4da5ff59a2b481e480",
+      "hidden_viewpoint": "9b0055db51914f059f7b9eaf79297f02",
+      "start_position": [
+        6.333799839019775,
+        -1.9076000452041626,
+        1.6789000034332275
+      ],
+      "hidden_position": [
+        6.005199909210205,
+        -0.12489999830722809,
+        1.6969000101089478
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.8128331899642944,
+        "rel_heading_rad_from_start_heading_0": -0.18227432668209076,
+        "rel_elevation_rad": 0.009973502664962254
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_right_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_006/view_A.png",
+          "viewpoint": "d92842ea395c4a4da5ff59a2b481e480",
+          "heading_rad": -1.7530706534769873
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_006/view_B.png",
+          "viewpoint": "d92842ea395c4a4da5ff59a2b481e480",
+          "heading_rad": 1.3885220001128058
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_006/view_C_hidden_oracle.png",
+          "viewpoint": "9b0055db51914f059f7b9eaf79297f02",
+          "heading_rad": -0.967672490079539
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_006/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 111.0308609008789,
+          "std": 67.3551254272461,
+          "dark_fraction": 0.006162109375
+        },
+        "B": {
+          "mean": 100.06275939941406,
+          "std": 67.56369018554688,
+          "dark_fraction": 0.011494140625
+        },
+        "C": {
+          "mean": 125.60466003417969,
+          "std": 74.09245300292969,
+          "dark_fraction": 0.022724609375
+        },
+        "mean_abs_delta_A_C": 75.58898328993055,
+        "mean_abs_delta_B_C": 88.28330403645833,
+        "mean_abs_delta_A_B": 67.07625868055555,
+        "selection_quality_score": 97.18452593538495
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 130.5611391284731,
+      "selected_rank": 30,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\30_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\30_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\30_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\30_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\contact_sheet.png"
+      },
+      "curated_rank": 12,
+      "source_selected40_rank": 30,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a living room or parlor area with seating, a piano, side table, and chandelier.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006\\metadata.json"
+      }
+    },
+    {
+      "item_id": "17DRP5sb8fy_000",
+      "scan_id": "17DRP5sb8fy",
+      "start_viewpoint": "77a1a11978b04e9cbf74914c98578ab8",
+      "hidden_viewpoint": "6800f98e9e67463e9928a4253253bc2f",
+      "start_position": [
+        -4.333799839019775,
+        1.468400001525879,
+        1.533400058746338
+      ],
+      "hidden_position": [
+        -6.385000228881836,
+        2.0947999954223633,
+        0.6873000264167786
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.305572271347046,
+        "rel_heading_rad_from_start_heading_0": -1.2744197845458984,
+        "rel_elevation_rad": -0.37578798670127483
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_left_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_000/view_A.png",
+          "viewpoint": "77a1a11978b04e9cbf74914c98578ab8",
+          "heading_rad": -2.845216111340795
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_000/view_B.png",
+          "viewpoint": "77a1a11978b04e9cbf74914c98578ab8",
+          "heading_rad": 0.2963765422489981
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_000/view_C_hidden_oracle.png",
+          "viewpoint": "6800f98e9e67463e9928a4253253bc2f",
+          "heading_rad": -0.48902162114845016
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_000/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 126.0364990234375,
+          "std": 48.47285079956055,
+          "dark_fraction": 0.0
+        },
+        "B": {
+          "mean": 110.08877563476562,
+          "std": 65.3240966796875,
+          "dark_fraction": 0.025615234375
+        },
+        "C": {
+          "mean": 102.17212677001953,
+          "std": 73.0075454711914,
+          "dark_fraction": 0.021826171875
+        },
+        "mean_abs_delta_A_C": 89.30452256944444,
+        "mean_abs_delta_B_C": 80.88843641493055,
+        "mean_abs_delta_A_B": 69.86999457465278,
+        "selection_quality_score": 99.15490889761183
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 129.28006363868712,
+      "selected_rank": 31,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\31_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\31_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\31_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\31_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\contact_sheet.png"
+      },
+      "curated_rank": 13,
+      "source_selected40_rank": 31,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals an adjacent hallway or stair/landing area beyond the living room.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000\\metadata.json"
+      }
+    },
+    {
+      "item_id": "17DRP5sb8fy_006",
+      "scan_id": "17DRP5sb8fy",
+      "start_viewpoint": "3a6d2322867f40d9a3d2758ab88df288",
+      "hidden_viewpoint": "23ec8bbec8eb40478411cba2e55b732e",
+      "start_position": [
+        -9.29740047454834,
+        0.05209999904036522,
+        1.5247999429702759
+      ],
+      "hidden_position": [
+        -9.870200157165527,
+        1.2619999647140503,
+        1.5231000185012817
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.338598608970642,
+        "rel_heading_rad_from_start_heading_0": -0.4421881437301636,
+        "rel_elevation_rad": -0.001292370709030152
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "look_back_toward_start",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_006/view_A.png",
+          "viewpoint": "3a6d2322867f40d9a3d2758ab88df288",
+          "heading_rad": -2.01298447052506
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_006/view_B.png",
+          "viewpoint": "3a6d2322867f40d9a3d2758ab88df288",
+          "heading_rad": 1.128608183064733
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_006/view_C_hidden_oracle.png",
+          "viewpoint": "23ec8bbec8eb40478411cba2e55b732e",
+          "heading_rad": 2.6994045098596295
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_006/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 120.0326919555664,
+          "std": 68.79181671142578,
+          "dark_fraction": 0.007275390625
+        },
+        "B": {
+          "mean": 129.8707275390625,
+          "std": 61.84130096435547,
+          "dark_fraction": 0.009300130208333333
+        },
+        "C": {
+          "mean": 128.6495819091797,
+          "std": 58.374839782714844,
+          "dark_fraction": 0.022337239583333335
+        },
+        "mean_abs_delta_A_C": 74.60616102430555,
+        "mean_abs_delta_B_C": 70.51762803819445,
+        "mean_abs_delta_A_B": 68.38711371527778,
+        "selection_quality_score": 88.45701662328509
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 124.8885286336475,
+      "selected_rank": 32,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\32_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\32_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\32_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\32_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\contact_sheet.png"
+      },
+      "curated_rank": 14,
+      "source_selected40_rank": 32,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a bedroom/living suite with a TV, red wall art, seating, and a bed-like surface.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006\\metadata.json"
+      }
+    },
+    {
+      "item_id": "17DRP5sb8fy_000",
+      "scan_id": "17DRP5sb8fy",
+      "start_viewpoint": "51857544c192476faebf212acb1b3d90",
+      "hidden_viewpoint": "8a0f2f1a8ea441658501561e5dc34a3e",
+      "start_position": [
+        -8.742400169372559,
+        1.1052000522613525,
+        1.5226000547409058
+      ],
+      "hidden_position": [
+        -8.623700141906738,
+        0.026900000870227814,
+        1.524399995803833
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.0847984552383423,
+        "rel_heading_rad_from_start_heading_0": 3.031998634338379,
+        "rel_elevation_rad": 0.0016592409159519052
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_right_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_000/view_A.png",
+          "viewpoint": "51857544c192476faebf212acb1b3d90",
+          "heading_rad": 1.4612023075434823
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_000/view_B.png",
+          "viewpoint": "51857544c192476faebf212acb1b3d90",
+          "heading_rad": -1.6803903460463108
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_000/view_C_hidden_oracle.png",
+          "viewpoint": "8a0f2f1a8ea441658501561e5dc34a3e",
+          "heading_rad": 2.2466004709409306
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/17DRP5sb8fy/17DRP5sb8fy_000/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 110.90756225585938,
+          "std": 55.54084014892578,
+          "dark_fraction": 0.006516927083333333
+        },
+        "B": {
+          "mean": 108.68563842773438,
+          "std": 64.24640655517578,
+          "dark_fraction": 0.0296484375
+        },
+        "C": {
+          "mean": 136.59523010253906,
+          "std": 66.7400131225586,
+          "dark_fraction": 0.00375
+        },
+        "mean_abs_delta_A_C": 83.02662977430556,
+        "mean_abs_delta_B_C": 77.41272677951389,
+        "mean_abs_delta_A_B": 65.93745985243055,
+        "selection_quality_score": 93.66287905746036
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 123.97650580035317,
+      "selected_rank": 33,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\33_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\33_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\33_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\33_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\contact_sheet.png"
+      },
+      "curated_rank": 15,
+      "source_selected40_rank": 33,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a bathroom area with a sink/vanity, towels, and a mirror beyond the living-room view.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000\\metadata.json"
+      }
+    },
+    {
+      "item_id": "29hnd4uzFmX_000",
+      "scan_id": "29hnd4uzFmX",
+      "start_viewpoint": "0eefd4bea0874786ab4946ca120bff73",
+      "hidden_viewpoint": "3c286cf678234163b7cb2ab3785fc498",
+      "start_position": [
+        -6.422399997711182,
+        6.193999767303467,
+        1.2359999418258667
+      ],
+      "hidden_position": [
+        -5.7540998458862305,
+        5.3628997802734375,
+        1.230299949645996
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.0664652585983276,
+        "rel_heading_rad_from_start_heading_0": 2.464322566986084,
+        "rel_elevation_rad": -0.005325998104725962
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_right_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/29hnd4uzFmX/29hnd4uzFmX_000/view_A.png",
+          "viewpoint": "0eefd4bea0874786ab4946ca120bff73",
+          "heading_rad": 0.8935262401911874
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/29hnd4uzFmX/29hnd4uzFmX_000/view_B.png",
+          "viewpoint": "0eefd4bea0874786ab4946ca120bff73",
+          "heading_rad": -2.2480664133986057
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/29hnd4uzFmX/29hnd4uzFmX_000/view_C_hidden_oracle.png",
+          "viewpoint": "3c286cf678234163b7cb2ab3785fc498",
+          "heading_rad": 1.6789244035886357
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/29hnd4uzFmX/29hnd4uzFmX_000/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 149.42648315429688,
+          "std": 45.28113555908203,
+          "dark_fraction": 0.0017578125
+        },
+        "B": {
+          "mean": 109.90394592285156,
+          "std": 62.22245788574219,
+          "dark_fraction": 0.011634114583333334
+        },
+        "C": {
+          "mean": 107.56839752197266,
+          "std": 71.74038696289062,
+          "dark_fraction": 0.0024837239583333334
+        },
+        "mean_abs_delta_A_C": 78.05826280381945,
+        "mean_abs_delta_B_C": 75.48831271701388,
+        "mean_abs_delta_A_B": 80.92090277777778,
+        "selection_quality_score": 89.65896894507938
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 122.74737487634023,
+      "selected_rank": 34,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\34_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\34_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\34_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\34_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\contact_sheet.png"
+      },
+      "curated_rank": 16,
+      "source_selected40_rank": 34,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals the kitchen sink and countertop area with dark glossy cabinets and wood-paneled walls.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000\\metadata.json"
+      }
+    },
+    {
+      "item_id": "2t7WUuJeko7_001",
+      "scan_id": "2t7WUuJeko7",
+      "start_viewpoint": "8898d3cea28d404f8f69c3a3bce52371",
+      "hidden_viewpoint": "edc7b2c25f054ce8992ae3fb66e80881",
+      "start_position": [
+        8.792699813842773,
+        -5.2058000564575195,
+        1.6888999938964844
+      ],
+      "hidden_position": [
+        8.319600105285645,
+        -3.1233999729156494,
+        1.6878000497817993
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.1354875564575195,
+        "rel_heading_rad_from_start_heading_0": -0.2234003096818924,
+        "rel_elevation_rad": -0.0005057562562509763
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_001/view_A.png",
+          "viewpoint": "8898d3cea28d404f8f69c3a3bce52371",
+          "heading_rad": -1.794196636476789
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_001/view_B.png",
+          "viewpoint": "8898d3cea28d404f8f69c3a3bce52371",
+          "heading_rad": 1.3473960171130042
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_001/view_C_hidden_oracle.png",
+          "viewpoint": "edc7b2c25f054ce8992ae3fb66e80881",
+          "heading_rad": -0.2234003096818924
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_001/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 114.72502899169922,
+          "std": 54.39175033569336,
+          "dark_fraction": 0.010104166666666666
+        },
+        "B": {
+          "mean": 126.0657958984375,
+          "std": 59.09284973144531,
+          "dark_fraction": 0.0012239583333333334
+        },
+        "C": {
+          "mean": 124.74323272705078,
+          "std": 60.43172836303711,
+          "dark_fraction": 0.0047005208333333335
+        },
+        "mean_abs_delta_A_C": 64.46802300347223,
+        "mean_abs_delta_B_C": 80.02916666666667,
+        "mean_abs_delta_A_B": 76.05573784722222,
+        "selection_quality_score": 84.16929825676813
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+      "review_score": 122.45533278571236,
+      "selected_rank": 35,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\35_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\35_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\35_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\35_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\contact_sheet.png"
+      },
+      "curated_rank": 17,
+      "source_selected40_rank": 35,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a black stove/heater or cooking range with pots and utensils on top.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001\\metadata.json"
+      }
+    },
+    {
+      "item_id": "17DRP5sb8fy_001",
+      "scan_id": "17DRP5sb8fy",
+      "start_viewpoint": "558ba0761bf24428b9cf91e60333ea25",
+      "hidden_viewpoint": "00ebbf3782c64d74aaf7dd39cd561175",
+      "start_position": [
+        2.414099931716919,
+        -0.3977000117301941,
+        1.5745999813079834
+      ],
+      "hidden_position": [
+        3.5074000358581543,
+        -0.492000013589859,
+        1.5760999917984009
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 1.0974547863006592,
+        "rel_heading_rad_from_start_heading_0": 1.6568807363510132,
+        "rel_elevation_rad": 0.0013394357253714276
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "movement_forward",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_001/view_A.png",
+          "viewpoint": "558ba0761bf24428b9cf91e60333ea25",
+          "heading_rad": 0.08608440955611663
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_001/view_B.png",
+          "viewpoint": "558ba0761bf24428b9cf91e60333ea25",
+          "heading_rad": -3.0555082440336765
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_001/view_C_hidden_oracle.png",
+          "viewpoint": "00ebbf3782c64d74aaf7dd39cd561175",
+          "heading_rad": 1.6568807363510132
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/17DRP5sb8fy/17DRP5sb8fy_001/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 126.19549560546875,
+          "std": 40.3912239074707,
+          "dark_fraction": 0.021100260416666666
+        },
+        "B": {
+          "mean": 126.02765655517578,
+          "std": 45.496620178222656,
+          "dark_fraction": 0.0023795572916666665
+        },
+        "C": {
+          "mean": 89.61170196533203,
+          "std": 67.1134033203125,
+          "dark_fraction": 0.009527994791666666
+        },
+        "mean_abs_delta_A_C": 79.44894748263889,
+        "mean_abs_delta_B_C": 78.52606336805556,
+        "mean_abs_delta_A_B": 57.87072265625,
+        "selection_quality_score": 91.28322589132522
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 121.56313571188184,
+      "selected_rank": 37,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\37_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\37_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\37_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\37_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\contact_sheet.png"
+      },
+      "curated_rank": 18,
+      "source_selected40_rank": 37,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a mirror-lit dressing, closet, or bathroom-adjacent area with a doorway and hanging item.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001\\metadata.json"
+      }
+    },
+    {
+      "item_id": "759xd9YjKW5_006",
+      "scan_id": "759xd9YjKW5",
+      "start_viewpoint": "aaef0e13feb84a9a8cb567429c9fb8d7",
+      "hidden_viewpoint": "606a5b4d7ee048d4b15fb07fc7a07fc6",
+      "start_position": [
+        -4.3678998947143555,
+        1.0379999876022339,
+        1.6440999507904053
+      ],
+      "hidden_position": [
+        -2.5143001079559326,
+        2.162899971008301,
+        1.6207000017166138
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.1683530807495117,
+        "rel_heading_rad_from_start_heading_0": 1.025342345237732,
+        "rel_elevation_rad": -0.01076413155991831
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "diagonal_right_at_C",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_006/view_A.png",
+          "viewpoint": "aaef0e13feb84a9a8cb567429c9fb8d7",
+          "heading_rad": -0.5454539815571646
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_006/view_B.png",
+          "viewpoint": "aaef0e13feb84a9a8cb567429c9fb8d7",
+          "heading_rad": 2.5961386720326285
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_006/view_C_hidden_oracle.png",
+          "viewpoint": "606a5b4d7ee048d4b15fb07fc7a07fc6",
+          "heading_rad": 0.23994418184028365
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_006/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 139.21044921875,
+          "std": 48.03846740722656,
+          "dark_fraction": 0.0020377604166666665
+        },
+        "B": {
+          "mean": 127.49734497070312,
+          "std": 63.952972412109375,
+          "dark_fraction": 0.011920572916666667
+        },
+        "C": {
+          "mean": 122.66343688964844,
+          "std": 59.65724182128906,
+          "dark_fraction": 0.03142903645833333
+        },
+        "mean_abs_delta_A_C": 73.98857313368056,
+        "mean_abs_delta_B_C": 78.26504231770834,
+        "mean_abs_delta_A_B": 64.62547743055555,
+        "selection_quality_score": 91.56037813398574
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 119.93869878556994,
+      "selected_rank": 38,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\38_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\38_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\38_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\38_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\contact_sheet.png"
+      },
+      "curated_rank": 19,
+      "source_selected40_rank": 38,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a kitchen/dining area with cabinets, hanging cookware, and a wooden table or island.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006\\metadata.json"
+      }
+    },
+    {
+      "item_id": "759xd9YjKW5_005",
+      "scan_id": "759xd9YjKW5",
+      "start_viewpoint": "f5f240dba39b4c19a1354c89c56d7a59",
+      "hidden_viewpoint": "f346ec806ac7467c97fab5a2e36793dd",
+      "start_position": [
+        -5.003600120544434,
+        8.066499710083008,
+        1.604599952697754
+      ],
+      "hidden_position": [
+        -3.001199960708618,
+        8.59220027923584,
+        1.6060999631881714
+      ],
+      "movement": {
+        "type": "connectivity_neighbor",
+        "distance_m": 2.0702271461486816,
+        "rel_heading_rad_from_start_heading_0": 1.3140363693237305,
+        "rel_elevation_rad": 0.0007245632809949773
+      },
+      "c_heading_policy": "best_novel",
+      "c_heading_label": "look_back_toward_start",
+      "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+      "views": {
+        "A": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_005/view_A.png",
+          "viewpoint": "f5f240dba39b4c19a1354c89c56d7a59",
+          "heading_rad": -0.2567599574711661
+        },
+        "B": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_005/view_B.png",
+          "viewpoint": "f5f240dba39b4c19a1354c89c56d7a59",
+          "heading_rad": 2.884832696118627
+        },
+        "C_hidden_oracle": {
+          "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_005/view_C_hidden_oracle.png",
+          "viewpoint": "f346ec806ac7467c97fab5a2e36793dd",
+          "heading_rad": -1.8275562842660626
+        },
+        "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v3_20260624/759xd9YjKW5/759xd9YjKW5_005/contact_sheet.png"
+      },
+      "quality_stats": {
+        "A": {
+          "mean": 115.58309936523438,
+          "std": 67.1070556640625,
+          "dark_fraction": 0.029541015625
+        },
+        "B": {
+          "mean": 136.25270080566406,
+          "std": 42.488338470458984,
+          "dark_fraction": 0.0030143229166666665
+        },
+        "C": {
+          "mean": 122.14360809326172,
+          "std": 60.24359893798828,
+          "dark_fraction": 0.022415364583333333
+        },
+        "mean_abs_delta_A_C": 83.9950705295139,
+        "mean_abs_delta_B_C": 71.85741970486112,
+        "mean_abs_delta_A_B": 60.05824978298611,
+        "selection_quality_score": 87.8039552921719
+      },
+      "candidate_question_templates": [
+        "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+        "Which scene region becomes visible in View C that is not visible in Views A and B?",
+        "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+      ],
+      "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+      "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v3_20260624\\manifest.json",
+      "source_batch": "mp3d_abc_view_candidates_diverse50_v3_20260624",
+      "review_score": 118.54372449451023,
+      "selected_rank": 39,
+      "selected_item_id": "mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005",
+      "selected_paths": {
+        "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\39_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\view_A.png",
+        "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\39_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\view_B.png",
+        "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\39_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\view_C_hidden_oracle.png",
+        "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\39_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\contact_sheet.png"
+      },
+      "curated_rank": 20,
+      "source_selected40_rank": 39,
+      "question_for_model": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "hidden_oracle_answer": "The hidden view reveals a study/office corner with shelves, books, and a desk or computer setup.",
+      "evaluation_note": "Show only View A, View B, and question_for_model to the model. Keep View C and hidden_oracle_answer hidden until evaluation.",
+      "curated_paths": {
+        "view_A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\view_A.png",
+        "view_B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\view_B.png",
+        "hidden_view_C_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\view_C_hidden_oracle.png",
+        "contact_sheet_for_human_review": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\contact_sheet.png",
+        "metadata": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_curated20_questions_final_20260624\\20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005\\metadata.json"
+      }
+    }
+  ]
+}

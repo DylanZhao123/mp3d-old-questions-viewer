@@ -1,0 +1,1944 @@
+{
+  "records": [
+    {
+      "rank": 1,
+      "itemId": "1LXtFkjw3qL_000",
+      "scanId": "1LXtFkjw3qL",
+      "folder": "01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals an outdoor terrace or balcony with a dining table and chairs among trees.",
+      "views": {
+        "A": "01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/view_A.png",
+        "B": "01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/view_B.png",
+        "C": "01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/view_C_hidden_oracle.png",
+        "contactSheet": "01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/connectivity_topdown.png",
+        "start360": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/a_depth_raw.png",
+            "color": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/01_1LXtFkjw3qL_000/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/01_1LXtFkjw3qL_000/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.60625,
+              "median_m": 3.2125,
+              "max_m": 8.6095,
+              "color_scale_p02_m": 1.6705,
+              "color_scale_p98_m": 8.0955
+            }
+          },
+          "B": {
+            "raw": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/b_depth_raw.png",
+            "color": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/01_1LXtFkjw3qL_000/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/01_1LXtFkjw3qL_000/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9950520833333333,
+              "min_m": 0.44975,
+              "median_m": 1.99175,
+              "max_m": 4.112,
+              "color_scale_p02_m": 0.514,
+              "color_scale_p98_m": 3.53375
+            }
+          },
+          "C": {
+            "raw": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/01_1LXtFkjw3qL_000/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/01_1LXtFkjw3qL_000/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.5563932291666667,
+              "min_m": 1.1565,
+              "median_m": 1.47775,
+              "max_m": 3.341,
+              "color_scale_p02_m": 1.22075,
+              "color_scale_p98_m": 3.01975
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 130,
+            "region_index": 11,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1LXtFkjw3qL/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 64,
+            "region_index": 5,
+            "region_code": "p",
+            "room_label": "porch/terrace/deck/driveway",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1LXtFkjw3qL/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 0.9477841854095459,
+          "shortest_graph_distance_m": 0.9477841854095459,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "fc94c2a0445640028200b2f96e1fe90c",
+            "7d01dee740ef4288b111dc65f449ca22"
+          ],
+          "generator_recorded_movement_distance_m": 0.9477841854095459
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "itemId": "5q7pvUzZiYa_001",
+      "scanId": "5q7pvUzZiYa",
+      "folder": "02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view opens from the kitchen area toward an outdoor balcony/railing with hills and greenery beyond.",
+      "views": {
+        "A": "02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/view_A.png",
+        "B": "02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/view_B.png",
+        "C": "02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/view_C_hidden_oracle.png",
+        "contactSheet": "02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/connectivity_topdown.png",
+        "start360": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/a_depth_raw.png",
+            "color": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/02_5q7pvUzZiYa_001/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/02_5q7pvUzZiYa_001/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.09225,
+              "median_m": 1.22075,
+              "max_m": 1.542,
+              "color_scale_p02_m": 1.09225,
+              "color_scale_p98_m": 1.542
+            }
+          },
+          "B": {
+            "raw": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/b_depth_raw.png",
+            "color": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/02_5q7pvUzZiYa_001/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/02_5q7pvUzZiYa_001/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9970572916666667,
+              "min_m": 1.09225,
+              "median_m": 3.01975,
+              "max_m": 10.34425,
+              "color_scale_p02_m": 1.22075,
+              "color_scale_p98_m": 7.77425
+            }
+          },
+          "C": {
+            "raw": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/02_5q7pvUzZiYa_001/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/02_5q7pvUzZiYa_001/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9694401041666667,
+              "min_m": 1.22075,
+              "median_m": 3.27675,
+              "max_m": 5.7825,
+              "color_scale_p02_m": 1.542,
+              "color_scale_p98_m": 5.20425
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 55,
+            "region_index": 0,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 85,
+            "region_index": 0,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.009052038192749,
+          "shortest_graph_distance_m": 2.009052038192749,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "8a86473cfb6a4039bd774ddc71378f2c",
+            "f08482ae99a841d882f8d40ce2646f62"
+          ],
+          "generator_recorded_movement_distance_m": 2.009052038192749
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "itemId": "5q7pvUzZiYa_002",
+      "scanId": "5q7pvUzZiYa",
+      "folder": "03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals built-in closet cabinetry with shelves, drawers, folded items, and hanging clothes.",
+      "views": {
+        "A": "03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/view_A.png",
+        "B": "03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/view_B.png",
+        "C": "03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/view_C_hidden_oracle.png",
+        "contactSheet": "03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/connectivity_topdown.png",
+        "start360": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/a_depth_raw.png",
+            "color": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/03_5q7pvUzZiYa_002/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/03_5q7pvUzZiYa_002/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.771,
+              "median_m": 1.99175,
+              "max_m": 9.252,
+              "color_scale_p02_m": 0.83525,
+              "color_scale_p98_m": 6.682
+            }
+          },
+          "B": {
+            "raw": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/b_depth_raw.png",
+            "color": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/03_5q7pvUzZiYa_002/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/03_5q7pvUzZiYa_002/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.6425,
+              "median_m": 0.96375,
+              "max_m": 1.6705,
+              "color_scale_p02_m": 0.6425,
+              "color_scale_p98_m": 1.60625
+            }
+          },
+          "C": {
+            "raw": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/03_5q7pvUzZiYa_002/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/03_5q7pvUzZiYa_002/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.3855,
+              "median_m": 1.285,
+              "max_m": 6.61775,
+              "color_scale_p02_m": 0.57825,
+              "color_scale_p98_m": 6.168
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 47,
+            "region_index": 13,
+            "region_code": "c",
+            "room_label": "closet",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 59,
+            "region_index": 13,
+            "region_code": "c",
+            "room_label": "closet",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.2839906215667725,
+          "shortest_graph_distance_m": 1.2839906215667725,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "74ab065a407340d2a67a66e54d64d309",
+            "8fcfcd2540414736b7d56cf70c62ecf9"
+          ],
+          "generator_recorded_movement_distance_m": 1.2839906215667725
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "itemId": "5q7pvUzZiYa_000",
+      "scanId": "5q7pvUzZiYa",
+      "folder": "04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a window-side sitting or desk area with a plant, tripod/telescope-like object, and open landscape beyond.",
+      "views": {
+        "A": "04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/view_A.png",
+        "B": "04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/view_B.png",
+        "C": "04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/view_C_hidden_oracle.png",
+        "contactSheet": "04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/connectivity_topdown.png",
+        "start360": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/a_depth_raw.png",
+            "color": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/04_5q7pvUzZiYa_000/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/04_5q7pvUzZiYa_000/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9957682291666666,
+              "min_m": 2.1845,
+              "median_m": 3.855,
+              "max_m": 10.4085,
+              "color_scale_p02_m": 2.37725,
+              "color_scale_p98_m": 9.413910000000262
+            }
+          },
+          "B": {
+            "raw": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/b_depth_raw.png",
+            "color": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/04_5q7pvUzZiYa_000/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/04_5q7pvUzZiYa_000/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.542,
+              "median_m": 3.598,
+              "max_m": 6.0395,
+              "color_scale_p02_m": 2.12025,
+              "color_scale_p98_m": 5.397
+            }
+          },
+          "C": {
+            "raw": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/04_5q7pvUzZiYa_000/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/04_5q7pvUzZiYa_000/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9986458333333333,
+              "min_m": 1.47775,
+              "median_m": 3.53375,
+              "max_m": 10.28,
+              "color_scale_p02_m": 1.6705,
+              "color_scale_p98_m": 6.8105
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 6,
+            "region_index": 1,
+            "region_code": "d",
+            "room_label": "dining room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 17,
+            "region_index": -1,
+            "region_code": "-",
+            "room_label": "no label",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.305844306945801,
+          "shortest_graph_distance_m": 2.305844306945801,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "12027c1e43dd4e808d58137ddb8e293b",
+            "2f78f0c5a7714e29a93fe5cb72bea6bc"
+          ],
+          "generator_recorded_movement_distance_m": 2.305844306945801
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "itemId": "5LpN3gDmAk7_000",
+      "scanId": "5LpN3gDmAk7",
+      "folder": "05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a high outdoor terrace view with city/hillside scenery and a telescope or spotting scope.",
+      "views": {
+        "A": "05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/view_A.png",
+        "B": "05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/view_B.png",
+        "C": "05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/view_C_hidden_oracle.png",
+        "contactSheet": "05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/connectivity_topdown.png",
+        "start360": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/a_depth_raw.png",
+            "color": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/05_5LpN3gDmAk7_000/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/05_5LpN3gDmAk7_000/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.22671875,
+              "min_m": 1.285,
+              "median_m": 1.86325,
+              "max_m": 4.81875,
+              "color_scale_p02_m": 1.34925,
+              "color_scale_p98_m": 4.56175
+            }
+          },
+          "B": {
+            "raw": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/b_depth_raw.png",
+            "color": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/05_5LpN3gDmAk7_000/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/05_5LpN3gDmAk7_000/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8790234375,
+              "min_m": 0.514,
+              "median_m": 1.6705,
+              "max_m": 8.41675,
+              "color_scale_p02_m": 0.57825,
+              "color_scale_p98_m": 7.26025
+            }
+          },
+          "C": {
+            "raw": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/05_5LpN3gDmAk7_000/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/05_5LpN3gDmAk7_000/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.47151041666666665,
+              "min_m": 1.99175,
+              "median_m": 4.69025,
+              "max_m": 11.822,
+              "color_scale_p02_m": 2.12025,
+              "color_scale_p98_m": 7.8385
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 51,
+            "region_index": 22,
+            "region_code": "p",
+            "room_label": "porch/terrace/deck/driveway",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5LpN3gDmAk7/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 5,
+            "region_index": 22,
+            "region_code": "p",
+            "room_label": "porch/terrace/deck/driveway",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5LpN3gDmAk7/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.452544927597046,
+          "shortest_graph_distance_m": 2.452544927597046,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "6536cc05bf45478aa2aceaa3bc575b61",
+            "0c589847582145febe410715c1cf3866"
+          ],
+          "generator_recorded_movement_distance_m": 2.452544927597046
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "itemId": "2t7WUuJeko7_005",
+      "scanId": "2t7WUuJeko7",
+      "folder": "06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals more of a bedroom or sitting room, including tall windows, a plant, antique wooden furniture, and a bed/headboard area.",
+      "views": {
+        "A": "06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/view_A.png",
+        "B": "06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/view_B.png",
+        "C": "06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/view_C_hidden_oracle.png",
+        "contactSheet": "06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/connectivity_topdown.png",
+        "start360": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/a_depth_raw.png",
+            "color": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/06_2t7WUuJeko7_005/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/06_2t7WUuJeko7_005/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.47775,
+              "median_m": 2.63425,
+              "max_m": 6.8105,
+              "color_scale_p02_m": 1.9275,
+              "color_scale_p98_m": 4.112
+            }
+          },
+          "B": {
+            "raw": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/b_depth_raw.png",
+            "color": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/06_2t7WUuJeko7_005/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/06_2t7WUuJeko7_005/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.70675,
+              "median_m": 1.028,
+              "max_m": 1.1565,
+              "color_scale_p02_m": 0.83525,
+              "color_scale_p98_m": 1.09225
+            }
+          },
+          "C": {
+            "raw": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/06_2t7WUuJeko7_005/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/06_2t7WUuJeko7_005/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9961328125,
+              "min_m": 0.514,
+              "median_m": 2.24875,
+              "max_m": 2.57,
+              "color_scale_p02_m": 1.4135,
+              "color_scale_p98_m": 2.4415
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 30,
+            "region_index": 0,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 23,
+            "region_index": 0,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.2107090950012207,
+          "shortest_graph_distance_m": 2.2107090950012207,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "c2e11b94c07a4d6c85cc60286f586a02",
+            "994c3fd765cb4a1c9b38e0bf66c20fb1"
+          ],
+          "generator_recorded_movement_distance_m": 2.2107090950012207
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "itemId": "2t7WUuJeko7_002",
+      "scanId": "2t7WUuJeko7",
+      "folder": "07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a dining/sitting room with a fireplace or mantel, chandelier, windows, and older wooden furniture.",
+      "views": {
+        "A": "07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/view_A.png",
+        "B": "07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/view_B.png",
+        "C": "07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/view_C_hidden_oracle.png",
+        "contactSheet": "07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/connectivity_topdown.png",
+        "start360": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/a_depth_raw.png",
+            "color": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/07_2t7WUuJeko7_002/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/07_2t7WUuJeko7_002/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8028255208333334,
+              "min_m": 0.32125,
+              "median_m": 2.1845,
+              "max_m": 2.50575,
+              "color_scale_p02_m": 0.32125,
+              "color_scale_p98_m": 2.50575
+            }
+          },
+          "B": {
+            "raw": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/b_depth_raw.png",
+            "color": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/07_2t7WUuJeko7_002/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/07_2t7WUuJeko7_002/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8928385416666667,
+              "min_m": 0.32125,
+              "median_m": 0.514,
+              "max_m": 3.53375,
+              "color_scale_p02_m": 0.3855,
+              "color_scale_p98_m": 3.01975
+            }
+          },
+          "C": {
+            "raw": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/07_2t7WUuJeko7_002/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/07_2t7WUuJeko7_002/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.285,
+              "median_m": 2.89125,
+              "max_m": 3.7265,
+              "color_scale_p02_m": 1.47775,
+              "color_scale_p98_m": 3.40525
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 14,
+            "region_index": 4,
+            "region_code": "h",
+            "room_label": "hallway",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 6,
+            "region_index": 0,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.2777148485183716,
+          "shortest_graph_distance_m": 1.2777148485183716,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "548d13fef345430ba0ca030f8edf4543",
+            "1e6b606b44df4a6086c0f97e826d4d15"
+          ],
+          "generator_recorded_movement_distance_m": 1.2777148485183716
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "itemId": "1LXtFkjw3qL_002",
+      "scanId": "1LXtFkjw3qL",
+      "folder": "08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a long interior hallway with doors and ceiling lights extending away from the start.",
+      "views": {
+        "A": "08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/view_A.png",
+        "B": "08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/view_B.png",
+        "C": "08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/view_C_hidden_oracle.png",
+        "contactSheet": "08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/connectivity_topdown.png",
+        "start360": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/a_depth_raw.png",
+            "color": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/08_1LXtFkjw3qL_002/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/08_1LXtFkjw3qL_002/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.8995,
+              "median_m": 1.799,
+              "max_m": 3.40525,
+              "color_scale_p02_m": 0.96375,
+              "color_scale_p98_m": 3.341
+            }
+          },
+          "B": {
+            "raw": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/b_depth_raw.png",
+            "color": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/08_1LXtFkjw3qL_002/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/08_1LXtFkjw3qL_002/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.6046484375,
+              "min_m": 0.57825,
+              "median_m": 0.6425,
+              "max_m": 0.70675,
+              "color_scale_p02_m": 0.6425,
+              "color_scale_p98_m": 0.70675
+            }
+          },
+          "C": {
+            "raw": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/08_1LXtFkjw3qL_002/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/08_1LXtFkjw3qL_002/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8217708333333333,
+              "min_m": 0.771,
+              "median_m": 2.76275,
+              "max_m": 10.34425,
+              "color_scale_p02_m": 0.83525,
+              "color_scale_p98_m": 9.252
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 52,
+            "region_index": 12,
+            "region_code": "h",
+            "room_label": "hallway",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1LXtFkjw3qL/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 30,
+            "region_index": 12,
+            "region_code": "h",
+            "room_label": "hallway",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1LXtFkjw3qL/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.9952136278152466,
+          "shortest_graph_distance_m": 1.9952136278152466,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "6c15ae9a3fc24613b9fcedb3da80aee5",
+            "3eb5c4d7ad9a4805b0470cf5f9e3b17c"
+          ],
+          "generator_recorded_movement_distance_m": 1.9952136278152466
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "itemId": "1pXnuDYAj8r_003",
+      "scanId": "1pXnuDYAj8r",
+      "folder": "09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a closet or dressing area with shelves, drawers, and a hanging garment bag.",
+      "views": {
+        "A": "09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/view_A.png",
+        "B": "09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/view_B.png",
+        "C": "09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/view_C_hidden_oracle.png",
+        "contactSheet": "09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/connectivity_topdown.png",
+        "start360": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/a_depth_raw.png",
+            "color": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/09_1pXnuDYAj8r_003/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/09_1pXnuDYAj8r_003/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.44975,
+              "median_m": 1.60625,
+              "max_m": 1.73475,
+              "color_scale_p02_m": 0.44975,
+              "color_scale_p98_m": 1.73475
+            }
+          },
+          "B": {
+            "raw": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/b_depth_raw.png",
+            "color": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/09_1pXnuDYAj8r_003/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/09_1pXnuDYAj8r_003/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.3855,
+              "median_m": 2.9555,
+              "max_m": 9.44475,
+              "color_scale_p02_m": 0.44975,
+              "color_scale_p98_m": 8.28825
+            }
+          },
+          "C": {
+            "raw": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/09_1pXnuDYAj8r_003/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/09_1pXnuDYAj8r_003/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.3855,
+              "median_m": 1.799,
+              "max_m": 4.43325,
+              "color_scale_p02_m": 0.44975,
+              "color_scale_p98_m": 3.855
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 35,
+            "region_index": 1,
+            "region_code": "a",
+            "room_label": "bathroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1pXnuDYAj8r/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 67,
+            "region_index": 1,
+            "region_code": "a",
+            "room_label": "bathroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1pXnuDYAj8r/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.2348881959915161,
+          "shortest_graph_distance_m": 1.2348881959915161,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "5cd8a7aa73d841a4b540b19cf91de719",
+            "a55dab7d921b47d59b1391d69fa7e464"
+          ],
+          "generator_recorded_movement_distance_m": 1.2348881959915161
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "itemId": "759xd9YjKW5_001",
+      "scanId": "759xd9YjKW5",
+      "folder": "10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals the sink/window side of the kitchen with stained-glass decoration and bottles on the sill.",
+      "views": {
+        "A": "10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/view_A.png",
+        "B": "10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/view_B.png",
+        "C": "10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/view_C_hidden_oracle.png",
+        "contactSheet": "10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/connectivity_topdown.png",
+        "start360": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/a_depth_raw.png",
+            "color": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/10_759xd9YjKW5_001/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/10_759xd9YjKW5_001/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.285,
+              "median_m": 1.6705,
+              "max_m": 2.24875,
+              "color_scale_p02_m": 1.34925,
+              "color_scale_p98_m": 2.1845
+            }
+          },
+          "B": {
+            "raw": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/b_depth_raw.png",
+            "color": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/10_759xd9YjKW5_001/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/10_759xd9YjKW5_001/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9998697916666667,
+              "min_m": 0.6425,
+              "median_m": 2.50575,
+              "max_m": 7.0675,
+              "color_scale_p02_m": 0.70675,
+              "color_scale_p98_m": 6.87475
+            }
+          },
+          "C": {
+            "raw": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/10_759xd9YjKW5_001/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/10_759xd9YjKW5_001/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9990494791666666,
+              "min_m": 0.96375,
+              "median_m": 1.60625,
+              "max_m": 2.76275,
+              "color_scale_p02_m": 1.22075,
+              "color_scale_p98_m": 1.9275
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 11,
+            "region_index": 6,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 37,
+            "region_index": 6,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.001844644546509,
+          "shortest_graph_distance_m": 2.001844644546509,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "14af8cbc71694b0ab5ca408ceb1c2cdb",
+            "99fcb9869e0b4a7a9f825d70d6f67efc"
+          ],
+          "generator_recorded_movement_distance_m": 2.001844644546509
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "itemId": "5LpN3gDmAk7_002",
+      "scanId": "5LpN3gDmAk7",
+      "folder": "11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a bedroom area with a large bed, bedside furniture, and broad windows or an open terrace view.",
+      "views": {
+        "A": "11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/view_A.png",
+        "B": "11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/view_B.png",
+        "C": "11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/view_C_hidden_oracle.png",
+        "contactSheet": "11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/connectivity_topdown.png",
+        "start360": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/a_depth_raw.png",
+            "color": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/11_5LpN3gDmAk7_002/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/11_5LpN3gDmAk7_002/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.96375,
+              "median_m": 1.542,
+              "max_m": 7.967,
+              "color_scale_p02_m": 1.028,
+              "color_scale_p98_m": 6.61775
+            }
+          },
+          "B": {
+            "raw": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/b_depth_raw.png",
+            "color": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/11_5LpN3gDmAk7_002/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/11_5LpN3gDmAk7_002/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9108463541666667,
+              "min_m": 1.028,
+              "median_m": 2.12025,
+              "max_m": 6.23225,
+              "color_scale_p02_m": 1.09225,
+              "color_scale_p98_m": 5.58975
+            }
+          },
+          "C": {
+            "raw": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/11_5LpN3gDmAk7_002/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/11_5LpN3gDmAk7_002/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9409765625,
+              "min_m": 2.313,
+              "median_m": 4.56175,
+              "max_m": 6.8105,
+              "color_scale_p02_m": 3.01975,
+              "color_scale_p98_m": 6.5535
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 109,
+            "region_index": 8,
+            "region_code": "b",
+            "room_label": "bedroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5LpN3gDmAk7/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 79,
+            "region_index": 8,
+            "region_code": "b",
+            "room_label": "bedroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5LpN3gDmAk7/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.0968035459518433,
+          "shortest_graph_distance_m": 1.0968035459518433,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "d28afd8227934d9e9845a151839f2501",
+            "9231543c6c484c939a501338ad8c1db4"
+          ],
+          "generator_recorded_movement_distance_m": 1.0968035459518433
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "itemId": "2t7WUuJeko7_006",
+      "scanId": "2t7WUuJeko7",
+      "folder": "12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a living room or parlor area with seating, a piano, side table, and chandelier.",
+      "views": {
+        "A": "12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/view_A.png",
+        "B": "12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/view_B.png",
+        "C": "12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/view_C_hidden_oracle.png",
+        "contactSheet": "12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/connectivity_topdown.png",
+        "start360": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/a_depth_raw.png",
+            "color": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/12_2t7WUuJeko7_006/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/12_2t7WUuJeko7_006/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8846223958333334,
+              "min_m": 0.32125,
+              "median_m": 0.6425,
+              "max_m": 7.51725,
+              "color_scale_p02_m": 0.32125,
+              "color_scale_p98_m": 7.196
+            }
+          },
+          "B": {
+            "raw": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/b_depth_raw.png",
+            "color": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/12_2t7WUuJeko7_006/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/12_2t7WUuJeko7_006/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8747526041666667,
+              "min_m": 0.32125,
+              "median_m": 0.57825,
+              "max_m": 4.30475,
+              "color_scale_p02_m": 0.32125,
+              "color_scale_p98_m": 4.2405
+            }
+          },
+          "C": {
+            "raw": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/12_2t7WUuJeko7_006/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/12_2t7WUuJeko7_006/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9954947916666667,
+              "min_m": 0.771,
+              "median_m": 2.89125,
+              "max_m": 6.74625,
+              "color_scale_p02_m": 0.96375,
+              "color_scale_p98_m": 6.5535
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 34,
+            "region_index": 0,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 24,
+            "region_index": 0,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.8128331899642944,
+          "shortest_graph_distance_m": 1.8128331899642944,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "d92842ea395c4a4da5ff59a2b481e480",
+            "9b0055db51914f059f7b9eaf79297f02"
+          ],
+          "generator_recorded_movement_distance_m": 1.8128331899642944
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "itemId": "17DRP5sb8fy_000",
+      "scanId": "17DRP5sb8fy",
+      "folder": "13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals an adjacent hallway or stair/landing area beyond the living room.",
+      "views": {
+        "A": "13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/view_A.png",
+        "B": "13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/view_B.png",
+        "C": "13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/view_C_hidden_oracle.png",
+        "contactSheet": "13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/connectivity_topdown.png",
+        "start360": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/a_depth_raw.png",
+            "color": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/13_17DRP5sb8fy_000/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/13_17DRP5sb8fy_000/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.70675,
+              "median_m": 0.83525,
+              "max_m": 1.1565,
+              "color_scale_p02_m": 0.70675,
+              "color_scale_p98_m": 1.1565
+            }
+          },
+          "B": {
+            "raw": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/b_depth_raw.png",
+            "color": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/13_17DRP5sb8fy_000/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/13_17DRP5sb8fy_000/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9651692708333334,
+              "min_m": 1.542,
+              "median_m": 2.76275,
+              "max_m": 4.30475,
+              "color_scale_p02_m": 1.86325,
+              "color_scale_p98_m": 4.112
+            }
+          },
+          "C": {
+            "raw": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/13_17DRP5sb8fy_000/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/13_17DRP5sb8fy_000/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.6500520833333333,
+              "min_m": 0.257,
+              "median_m": 0.8995,
+              "max_m": 2.6985,
+              "color_scale_p02_m": 0.32125,
+              "color_scale_p98_m": 2.63425
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 23,
+            "region_index": 7,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 21,
+            "region_index": 7,
+            "region_code": "l",
+            "room_label": "living room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.305572271347046,
+          "shortest_graph_distance_m": 2.305572271347046,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "77a1a11978b04e9cbf74914c98578ab8",
+            "6800f98e9e67463e9928a4253253bc2f"
+          ],
+          "generator_recorded_movement_distance_m": 2.305572271347046
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "itemId": "17DRP5sb8fy_006",
+      "scanId": "17DRP5sb8fy",
+      "folder": "14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a bedroom/living suite with a TV, red wall art, seating, and a bed-like surface.",
+      "views": {
+        "A": "14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/view_A.png",
+        "B": "14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/view_B.png",
+        "C": "14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/view_C_hidden_oracle.png",
+        "contactSheet": "14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/connectivity_topdown.png",
+        "start360": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/a_depth_raw.png",
+            "color": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/14_17DRP5sb8fy_006/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/14_17DRP5sb8fy_006/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.96375,
+              "median_m": 1.99175,
+              "max_m": 3.27675,
+              "color_scale_p02_m": 1.1565,
+              "color_scale_p98_m": 3.084
+            }
+          },
+          "B": {
+            "raw": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/b_depth_raw.png",
+            "color": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/14_17DRP5sb8fy_006/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/14_17DRP5sb8fy_006/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.028,
+              "median_m": 2.4415,
+              "max_m": 8.80225,
+              "color_scale_p02_m": 1.09225,
+              "color_scale_p98_m": 7.13175
+            }
+          },
+          "C": {
+            "raw": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/14_17DRP5sb8fy_006/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/14_17DRP5sb8fy_006/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.4135,
+              "median_m": 3.01975,
+              "max_m": 4.4975,
+              "color_scale_p02_m": 1.542,
+              "color_scale_p98_m": 4.369
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 14,
+            "region_index": 8,
+            "region_code": "f",
+            "room_label": "family room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 9,
+            "region_index": 0,
+            "region_code": "b",
+            "room_label": "bedroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.338598608970642,
+          "shortest_graph_distance_m": 1.338598608970642,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "3a6d2322867f40d9a3d2758ab88df288",
+            "23ec8bbec8eb40478411cba2e55b732e"
+          ],
+          "generator_recorded_movement_distance_m": 1.338598608970642
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "itemId": "17DRP5sb8fy_000",
+      "scanId": "17DRP5sb8fy",
+      "folder": "15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a bathroom area with a sink/vanity, towels, and a mirror beyond the living-room view.",
+      "views": {
+        "A": "15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/view_A.png",
+        "B": "15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/view_B.png",
+        "C": "15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/view_C_hidden_oracle.png",
+        "contactSheet": "15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/connectivity_topdown.png",
+        "start360": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/a_depth_raw.png",
+            "color": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/15_17DRP5sb8fy_000/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/15_17DRP5sb8fy_000/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.6425,
+              "median_m": 2.056,
+              "max_m": 10.47275,
+              "color_scale_p02_m": 0.70675,
+              "color_scale_p98_m": 9.766
+            }
+          },
+          "B": {
+            "raw": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/b_depth_raw.png",
+            "color": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/15_17DRP5sb8fy_000/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/15_17DRP5sb8fy_000/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.6425,
+              "median_m": 1.99175,
+              "max_m": 2.9555,
+              "color_scale_p02_m": 1.34925,
+              "color_scale_p98_m": 2.827
+            }
+          },
+          "C": {
+            "raw": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/15_17DRP5sb8fy_000/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/15_17DRP5sb8fy_000/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.514,
+              "median_m": 1.34925,
+              "max_m": 4.43325,
+              "color_scale_p02_m": 0.514,
+              "color_scale_p98_m": 3.9835
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 16,
+            "region_index": 0,
+            "region_code": "b",
+            "room_label": "bedroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 27,
+            "region_index": 8,
+            "region_code": "f",
+            "room_label": "family room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.0847984552383423,
+          "shortest_graph_distance_m": 1.0847984552383423,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "51857544c192476faebf212acb1b3d90",
+            "8a0f2f1a8ea441658501561e5dc34a3e"
+          ],
+          "generator_recorded_movement_distance_m": 1.0847984552383423
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "itemId": "29hnd4uzFmX_000",
+      "scanId": "29hnd4uzFmX",
+      "folder": "16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals the kitchen sink and countertop area with dark glossy cabinets and wood-paneled walls.",
+      "views": {
+        "A": "16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/view_A.png",
+        "B": "16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/view_B.png",
+        "C": "16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/view_C_hidden_oracle.png",
+        "contactSheet": "16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/connectivity_topdown.png",
+        "start360": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/a_depth_raw.png",
+            "color": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/16_29hnd4uzFmX_000/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/16_29hnd4uzFmX_000/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.8474348958333333,
+              "min_m": 0.44975,
+              "median_m": 0.514,
+              "max_m": 1.09225,
+              "color_scale_p02_m": 0.514,
+              "color_scale_p98_m": 1.09225
+            }
+          },
+          "B": {
+            "raw": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/b_depth_raw.png",
+            "color": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/16_29hnd4uzFmX_000/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/16_29hnd4uzFmX_000/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9645703125,
+              "min_m": 0.771,
+              "median_m": 2.24875,
+              "max_m": 4.626,
+              "color_scale_p02_m": 1.1565,
+              "color_scale_p98_m": 4.43325
+            }
+          },
+          "C": {
+            "raw": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/16_29hnd4uzFmX_000/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/16_29hnd4uzFmX_000/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.57825,
+              "median_m": 1.22075,
+              "max_m": 8.8665,
+              "color_scale_p02_m": 0.6425,
+              "color_scale_p98_m": 7.3245
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 7,
+            "region_index": 9,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/29hnd4uzFmX/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 38,
+            "region_index": 9,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/29hnd4uzFmX/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.0664652585983276,
+          "shortest_graph_distance_m": 1.0664652585983276,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "0eefd4bea0874786ab4946ca120bff73",
+            "3c286cf678234163b7cb2ab3785fc498"
+          ],
+          "generator_recorded_movement_distance_m": 1.0664652585983276
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "itemId": "2t7WUuJeko7_001",
+      "scanId": "2t7WUuJeko7",
+      "folder": "17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a black stove/heater or cooking range with pots and utensils on top.",
+      "views": {
+        "A": "17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/view_A.png",
+        "B": "17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/view_B.png",
+        "C": "17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/view_C_hidden_oracle.png",
+        "contactSheet": "17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/connectivity_topdown.png",
+        "start360": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/a_depth_raw.png",
+            "color": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/17_2t7WUuJeko7_001/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/17_2t7WUuJeko7_001/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.57825,
+              "median_m": 1.99175,
+              "max_m": 3.084,
+              "color_scale_p02_m": 0.6425,
+              "color_scale_p98_m": 2.9555
+            }
+          },
+          "B": {
+            "raw": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/b_depth_raw.png",
+            "color": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/17_2t7WUuJeko7_001/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/17_2t7WUuJeko7_001/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.8995,
+              "median_m": 1.22075,
+              "max_m": 4.369,
+              "color_scale_p02_m": 1.028,
+              "color_scale_p98_m": 3.9835
+            }
+          },
+          "C": {
+            "raw": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/17_2t7WUuJeko7_001/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/17_2t7WUuJeko7_001/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.6425,
+              "median_m": 1.028,
+              "max_m": 1.34925,
+              "color_scale_p02_m": 0.70675,
+              "color_scale_p98_m": 1.34925
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 18,
+            "region_index": 2,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 35,
+            "region_index": 2,
+            "region_code": "k",
+            "room_label": "kitchen",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.1354877948760986,
+          "shortest_graph_distance_m": 2.1354877948760986,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "8898d3cea28d404f8f69c3a3bce52371",
+            "edc7b2c25f054ce8992ae3fb66e80881"
+          ],
+          "generator_recorded_movement_distance_m": 2.1354875564575195
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "itemId": "17DRP5sb8fy_001",
+      "scanId": "17DRP5sb8fy",
+      "folder": "18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a mirror-lit dressing, closet, or bathroom-adjacent area with a doorway and hanging item.",
+      "views": {
+        "A": "18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/view_A.png",
+        "B": "18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/view_B.png",
+        "C": "18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/view_C_hidden_oracle.png",
+        "contactSheet": "18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/connectivity_topdown.png",
+        "start360": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/a_depth_raw.png",
+            "color": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/18_17DRP5sb8fy_001/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/18_17DRP5sb8fy_001/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9183854166666666,
+              "min_m": 0.32125,
+              "median_m": 0.514,
+              "max_m": 2.313,
+              "color_scale_p02_m": 0.44975,
+              "color_scale_p98_m": 1.542
+            }
+          },
+          "B": {
+            "raw": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/b_depth_raw.png",
+            "color": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/18_17DRP5sb8fy_001/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/18_17DRP5sb8fy_001/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.6322786458333334,
+              "min_m": 0.32125,
+              "median_m": 1.285,
+              "max_m": 3.66225,
+              "color_scale_p02_m": 0.32125,
+              "color_scale_p98_m": 1.86325
+            }
+          },
+          "C": {
+            "raw": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/18_17DRP5sb8fy_001/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/18_17DRP5sb8fy_001/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.83525,
+              "median_m": 1.1565,
+              "max_m": 8.995,
+              "color_scale_p02_m": 0.8995,
+              "color_scale_p98_m": 3.27675
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 17,
+            "region_index": -1,
+            "region_code": "-",
+            "room_label": "no label",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 0,
+            "region_index": 3,
+            "region_code": "a",
+            "room_label": "bathroom",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 1.0974547863006592,
+          "shortest_graph_distance_m": 1.0974547863006592,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "558ba0761bf24428b9cf91e60333ea25",
+            "00ebbf3782c64d74aaf7dd39cd561175"
+          ],
+          "generator_recorded_movement_distance_m": 1.0974547863006592
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "itemId": "759xd9YjKW5_006",
+      "scanId": "759xd9YjKW5",
+      "folder": "19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a kitchen/dining area with cabinets, hanging cookware, and a wooden table or island.",
+      "views": {
+        "A": "19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/view_A.png",
+        "B": "19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/view_B.png",
+        "C": "19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/view_C_hidden_oracle.png",
+        "contactSheet": "19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/connectivity_topdown.png",
+        "start360": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/a_depth_raw.png",
+            "color": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/19_759xd9YjKW5_006/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/19_759xd9YjKW5_006/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 1.47775,
+              "median_m": 2.12025,
+              "max_m": 3.2125,
+              "color_scale_p02_m": 1.60625,
+              "color_scale_p98_m": 2.89125
+            }
+          },
+          "B": {
+            "raw": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/b_depth_raw.png",
+            "color": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/19_759xd9YjKW5_006/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/19_759xd9YjKW5_006/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 0.9882552083333334,
+              "min_m": 1.47775,
+              "median_m": 2.63425,
+              "max_m": 6.168,
+              "color_scale_p02_m": 1.73475,
+              "color_scale_p98_m": 4.56175
+            }
+          },
+          "C": {
+            "raw": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/19_759xd9YjKW5_006/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/19_759xd9YjKW5_006/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.771,
+              "median_m": 1.86325,
+              "max_m": 5.97525,
+              "color_scale_p02_m": 0.83525,
+              "color_scale_p98_m": 5.5255
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 42,
+            "region_index": 5,
+            "region_code": "f",
+            "room_label": "family room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 28,
+            "region_index": 5,
+            "region_code": "f",
+            "room_label": "family room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.1683530807495117,
+          "shortest_graph_distance_m": 2.1683530807495117,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "aaef0e13feb84a9a8cb567429c9fb8d7",
+            "606a5b4d7ee048d4b15fb07fc7a07fc6"
+          ],
+          "generator_recorded_movement_distance_m": 2.1683530807495117
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "itemId": "759xd9YjKW5_005",
+      "scanId": "759xd9YjKW5",
+      "folder": "20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005",
+      "question": "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?",
+      "answer": "The hidden view reveals a study/office corner with shelves, books, and a desk or computer setup.",
+      "views": {
+        "A": "20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/view_A.png",
+        "B": "20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/view_B.png",
+        "C": "20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/view_C_hidden_oracle.png",
+        "contactSheet": "20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/contact_sheet.png"
+      },
+      "modalities": {
+        "connectivity": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/connectivity_topdown.png",
+        "start360": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/start_viewpoint_360_heading_sweep.png",
+        "hidden360": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/hidden_viewpoint_360_heading_sweep.png",
+        "startSkybox": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/start_viewpoint_skybox_panorama.jpg",
+        "hiddenSkybox": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/hidden_viewpoint_skybox_panorama.jpg",
+        "depth": {
+          "A": {
+            "raw": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/a_depth_raw.png",
+            "color": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/a_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/20_759xd9YjKW5_005/a_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/20_759xd9YjKW5_005/a_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.6425,
+              "median_m": 2.056,
+              "max_m": 4.112,
+              "color_scale_p02_m": 0.70675,
+              "color_scale_p98_m": 3.9835
+            }
+          },
+          "B": {
+            "raw": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/b_depth_raw.png",
+            "color": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/b_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/20_759xd9YjKW5_005/b_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/20_759xd9YjKW5_005/b_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.70675,
+              "median_m": 1.285,
+              "max_m": 4.69025,
+              "color_scale_p02_m": 0.83525,
+              "color_scale_p98_m": 4.43325
+            }
+          },
+          "C": {
+            "raw": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/c_hidden_oracle_depth_raw.png",
+            "color": "modalities/20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005/c_hidden_oracle_depth_color.png",
+            "stats": {
+              "available": true,
+              "raw_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/20_759xd9YjKW5_005/c_hidden_oracle_depth_raw.png",
+              "colorized_path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_sample_modalities_20260624/20_759xd9YjKW5_005/c_hidden_oracle_depth_color.png",
+              "encoding": "uint16 PNG; z-depth in 0.25 mm units, divide by 4000 for meters; zero means no reading",
+              "valid_pixel_ratio": 1.0,
+              "min_m": 0.57825,
+              "median_m": 2.57,
+              "max_m": 3.27675,
+              "color_scale_p02_m": 0.8995,
+              "color_scale_p98_m": 3.084
+            }
+          }
+        },
+        "room": {
+          "start": {
+            "panorama_index": 57,
+            "region_index": 7,
+            "region_code": "w",
+            "room_label": "workout/gym/exercise room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
+          },
+          "hidden": {
+            "panorama_index": 56,
+            "region_index": 7,
+            "region_code": "w",
+            "room_label": "workout/gym/exercise room",
+            "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
+          }
+        },
+        "graphDistance": {
+          "euclidean_distance_m": 2.0702271461486816,
+          "shortest_graph_distance_m": 2.0702271461486816,
+          "shortest_graph_hops": 1,
+          "shortest_path_viewpoints": [
+            "f5f240dba39b4c19a1354c89c56d7a59",
+            "f346ec806ac7467c97fab5a2e36793dd"
+          ],
+          "generator_recorded_movement_distance_m": 2.0702271461486816
+        }
+      }
+    }
+  ]
+}
