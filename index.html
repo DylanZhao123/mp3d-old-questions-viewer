@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MP3D Hard C-only Question Viewer</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --panel-soft: #eef2f6;
+      --text: #18202a;
+      --muted: #647181;
+      --line: #d9e0e8;
+      --accent: #1f6feb;
+      --accent-dark: #174ea6;
+      --good: #147d64;
+      --shadow: 0 10px 28px rgba(24, 32, 42, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background: #fbfcfd;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .sidebar-header {
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .title {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .stats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .search {
+      width: 100%;
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    .search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.14);
+    }
+
+    .list {
+      overflow: auto;
+      padding: 10px;
+    }
+
+    .item {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      text-align: left;
+      border: 1px solid transparent;
+      background: transparent;
+      border-radius: 8px;
+      padding: 8px;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .item:hover {
+      background: var(--panel-soft);
+    }
+
+    .item.active {
+      background: #e8f1ff;
+      border-color: #bad6ff;
+    }
+
+    .rank {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      color: var(--accent-dark);
+      font-weight: 700;
+    }
+
+    .item-title {
+      font-size: 14px;
+      font-weight: 650;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .item-meta {
+      margin-top: 3px;
+      font-size: 12px;
+      color: var(--muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .main {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      background: rgba(246, 247, 249, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .icon-button,
+    .text-button {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .icon-button {
+      width: 42px;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .text-button {
+      padding: 0 12px;
+      font-weight: 650;
+    }
+
+    .icon-button:hover,
+    .text-button:hover {
+      border-color: #b8c4d2;
+      box-shadow: 0 1px 0 rgba(24, 32, 42, 0.04);
+    }
+
+    .toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 7px 10px;
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      user-select: none;
+    }
+
+    .toggle input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
+    .content {
+      width: min(1500px, 100%);
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    .question-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .question-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .question-head h1 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .scan {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .question-text {
+      margin: 0;
+      color: #24303d;
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      align-items: start;
+    }
+
+    .image-grid.show-oracle {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .figure {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .figure-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfd;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .figure-header span:last-child {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .figure img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      background: #0f141a;
+    }
+
+    .oracle {
+      display: none;
+    }
+
+    .show-oracle .oracle {
+      display: block;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 16px;
+      background: #edf8f5;
+      border: 1px solid #bfe4d9;
+      border-radius: 8px;
+      padding: 14px 16px;
+      color: #123e34;
+    }
+
+    .answer.visible {
+      display: block;
+    }
+
+    .answer h2 {
+      margin: 0 0 8px;
+      color: var(--good);
+      font-size: 15px;
+    }
+
+    .answer p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .empty {
+      padding: 18px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 980px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        max-height: 320px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar {
+        position: static;
+        flex-wrap: wrap;
+      }
+
+      .image-grid,
+      .image-grid.show-oracle {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="title">MP3D Hard Questions</h1>
+        <div class="stats">
+          <span class="pill">20 curated</span>
+          <span class="pill">A/B visible</span>
+          <span class="pill">C hidden oracle</span>
+        </div>
+        <input id="search" class="search" type="search" placeholder="Search scan or answer">
+      </div>
+      <div id="list" class="list"></div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="nav">
+          <button id="prev" class="icon-button" title="Previous" aria-label="Previous">&#8249;</button>
+          <button id="next" class="icon-button" title="Next" aria-label="Next">&#8250;</button>
+          <button id="openFolder" class="text-button">Open Sheet</button>
+        </div>
+        <label class="toggle">
+          <input id="showOracle" type="checkbox">
+          <span>Show hidden oracle</span>
+        </label>
+      </div>
+
+      <section class="content">
+        <article class="question-card">
+          <div class="question-head">
+            <h1 id="itemTitle">Question</h1>
+            <span id="scan" class="scan"></span>
+          </div>
+          <p id="question" class="question-text"></p>
+          <div id="answer" class="answer">
+            <h2>Hidden oracle answer</h2>
+            <p id="answerText"></p>
+          </div>
+        </article>
+
+        <div id="imageGrid" class="image-grid">
+          <figure class="figure">
+            <div class="figure-header"><span>View A</span><span>model input</span></div>
+            <img id="viewA" alt="View A">
+          </figure>
+          <figure class="figure">
+            <div class="figure-header"><span>View B</span><span>model input</span></div>
+            <img id="viewB" alt="View B">
+          </figure>
+          <figure class="figure oracle">
+            <div class="figure-header"><span>View C</span><span>oracle only</span></div>
+            <img id="viewC" alt="Hidden View C oracle">
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const records = [
+      {
+        rank: 1,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000",
+        scanId: "1LXtFkjw3qL",
+        folder: "01_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_000",
+        answer: "The hidden view reveals an outdoor terrace or balcony with a dining table and chairs among trees."
+      },
+      {
+        rank: 2,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001",
+        scanId: "5q7pvUzZiYa",
+        folder: "02_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_001",
+        answer: "The hidden view opens from the kitchen area toward an outdoor balcony/railing with hills and greenery beyond."
+      },
+      {
+        rank: 3,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002",
+        scanId: "5q7pvUzZiYa",
+        folder: "03_mp3d_abc_view_candidates_diverse50_v3_20260624__5q7pvUzZiYa_002",
+        answer: "The hidden view reveals built-in closet cabinetry with shelves, drawers, folded items, and hanging clothes."
+      },
+      {
+        rank: 4,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000",
+        scanId: "5q7pvUzZiYa",
+        folder: "04_mp3d_abc_view_candidates_diverse50_v4_20260624__5q7pvUzZiYa_000",
+        answer: "The hidden view reveals a window-side sitting or desk area with a plant, tripod/telescope-like object, and open landscape beyond."
+      },
+      {
+        rank: 5,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000",
+        scanId: "5LpN3gDmAk7",
+        folder: "05_mp3d_abc_view_candidates_diverse50_v3_20260624__5LpN3gDmAk7_000",
+        answer: "The hidden view reveals a high outdoor terrace view with city/hillside scenery and a telescope or spotting scope."
+      },
+      {
+        rank: 6,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005",
+        scanId: "2t7WUuJeko7",
+        folder: "06_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_005",
+        answer: "The hidden view reveals more of a bedroom or sitting room, including tall windows, a plant, antique wooden furniture, and a bed/headboard area."
+      },
+      {
+        rank: 7,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002",
+        scanId: "2t7WUuJeko7",
+        folder: "07_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002",
+        answer: "The hidden view reveals a dining/sitting room with a fireplace or mantel, chandelier, windows, and older wooden furniture."
+      },
+      {
+        rank: 8,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002",
+        scanId: "1LXtFkjw3qL",
+        folder: "08_mp3d_abc_view_candidates_diverse50_v3_20260624__1LXtFkjw3qL_002",
+        answer: "The hidden view reveals a long interior hallway with doors and ceiling lights extending away from the start."
+      },
+      {
+        rank: 9,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003",
+        scanId: "1pXnuDYAj8r",
+        folder: "09_mp3d_abc_view_candidates_diverse50_v3_20260624__1pXnuDYAj8r_003",
+        answer: "The hidden view reveals a closet or dressing area with shelves, drawers, and a hanging garment bag."
+      },
+      {
+        rank: 10,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001",
+        scanId: "759xd9YjKW5",
+        folder: "10_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_001",
+        answer: "The hidden view reveals the sink/window side of the kitchen with stained-glass decoration and bottles on the sill."
+      },
+      {
+        rank: 11,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002",
+        scanId: "5LpN3gDmAk7",
+        folder: "11_mp3d_abc_view_candidates_diverse50_v4_20260624__5LpN3gDmAk7_002",
+        answer: "The hidden view reveals a bedroom area with a large bed, bedside furniture, and broad windows or an open terrace view."
+      },
+      {
+        rank: 12,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006",
+        scanId: "2t7WUuJeko7",
+        folder: "12_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_006",
+        answer: "The hidden view reveals a living room or parlor area with seating, a piano, side table, and chandelier."
+      },
+      {
+        rank: 13,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000",
+        scanId: "17DRP5sb8fy",
+        folder: "13_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_000",
+        answer: "The hidden view reveals an adjacent hallway or stair/landing area beyond the living room."
+      },
+      {
+        rank: 14,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006",
+        scanId: "17DRP5sb8fy",
+        folder: "14_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_006",
+        answer: "The hidden view reveals a bedroom/living suite with a TV, red wall art, seating, and a bed-like surface."
+      },
+      {
+        rank: 15,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000",
+        scanId: "17DRP5sb8fy",
+        folder: "15_mp3d_abc_view_candidates_diverse50_v4_20260624__17DRP5sb8fy_000",
+        answer: "The hidden view reveals a bathroom area with a sink/vanity, towels, and a mirror beyond the living-room view."
+      },
+      {
+        rank: 16,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000",
+        scanId: "29hnd4uzFmX",
+        folder: "16_mp3d_abc_view_candidates_diverse50_v3_20260624__29hnd4uzFmX_000",
+        answer: "The hidden view reveals the kitchen sink and countertop area with dark glossy cabinets and wood-paneled walls."
+      },
+      {
+        rank: 17,
+        itemId: "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001",
+        scanId: "2t7WUuJeko7",
+        folder: "17_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_001",
+        answer: "The hidden view reveals a black stove/heater or cooking range with pots and utensils on top."
+      },
+      {
+        rank: 18,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001",
+        scanId: "17DRP5sb8fy",
+        folder: "18_mp3d_abc_view_candidates_diverse50_v3_20260624__17DRP5sb8fy_001",
+        answer: "The hidden view reveals a mirror-lit dressing, closet, or bathroom-adjacent area with a doorway and hanging item."
+      },
+      {
+        rank: 19,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006",
+        scanId: "759xd9YjKW5",
+        folder: "19_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_006",
+        answer: "The hidden view reveals a kitchen/dining area with cabinets, hanging cookware, and a wooden table or island."
+      },
+      {
+        rank: 20,
+        itemId: "mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005",
+        scanId: "759xd9YjKW5",
+        folder: "20_mp3d_abc_view_candidates_diverse50_v3_20260624__759xd9YjKW5_005",
+        answer: "The hidden view reveals a study/office corner with shelves, books, and a desk or computer setup."
+      }
+    ];
+
+    const question = "Only View A and View B are visible. Imagine taking one short navigation step to the hidden nearby viewpoint C. What new visual evidence, object, or area would likely become visible there that is not sufficiently visible in A/B?";
+    const questionOverrides = {
+      1: {
+        question: "If I walk through the glass opening beside this living room toward the balcony, will I be closer to an outdoor dining table with chairs or just an empty railing?",
+        answer: "An outdoor dining table with chairs."
+      },
+      2: {
+        question: "If I move from the kitchen toward the bright opening beyond the counter, will the next view mainly open onto an outdoor railing and hills, or onto more indoor cabinets?",
+        answer: "It opens onto an outdoor railing with hills and greenery beyond."
+      },
+      3: {
+        question: "If I step deeper into the walk-in closet past the hanging clothes, will I find more built-in storage drawers and shelves, or does it open directly outside?",
+        answer: "More built-in storage drawers and shelves."
+      },
+      4: {
+        question: "If I walk from the dining area toward the full-height windows, will I reach a window-side overlook with plants and outdoor scenery, or another enclosed dining wall?",
+        answer: "A window-side overlook with plants and outdoor scenery."
+      },
+      5: {
+        question: "If I step out toward the glass-walled terrace, would this viewpoint be useful for looking over the city or hills, and is there likely an observation scope nearby?",
+        answer: "Yes. It gives a high terrace view over the city or hills with an observation scope nearby."
+      },
+      6: {
+        question: "If I move past the carved wooden bed or headboard toward the window side of the room, will I see a brighter sitting corner with plants and tall windows?",
+        answer: "Yes. The next view shows a brighter sitting/window corner with plants and tall windows."
+      },
+      7: {
+        question: "If I walk through the doorway from the entry area into the room ahead, will it lead to a furnished sitting/dining room with a fireplace and chandelier, or just a plain hall?",
+        answer: "A furnished sitting/dining room with a fireplace or mantel and chandelier."
+      },
+      8: {
+        question: "If I continue along the red-walled interior path rather than stopping at the door or window, will the space extend into a long hallway?",
+        answer: "Yes. It extends into a long hallway with doors and ceiling lights."
+      },
+      9: {
+        question: "If I move from the bathroom area toward the built-in cabinetry, will I enter a closet or dressing area with shelves and a hanging garment bag?",
+        answer: "Yes. It becomes a closet or dressing area with shelves, drawers, and a hanging garment bag."
+      },
+      10: {
+        question: "If I step from the kitchen/living area toward the bright blue-trimmed window, will I be standing by a sink and windowsill decorations rather than by the sofa?",
+        answer: "Yes. The viewpoint is by the sink and windowsill decorations."
+      },
+      11: {
+        question: "If I move around the wall toward the room beyond the balcony-facing opening, will the next view reveal a bed area or more outdoor seating?",
+        answer: "A bed area with bedside furniture and broad windows."
+      },
+      12: {
+        question: "If I walk through the doorway into the adjacent room, should I expect a parlor with a piano and seating, or a bedroom?",
+        answer: "A parlor or living room with a piano, seating, side table, and chandelier."
+      },
+      13: {
+        question: "If I move past the sofa and dark partition toward the opening, will I reach a hallway or stair landing rather than another sofa area?",
+        answer: "A hallway or stair landing."
+      },
+      14: {
+        question: "If I step from the window/vanity side farther into the suite, will a TV wall with red artwork and a bed or lounge surface come into view?",
+        answer: "Yes. A TV wall with red artwork and a bed or lounge surface comes into view."
+      },
+      15: {
+        question: "If I move toward the opening beside the TV/window area, does it lead into a bathroom vanity area or back into the living room?",
+        answer: "It leads into a bathroom vanity area with sink, towels, and mirror."
+      },
+      16: {
+        question: "If I step into the wood-paneled kitchen toward the glossy black cabinets, will the sink and main countertop be on that side?",
+        answer: "Yes. The sink and main countertop are on the glossy black cabinet side."
+      },
+      17: {
+        question: "If I walk from the white cabinet and curtained window toward the darker wall area, will I find a black stove or heater there?",
+        answer: "Yes. There is a black stove or heater with pots and utensils on top."
+      },
+      18: {
+        question: "If I move from the narrow hall toward the bright mirror-lit opening, will it reveal a dressing, closet, or bathroom-adjacent space?",
+        answer: "Yes. It reveals a mirror-lit dressing, closet, or bathroom-adjacent space with a doorway and hanging item."
+      },
+      19: {
+        question: "If I move past the living-room seating toward the adjoining room, will I enter a kitchen/dining area with hanging cookware and cabinets?",
+        answer: "Yes. It is a kitchen/dining area with cabinets, hanging cookware, and a wooden table or island."
+      },
+      20: {
+        question: "If I step toward the side room near the shelves, will I find a study or office corner with a desk/computer setup rather than more kitchen cabinetry?",
+        answer: "A study or office corner with shelves, books, and a desk/computer setup."
+      }
+    };
+    const state = { index: 0, filtered: records.slice() };
+
+    const el = {
+      list: document.getElementById("list"),
+      search: document.getElementById("search"),
+      itemTitle: document.getElementById("itemTitle"),
+      scan: document.getElementById("scan"),
+      question: document.getElementById("question"),
+      answer: document.getElementById("answer"),
+      answerText: document.getElementById("answerText"),
+      showOracle: document.getElementById("showOracle"),
+      imageGrid: document.getElementById("imageGrid"),
+      viewA: document.getElementById("viewA"),
+      viewB: document.getElementById("viewB"),
+      viewC: document.getElementById("viewC"),
+      prev: document.getElementById("prev"),
+      next: document.getElementById("next"),
+      openFolder: document.getElementById("openFolder")
+    };
+
+    function imagePath(record, name) {
+      return `${record.folder}/${name}`;
+    }
+
+    function renderList() {
+      el.list.innerHTML = "";
+      if (state.filtered.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "empty";
+        empty.textContent = "No matches";
+        el.list.appendChild(empty);
+        return;
+      }
+
+      state.filtered.forEach((record, idx) => {
+        const button = document.createElement("button");
+        button.className = `item ${idx === state.index ? "active" : ""}`;
+        button.innerHTML = `
+          <span class="rank">${String(record.rank).padStart(2, "0")}</span>
+          <span>
+            <span class="item-title">${record.scanId}</span>
+            <span class="item-meta">${record.answer}</span>
+          </span>
+        `;
+        button.addEventListener("click", () => {
+          state.index = idx;
+          render();
+        });
+        el.list.appendChild(button);
+      });
+    }
+
+    function renderDetail() {
+      const record = state.filtered[state.index];
+      if (!record) {
+        return;
+      }
+
+      el.itemTitle.textContent = `Question ${String(record.rank).padStart(2, "0")}`;
+      el.scan.textContent = `${record.scanId} / ${record.itemId}`;
+      const override = questionOverrides[record.rank] || {};
+      el.question.textContent = override.question || question;
+      el.answerText.textContent = override.answer || record.answer;
+      el.viewA.src = imagePath(record, "view_A.png");
+      el.viewB.src = imagePath(record, "view_B.png");
+      el.viewC.src = imagePath(record, "view_C_hidden_oracle.png");
+      el.imageGrid.classList.toggle("show-oracle", el.showOracle.checked);
+      el.answer.classList.toggle("visible", el.showOracle.checked);
+      el.openFolder.onclick = () => window.open(imagePath(record, "contact_sheet.png"), "_blank");
+    }
+
+    function render() {
+      if (state.index >= state.filtered.length) {
+        state.index = Math.max(0, state.filtered.length - 1);
+      }
+      renderList();
+      renderDetail();
+    }
+
+    function move(step) {
+      if (state.filtered.length === 0) {
+        return;
+      }
+      state.index = (state.index + step + state.filtered.length) % state.filtered.length;
+      render();
+    }
+
+    el.prev.addEventListener("click", () => move(-1));
+    el.next.addEventListener("click", () => move(1));
+    el.showOracle.addEventListener("change", renderDetail);
+    el.search.addEventListener("input", () => {
+      const term = el.search.value.trim().toLowerCase();
+      state.filtered = records.filter((record) => {
+        const haystack = `${record.rank} ${record.scanId} ${record.itemId} ${record.answer}`.toLowerCase();
+        return haystack.includes(term);
+      });
+      state.index = 0;
+      render();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.target === el.search) {
+        return;
+      }
+      if (event.key === "ArrowLeft") {
+        move(-1);
+      } else if (event.key === "ArrowRight") {
+        move(1);
+      } else if (event.key.toLowerCase() === "c") {
+        el.showOracle.checked = !el.showOracle.checked;
+        renderDetail();
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>

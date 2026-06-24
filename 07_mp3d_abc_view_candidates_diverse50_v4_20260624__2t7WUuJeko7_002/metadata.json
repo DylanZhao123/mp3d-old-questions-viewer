@@ -1,0 +1,81 @@
+{
+  "item_id": "2t7WUuJeko7_002",
+  "scan_id": "2t7WUuJeko7",
+  "start_viewpoint": "548d13fef345430ba0ca030f8edf4543",
+  "hidden_viewpoint": "1e6b606b44df4a6086c0f97e826d4d15",
+  "start_position": [
+    3.5485999584198,
+    -2.1140999794006348,
+    1.6849000453948975
+  ],
+  "hidden_position": [
+    3.5978000164031982,
+    -0.8374000191688538,
+    1.6887999773025513
+  ],
+  "movement": {
+    "type": "connectivity_neighbor",
+    "distance_m": 1.2777148485183716,
+    "rel_heading_rad_from_start_heading_0": 0.03846108913421631,
+    "rel_elevation_rad": 0.003060206067342772
+  },
+  "c_heading_policy": "best_novel",
+  "c_heading_label": "diagonal_left_at_C",
+  "c_heading_min_separation_degrees_from_A_or_B": 29.999999999999996,
+  "views": {
+    "A": {
+      "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/view_A.png",
+      "viewpoint": "548d13fef345430ba0ca030f8edf4543",
+      "heading_rad": -1.5323352376606802
+    },
+    "B": {
+      "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/view_B.png",
+      "viewpoint": "548d13fef345430ba0ca030f8edf4543",
+      "heading_rad": 1.6092574159291129
+    },
+    "C_hidden_oracle": {
+      "path": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/view_C_hidden_oracle.png",
+      "viewpoint": "1e6b606b44df4a6086c0f97e826d4d15",
+      "heading_rad": 0.8238592525316646
+    },
+    "contact_sheet": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/outputs/mp3d_abc_view_candidates_diverse50_v4_20260624/2t7WUuJeko7/2t7WUuJeko7_002/contact_sheet.png"
+  },
+  "quality_stats": {
+    "A": {
+      "mean": 81.15904998779297,
+      "std": 72.83159637451172,
+      "dark_fraction": 0.0035579427083333335
+    },
+    "B": {
+      "mean": 99.31442260742188,
+      "std": 65.884521484375,
+      "dark_fraction": 0.009677734375
+    },
+    "C": {
+      "mean": 124.8769760131836,
+      "std": 70.2259750366211,
+      "dark_fraction": 0.03635416666666667
+    },
+    "mean_abs_delta_A_C": 91.86013888888888,
+    "mean_abs_delta_B_C": 87.05156684027777,
+    "mean_abs_delta_A_B": 77.50111328125,
+    "selection_quality_score": 106.26521675692663
+  },
+  "candidate_question_templates": [
+    "After moving to the hidden viewpoint C, what newly visible object or area is in front of the camera?",
+    "Which scene region becomes visible in View C that is not visible in Views A and B?",
+    "If an agent starts at Views A/B and moves to C, what is the most salient change in the view?"
+  ],
+  "intended_use": "A/B are shown to the model; C is hidden oracle evidence for review or answer derivation.",
+  "source_manifest": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_candidates_diverse50_v4_20260624\\manifest.json",
+  "source_batch": "mp3d_abc_view_candidates_diverse50_v4_20260624",
+  "review_score": 141.13614937411415,
+  "selected_rank": 19,
+  "selected_item_id": "mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002",
+  "selected_paths": {
+    "A": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_A.png",
+    "B": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_B.png",
+    "C_hidden_oracle": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\view_C_hidden_oracle.png",
+    "contact_sheet": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_abc_view_selected40_review_20260624\\19_mp3d_abc_view_candidates_diverse50_v4_20260624__2t7WUuJeko7_002\\contact_sheet.png"
+  }
+}
