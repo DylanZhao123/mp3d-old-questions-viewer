@@ -60,3 +60,16 @@ Room labels are parsed from:
 `house_segmentations/panorama_to_region.txt`
 
 Each sample records the start viewpoint room label and the hidden C viewpoint room label. The raw MP3D region code and region index are preserved in `modalities.json`.
+
+## Navigation Action and Object Detection
+
+Added after the original modality export:
+
+- `navigation_action` in each `modalities.json`
+  Human-readable one-step movement label derived from start-to-C relative heading,
+  distance, elevation, and the selected hidden-C camera heading.
+
+- `object_detection` in each `modalities.json`
+  YOLO COCO detections for View A, View B, and hidden View C. Each view includes
+  labels, confidences, bounding boxes, label counts, and an annotated preview PNG.
+  These are detector outputs for analysis, not MP3D ground-truth object annotations.

@@ -465,11 +465,24 @@
             <div id="graphDistanceMetrics" class="metrics"></div>
           </div>
 
+          <h2 class="section-title">Navigation Action Label</h2>
+          <div class="metric-panel">
+            <div class="figure-header"><span>Navigation Action</span><span>one-step movement</span></div>
+            <div id="navigationActionMetrics" class="metrics"></div>
+          </div>
+
           <h2 class="section-title">Room Label</h2>
           <div class="metric-panel">
             <div class="figure-header"><span>Room Labels</span><span>MP3D semantic metadata</span></div>
             <div id="roomLabelMetrics" class="metrics"></div>
           </div>
+
+          <h2 class="section-title">Object Detection</h2>
+          <div class="metric-panel">
+            <div class="figure-header"><span>Detected Object Inventory</span><span>2D bounding boxes</span></div>
+            <div id="objectDetectionMetrics" class="metrics"></div>
+          </div>
+          <div id="objectDetectionGrid" class="panel-grid three"></div>
 
           <h2 class="section-title">Depth Maps</h2>
           <div id="depthGrid" class="panel-grid three"></div>
@@ -532,7 +545,10 @@
       viewC: document.getElementById("viewC"),
       connectivity: document.getElementById("connectivity"),
       graphDistanceMetrics: document.getElementById("graphDistanceMetrics"),
+      navigationActionMetrics: document.getElementById("navigationActionMetrics"),
       roomLabelMetrics: document.getElementById("roomLabelMetrics"),
+      objectDetectionMetrics: document.getElementById("objectDetectionMetrics"),
+      objectDetectionGrid: document.getElementById("objectDetectionGrid"),
       depthGrid: document.getElementById("depthGrid"),
       start360: document.getElementById("start360"),
       hidden360: document.getElementById("hidden360"),
@@ -586,6 +602,17 @@
       return `<div class="metric"><div class="metric-label">${label}</div><div class="metric-value">${value}</div></div>`;
     }
 
+    function humanize(value) {
+      if (!value) return "n/a";
+      return String(value).replaceAll("_", " ");
+    }
+
+    function labelCountsText(counts) {
+      const entries = Object.entries(counts || {});
+      if (!entries.length) return "none detected";
+      return entries.map(([label, count]) => `${label} (${count})`).join(", ");
+    }
+
     function renderGraphDistance(record) {
       const graph = record.modalities.graphDistance;
       el.graphDistanceMetrics.innerHTML = [
@@ -596,11 +623,55 @@
       ].join("");
     }
 
+    function renderNavigationAction(record) {
+      const action = record.modalities.navigationAction || {};
+      el.navigationActionMetrics.innerHTML = [
+        metric("Action label", humanize(action.action_label)),
+        metric("Move distance", `${formatNumber(action.movement_distance_m)} m`),
+        metric("Relative heading", `${formatNumber(action.relative_heading_degrees, 1)} degrees`),
+        metric("Elevation", humanize(action.elevation_label)),
+        metric("Hidden C camera", humanize(action.hidden_c_camera_heading_label)),
+        metric("Plain description", action.human_readable || "n/a")
+      ].join("");
+    }
+
     function renderRoomLabels(record) {
       const room = record.modalities.room;
       el.roomLabelMetrics.innerHTML = [
         metric("Start room", roomText(room.start)),
         metric("Hidden C room", roomText(room.hidden))
+      ].join("");
+    }
+
+    function detectionFigure(viewName, label, view) {
+      return `
+        <figure class="figure">
+          <div class="figure-header"><span>${label}</span><span>${view.detectionCount ?? 0} boxes</span></div>
+          <img class="view-img" src="${view.annotated}" alt="${label} object detections">
+          <div class="metrics">
+            ${metric("Detected labels", labelCountsText(view.labelCounts))}
+          </div>
+        </figure>
+      `;
+    }
+
+    function renderObjectDetection(record) {
+      const obj = record.modalities.objectDetection;
+      if (!obj) {
+        el.objectDetectionMetrics.innerHTML = metric("Status", "not available");
+        el.objectDetectionGrid.innerHTML = "";
+        return;
+      }
+      const summary = obj.summary || {};
+      el.objectDetectionMetrics.innerHTML = [
+        metric("C-only labels", (summary.C_only_labels_by_name || []).join(", ") || "none by label"),
+        metric("Shared with A/B", (summary.shared_with_C_by_name || []).join(", ") || "none by label"),
+        metric("Detector note", "YOLO COCO detections; not MP3D ground truth")
+      ].join("");
+      el.objectDetectionGrid.innerHTML = [
+        detectionFigure("A", "View A Objects", obj.views.A),
+        detectionFigure("B", "View B Objects", obj.views.B),
+        detectionFigure("C", "Hidden C Objects", obj.views.C)
       ].join("");
     }
 
@@ -641,7 +712,9 @@
       el.startSkybox.src = record.modalities.startSkybox;
       el.hiddenSkybox.src = record.modalities.hiddenSkybox;
       renderGraphDistance(record);
+      renderNavigationAction(record);
       renderRoomLabels(record);
+      renderObjectDetection(record);
       el.depthGrid.innerHTML = [
         depthFigure("A", "View A Depth", record.modalities.depth.A),
         depthFigure("B", "View B Depth", record.modalities.depth.B),

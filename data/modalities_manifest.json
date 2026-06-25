@@ -226,6 +226,200 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1LXtFkjw3qL/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_right",
+          "movement_distance_m": 0.9477841854095459,
+          "relative_heading_degrees": -108.63890573052596,
+          "relative_elevation_degrees": -2.3486229657624795,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step right for 0.95 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\01_1LXtFkjw3qL_000\\object_detection_a.png",
+              "detection_count": 3,
+              "label_counts": {
+                "tv": 1,
+                "person": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "tv",
+                  "confidence": 0.8159254789352417,
+                  "bbox_xyxy": [
+                    240.43670654296875,
+                    218.27273559570312,
+                    349.861328125,
+                    289.1731872558594
+                  ],
+                  "bbox_xywh": [
+                    240.43670654296875,
+                    218.27273559570312,
+                    109.42462158203125,
+                    70.90045166015625
+                  ],
+                  "area_px": 7758.255092907697
+                },
+                {
+                  "label": "person",
+                  "confidence": 0.3273649513721466,
+                  "bbox_xyxy": [
+                    0.057453155517578125,
+                    191.1243133544922,
+                    32.74274826049805,
+                    248.1983184814453
+                  ],
+                  "bbox_xywh": [
+                    0.057453155517578125,
+                    191.1243133544922,
+                    32.68529510498047,
+                    57.074005126953125
+                  ],
+                  "area_px": 1865.4807003976312
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.2698620855808258,
+                  "bbox_xyxy": [
+                    492.62200927734375,
+                    341.73541259765625,
+                    549.1589965820312,
+                    479.04559326171875
+                  ],
+                  "bbox_xywh": [
+                    492.62200927734375,
+                    341.73541259765625,
+                    56.5369873046875,
+                    137.3101806640625
+                  ],
+                  "area_px": 7763.103941008449
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\01_1LXtFkjw3qL_000\\object_detection_b.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\01_1LXtFkjw3qL_000\\object_detection_c.png",
+              "detection_count": 4,
+              "label_counts": {
+                "chair": 3,
+                "dining table": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.8171824216842651,
+                  "bbox_xyxy": [
+                    193.51406860351562,
+                    301.525390625,
+                    367.0785827636719,
+                    479.7877197265625
+                  ],
+                  "bbox_xywh": [
+                    193.51406860351562,
+                    301.525390625,
+                    173.56451416015625,
+                    178.2623291015625
+                  ],
+                  "area_px": 30940.014543570578
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.7349388599395752,
+                  "bbox_xyxy": [
+                    36.19197082519531,
+                    293.98681640625,
+                    207.33335876464844,
+                    479.68365478515625
+                  ],
+                  "bbox_xywh": [
+                    36.19197082519531,
+                    293.98681640625,
+                    171.14138793945312,
+                    185.69683837890625
+                  ],
+                  "area_px": 31780.414656134322
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4063720107078552,
+                  "bbox_xyxy": [
+                    406.32611083984375,
+                    370.74969482421875,
+                    516.9090576171875,
+                    479.65740966796875
+                  ],
+                  "bbox_xywh": [
+                    406.32611083984375,
+                    370.74969482421875,
+                    110.58294677734375,
+                    108.90771484375
+                  ],
+                  "area_px": 12043.336034208536
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.36220288276672363,
+                  "bbox_xyxy": [
+                    80.1981201171875,
+                    286.3927917480469,
+                    422.5216064453125,
+                    479.0833435058594
+                  ],
+                  "bbox_xywh": [
+                    80.1981201171875,
+                    286.3927917480469,
+                    342.323486328125,
+                    192.6905517578125
+                  ],
+                  "area_px": 65962.50146022439
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "person",
+              "tv"
+            ],
+            "B_labels": [],
+            "C_labels": [
+              "chair",
+              "dining table"
+            ],
+            "AB_union_labels": [
+              "chair",
+              "person",
+              "tv"
+            ],
+            "C_only_labels_by_name": [
+              "dining table"
+            ],
+            "shared_with_C_by_name": [
+              "chair"
+            ],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -453,6 +647,183 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_back",
+          "movement_distance_m": 2.009052038192749,
+          "relative_heading_degrees": 167.07415887265233,
+          "relative_elevation_degrees": -0.24868256995607968,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step back for 2.01 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\02_5q7pvUzZiYa_001\\object_detection_a.png",
+              "detection_count": 2,
+              "label_counts": {
+                "potted plant": 1,
+                "bottle": 1
+              },
+              "detections": [
+                {
+                  "label": "potted plant",
+                  "confidence": 0.8117713332176208,
+                  "bbox_xyxy": [
+                    44.20152282714844,
+                    357.45343017578125,
+                    169.18577575683594,
+                    449.28643798828125
+                  ],
+                  "bbox_xywh": [
+                    44.20152282714844,
+                    357.45343017578125,
+                    124.9842529296875,
+                    91.8330078125
+                  ],
+                  "area_px": 11477.679875731468
+                },
+                {
+                  "label": "bottle",
+                  "confidence": 0.7207152247428894,
+                  "bbox_xyxy": [
+                    423.14691162109375,
+                    365.0705261230469,
+                    446.2327880859375,
+                    426.2522277832031
+                  ],
+                  "bbox_xywh": [
+                    423.14691162109375,
+                    365.0705261230469,
+                    23.08587646484375,
+                    61.18170166015625
+                  ],
+                  "area_px": 1412.433206435293
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\02_5q7pvUzZiYa_001\\object_detection_b.png",
+              "detection_count": 4,
+              "label_counts": {
+                "refrigerator": 1,
+                "sink": 1,
+                "cup": 1,
+                "potted plant": 1
+              },
+              "detections": [
+                {
+                  "label": "refrigerator",
+                  "confidence": 0.8540747165679932,
+                  "bbox_xyxy": [
+                    357.55712890625,
+                    181.52188110351562,
+                    483.03759765625,
+                    393.0893859863281
+                  ],
+                  "bbox_xywh": [
+                    357.55712890625,
+                    181.52188110351562,
+                    125.48046875,
+                    211.5675048828125
+                  ],
+                  "area_px": 26547.589684963226
+                },
+                {
+                  "label": "sink",
+                  "confidence": 0.46553483605384827,
+                  "bbox_xyxy": [
+                    546.009033203125,
+                    356.49859619140625,
+                    639.8087158203125,
+                    408.6064453125
+                  ],
+                  "bbox_xywh": [
+                    546.009033203125,
+                    356.49859619140625,
+                    93.7996826171875,
+                    52.10784912109375
+                  ],
+                  "area_px": 4887.699709422886
+                },
+                {
+                  "label": "cup",
+                  "confidence": 0.37407106161117554,
+                  "bbox_xyxy": [
+                    107.06524658203125,
+                    336.1954345703125,
+                    143.765380859375,
+                    373.38037109375
+                  ],
+                  "bbox_xywh": [
+                    107.06524658203125,
+                    336.1954345703125,
+                    36.70013427734375,
+                    37.1849365234375
+                  ],
+                  "area_px": 1364.6921635046601
+                },
+                {
+                  "label": "potted plant",
+                  "confidence": 0.3196103274822235,
+                  "bbox_xyxy": [
+                    90.3744125366211,
+                    202.18006896972656,
+                    167.83932495117188,
+                    356.639892578125
+                  ],
+                  "bbox_xywh": [
+                    90.3744125366211,
+                    202.18006896972656,
+                    77.46491241455078,
+                    154.45982360839844
+                  ],
+                  "area_px": 11965.216707391548
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\02_5q7pvUzZiYa_001\\object_detection_c.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "bottle",
+              "potted plant"
+            ],
+            "B_labels": [
+              "cup",
+              "potted plant",
+              "refrigerator",
+              "sink"
+            ],
+            "C_labels": [],
+            "AB_union_labels": [
+              "bottle",
+              "cup",
+              "potted plant",
+              "refrigerator",
+              "sink"
+            ],
+            "C_only_labels_by_name": [],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -680,6 +1051,182 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_right",
+          "movement_distance_m": 1.2839906215667725,
+          "relative_heading_degrees": -92.24781093014019,
+          "relative_elevation_degrees": 0.09147949685021603,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step right for 1.28 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\03_5q7pvUzZiYa_002\\object_detection_a.png",
+              "detection_count": 2,
+              "label_counts": {
+                "train": 1,
+                "suitcase": 1
+              },
+              "detections": [
+                {
+                  "label": "train",
+                  "confidence": 0.4104325771331787,
+                  "bbox_xyxy": [
+                    258.6436767578125,
+                    2.665435791015625,
+                    637.4256591796875,
+                    480.0
+                  ],
+                  "bbox_xywh": [
+                    258.6436767578125,
+                    2.665435791015625,
+                    378.781982421875,
+                    477.3345642089844
+                  ],
+                  "area_px": 180805.73250956088
+                },
+                {
+                  "label": "suitcase",
+                  "confidence": 0.2975878417491913,
+                  "bbox_xyxy": [
+                    373.0528564453125,
+                    375.0484619140625,
+                    519.9649047851562,
+                    479.6522216796875
+                  ],
+                  "bbox_xywh": [
+                    373.0528564453125,
+                    375.0484619140625,
+                    146.91204833984375,
+                    104.603759765625
+                  ],
+                  "area_px": 15367.552611216903
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\03_5q7pvUzZiYa_002\\object_detection_b.png",
+              "detection_count": 1,
+              "label_counts": {
+                "keyboard": 1
+              },
+              "detections": [
+                {
+                  "label": "keyboard",
+                  "confidence": 0.4899190664291382,
+                  "bbox_xyxy": [
+                    390.6624755859375,
+                    283.44537353515625,
+                    495.1695556640625,
+                    329.34954833984375
+                  ],
+                  "bbox_xywh": [
+                    390.6624755859375,
+                    283.44537353515625,
+                    104.507080078125,
+                    45.9041748046875
+                  ],
+                  "area_px": 4797.311272233725
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\03_5q7pvUzZiYa_002\\object_detection_c.png",
+              "detection_count": 3,
+              "label_counts": {
+                "suitcase": 3
+              },
+              "detections": [
+                {
+                  "label": "suitcase",
+                  "confidence": 0.3797701895236969,
+                  "bbox_xyxy": [
+                    90.90006256103516,
+                    290.0911865234375,
+                    232.38967895507812,
+                    339.563232421875
+                  ],
+                  "bbox_xywh": [
+                    90.90006256103516,
+                    290.0911865234375,
+                    141.48961639404297,
+                    49.4720458984375
+                  ],
+                  "area_px": 6999.780796398409
+                },
+                {
+                  "label": "suitcase",
+                  "confidence": 0.36491820216178894,
+                  "bbox_xyxy": [
+                    157.78659057617188,
+                    252.10903930664062,
+                    239.12167358398438,
+                    303.4533996582031
+                  ],
+                  "bbox_xywh": [
+                    157.78659057617188,
+                    252.10903930664062,
+                    81.3350830078125,
+                    51.3443603515625
+                  ],
+                  "area_px": 4176.097811177373
+                },
+                {
+                  "label": "suitcase",
+                  "confidence": 0.31633850932121277,
+                  "bbox_xyxy": [
+                    79.04705810546875,
+                    253.57534790039062,
+                    163.44964599609375,
+                    299.0494079589844
+                  ],
+                  "bbox_xywh": [
+                    79.04705810546875,
+                    253.57534790039062,
+                    84.402587890625,
+                    45.47406005859375
+                  ],
+                  "area_px": 3838.128350839019
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "suitcase",
+              "train"
+            ],
+            "B_labels": [
+              "keyboard"
+            ],
+            "C_labels": [
+              "suitcase"
+            ],
+            "AB_union_labels": [
+              "keyboard",
+              "suitcase",
+              "train"
+            ],
+            "C_only_labels_by_name": [],
+            "shared_with_C_by_name": [
+              "suitcase"
+            ],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -907,6 +1454,231 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5q7pvUzZiYa/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_back",
+          "movement_distance_m": 2.305844306945801,
+          "relative_heading_degrees": -163.46592019829635,
+          "relative_elevation_degrees": -0.7086758433499523,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step back for 2.31 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\04_5q7pvUzZiYa_000\\object_detection_a.png",
+              "detection_count": 7,
+              "label_counts": {
+                "chair": 4,
+                "potted plant": 1,
+                "dining table": 2
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.8572537899017334,
+                  "bbox_xyxy": [
+                    289.2374267578125,
+                    348.4137878417969,
+                    416.243408203125,
+                    479.6886901855469
+                  ],
+                  "bbox_xywh": [
+                    289.2374267578125,
+                    348.4137878417969,
+                    127.0059814453125,
+                    131.27490234375
+                  ],
+                  "area_px": 16672.697811305523
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.7045691013336182,
+                  "bbox_xyxy": [
+                    440.5377197265625,
+                    370.88250732421875,
+                    555.9443969726562,
+                    479.82537841796875
+                  ],
+                  "bbox_xywh": [
+                    440.5377197265625,
+                    370.88250732421875,
+                    115.40667724609375,
+                    108.94287109375
+                  ],
+                  "area_px": 12572.734762579203
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.6543108224868774,
+                  "bbox_xyxy": [
+                    544.0772705078125,
+                    359.33673095703125,
+                    639.47216796875,
+                    479.31512451171875
+                  ],
+                  "bbox_xywh": [
+                    544.0772705078125,
+                    359.33673095703125,
+                    95.3948974609375,
+                    119.9783935546875
+                  ],
+                  "area_px": 11445.326550677419
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.5396305322647095,
+                  "bbox_xyxy": [
+                    373.33892822265625,
+                    324.1474609375,
+                    429.47723388671875,
+                    342.16064453125
+                  ],
+                  "bbox_xywh": [
+                    373.33892822265625,
+                    324.1474609375,
+                    56.1383056640625,
+                    18.01318359375
+                  ],
+                  "area_px": 1011.2296065688133
+                },
+                {
+                  "label": "potted plant",
+                  "confidence": 0.5299420356750488,
+                  "bbox_xyxy": [
+                    476.17510986328125,
+                    240.8786163330078,
+                    545.8899536132812,
+                    340.14373779296875
+                  ],
+                  "bbox_xywh": [
+                    476.17510986328125,
+                    240.8786163330078,
+                    69.71484375,
+                    99.26512145996094
+                  ],
+                  "area_px": 6920.252432405949
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.4232498109340668,
+                  "bbox_xyxy": [
+                    344.949951171875,
+                    324.5142822265625,
+                    640.0,
+                    480.0
+                  ],
+                  "bbox_xywh": [
+                    344.949951171875,
+                    324.5142822265625,
+                    295.050048828125,
+                    155.4857177734375
+                  ],
+                  "area_px": 45876.0686211288
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.27995291352272034,
+                  "bbox_xyxy": [
+                    344.0074462890625,
+                    332.4991455078125,
+                    587.2501220703125,
+                    393.022705078125
+                  ],
+                  "bbox_xywh": [
+                    344.0074462890625,
+                    332.4991455078125,
+                    243.24267578125,
+                    60.5235595703125
+                  ],
+                  "area_px": 14721.912577688694
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\04_5q7pvUzZiYa_000\\object_detection_b.png",
+              "detection_count": 2,
+              "label_counts": {
+                "person": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "person",
+                  "confidence": 0.3970309793949127,
+                  "bbox_xyxy": [
+                    503.0057373046875,
+                    227.3037109375,
+                    550.7689208984375,
+                    271.95465087890625
+                  ],
+                  "bbox_xywh": [
+                    503.0057373046875,
+                    227.3037109375,
+                    47.76318359375,
+                    44.65093994140625
+                  ],
+                  "area_px": 2132.6710420548916
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.2553793787956238,
+                  "bbox_xyxy": [
+                    0.4335479736328125,
+                    429.778564453125,
+                    91.56059265136719,
+                    479.80120849609375
+                  ],
+                  "bbox_xywh": [
+                    0.4335479736328125,
+                    429.778564453125,
+                    91.12704467773438,
+                    50.02264404296875
+                  ],
+                  "area_px": 4558.415718602017
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\04_5q7pvUzZiYa_000\\object_detection_c.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "dining table",
+              "potted plant"
+            ],
+            "B_labels": [
+              "chair",
+              "person"
+            ],
+            "C_labels": [],
+            "AB_union_labels": [
+              "chair",
+              "dining table",
+              "person",
+              "potted plant"
+            ],
+            "C_only_labels_by_name": [],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -1134,6 +1906,125 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5LpN3gDmAk7/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_back_left",
+          "movement_distance_m": 2.452544927597046,
+          "relative_heading_degrees": 119.8521160833951,
+          "relative_elevation_degrees": -0.8308200370385738,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_left_at_C",
+          "human_readable": "step back left for 2.45 m; same level; C camera: diagonal left at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\05_5LpN3gDmAk7_000\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\05_5LpN3gDmAk7_000\\object_detection_b.png",
+              "detection_count": 2,
+              "label_counts": {
+                "chair": 1,
+                "toilet": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.41550108790397644,
+                  "bbox_xyxy": [
+                    6.8455047607421875,
+                    356.1742858886719,
+                    139.04940795898438,
+                    479.7724304199219
+                  ],
+                  "bbox_xywh": [
+                    6.8455047607421875,
+                    356.1742858886719,
+                    132.2039031982422,
+                    123.59814453125
+                  ],
+                  "area_px": 16340.157135091722
+                },
+                {
+                  "label": "toilet",
+                  "confidence": 0.33662834763526917,
+                  "bbox_xyxy": [
+                    425.76153564453125,
+                    361.4944152832031,
+                    543.7349853515625,
+                    479.8107604980469
+                  ],
+                  "bbox_xywh": [
+                    425.76153564453125,
+                    361.4944152832031,
+                    117.97344970703125,
+                    118.31634521484375
+                  ],
+                  "area_px": 13958.187401723117
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\05_5LpN3gDmAk7_000\\object_detection_c.png",
+              "detection_count": 1,
+              "label_counts": {
+                "couch": 1
+              },
+              "detections": [
+                {
+                  "label": "couch",
+                  "confidence": 0.7822412252426147,
+                  "bbox_xyxy": [
+                    503.8497314453125,
+                    308.602783203125,
+                    639.89013671875,
+                    409.64599609375
+                  ],
+                  "bbox_xywh": [
+                    503.8497314453125,
+                    308.602783203125,
+                    136.0404052734375,
+                    101.043212890625
+                  ],
+                  "area_px": 13745.95963177085
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [
+              "chair",
+              "toilet"
+            ],
+            "C_labels": [
+              "couch"
+            ],
+            "AB_union_labels": [
+              "chair",
+              "toilet"
+            ],
+            "C_only_labels_by_name": [
+              "couch"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -1361,6 +2252,224 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_right",
+          "movement_distance_m": 2.2107090950012207,
+          "relative_heading_degrees": -95.903287192796,
+          "relative_elevation_degrees": 0.5250959062865885,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step right for 2.21 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\06_2t7WUuJeko7_005\\object_detection_a.png",
+              "detection_count": 2,
+              "label_counts": {
+                "vase": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "vase",
+                  "confidence": 0.4803156554698944,
+                  "bbox_xyxy": [
+                    478.61419677734375,
+                    429.5518493652344,
+                    501.86993408203125,
+                    474.0580139160156
+                  ],
+                  "bbox_xywh": [
+                    478.61419677734375,
+                    429.5518493652344,
+                    23.2557373046875,
+                    44.50616455078125
+                  ],
+                  "area_px": 1035.023671232164
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4428534507751465,
+                  "bbox_xyxy": [
+                    0.15496444702148438,
+                    407.07464599609375,
+                    34.70086669921875,
+                    479.12799072265625
+                  ],
+                  "bbox_xywh": [
+                    0.15496444702148438,
+                    407.07464599609375,
+                    34.545902252197266,
+                    72.0533447265625
+                  ],
+                  "area_px": 2489.1478038677014
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\06_2t7WUuJeko7_005\\object_detection_b.png",
+              "detection_count": 4,
+              "label_counts": {
+                "cat": 2,
+                "chair": 1,
+                "person": 1
+              },
+              "detections": [
+                {
+                  "label": "cat",
+                  "confidence": 0.4839761257171631,
+                  "bbox_xyxy": [
+                    221.0587158203125,
+                    397.22357177734375,
+                    289.68731689453125,
+                    479.93572998046875
+                  ],
+                  "bbox_xywh": [
+                    221.0587158203125,
+                    397.22357177734375,
+                    68.62860107421875,
+                    82.712158203125
+                  ],
+                  "area_px": 5676.419709309936
+                },
+                {
+                  "label": "cat",
+                  "confidence": 0.43737301230430603,
+                  "bbox_xyxy": [
+                    565.16259765625,
+                    397.70880126953125,
+                    639.66943359375,
+                    479.587890625
+                  ],
+                  "bbox_xywh": [
+                    565.16259765625,
+                    397.70880126953125,
+                    74.5068359375,
+                    81.87908935546875
+                  ],
+                  "area_px": 6100.551877319813
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.3764767646789551,
+                  "bbox_xyxy": [
+                    0.601104736328125,
+                    311.80596923828125,
+                    215.13906860351562,
+                    479.60955810546875
+                  ],
+                  "bbox_xywh": [
+                    0.601104736328125,
+                    311.80596923828125,
+                    214.5379638671875,
+                    167.8035888671875
+                  ],
+                  "area_px": 36000.24028517306
+                },
+                {
+                  "label": "person",
+                  "confidence": 0.36735811829566956,
+                  "bbox_xyxy": [
+                    0.27716064453125,
+                    309.19915771484375,
+                    113.96513366699219,
+                    478.43719482421875
+                  ],
+                  "bbox_xywh": [
+                    0.27716064453125,
+                    309.19915771484375,
+                    113.68797302246094,
+                    169.238037109375
+                  ],
+                  "area_px": 19240.329397264868
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\06_2t7WUuJeko7_005\\object_detection_c.png",
+              "detection_count": 2,
+              "label_counts": {
+                "potted plant": 1,
+                "couch": 1
+              },
+              "detections": [
+                {
+                  "label": "potted plant",
+                  "confidence": 0.8152619004249573,
+                  "bbox_xyxy": [
+                    92.51763153076172,
+                    359.114990234375,
+                    324.07147216796875,
+                    479.6966552734375
+                  ],
+                  "bbox_xywh": [
+                    92.51763153076172,
+                    359.114990234375,
+                    231.55384063720703,
+                    120.5816650390625
+                  ],
+                  "area_px": 27921.147650224157
+                },
+                {
+                  "label": "couch",
+                  "confidence": 0.30852699279785156,
+                  "bbox_xyxy": [
+                    485.2381591796875,
+                    422.32916259765625,
+                    626.6138916015625,
+                    479.73779296875
+                  ],
+                  "bbox_xywh": [
+                    485.2381591796875,
+                    422.32916259765625,
+                    141.375732421875,
+                    57.40863037109375
+                  ],
+                  "area_px": 8116.1871660500765
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "vase"
+            ],
+            "B_labels": [
+              "cat",
+              "chair",
+              "person"
+            ],
+            "C_labels": [
+              "couch",
+              "potted plant"
+            ],
+            "AB_union_labels": [
+              "cat",
+              "chair",
+              "person",
+              "vase"
+            ],
+            "C_only_labels_by_name": [
+              "couch",
+              "potted plant"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -1588,6 +2697,266 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward",
+          "movement_distance_m": 1.2777148485183716,
+          "relative_heading_degrees": 2.2036580828670638,
+          "relative_elevation_degrees": 0.17533689209906822,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_left_at_C",
+          "human_readable": "step forward for 1.28 m; same level; C camera: diagonal left at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\07_2t7WUuJeko7_002\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\07_2t7WUuJeko7_002\\object_detection_b.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\07_2t7WUuJeko7_002\\object_detection_c.png",
+              "detection_count": 11,
+              "label_counts": {
+                "chair": 5,
+                "dining table": 2,
+                "vase": 1,
+                "clock": 1,
+                "bowl": 1,
+                "potted plant": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.8157715797424316,
+                  "bbox_xyxy": [
+                    196.32611083984375,
+                    351.1767272949219,
+                    277.42596435546875,
+                    459.8166809082031
+                  ],
+                  "bbox_xywh": [
+                    196.32611083984375,
+                    351.1767272949219,
+                    81.099853515625,
+                    108.63995361328125
+                  ],
+                  "area_px": 8810.684323981404
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.6912262439727783,
+                  "bbox_xyxy": [
+                    83.91726684570312,
+                    439.35333251953125,
+                    155.769287109375,
+                    479.84661865234375
+                  ],
+                  "bbox_xywh": [
+                    83.91726684570312,
+                    439.35333251953125,
+                    71.85202026367188,
+                    40.4932861328125
+                  ],
+                  "area_px": 2909.524415757507
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.6011883020401001,
+                  "bbox_xyxy": [
+                    191.94403076171875,
+                    417.1474304199219,
+                    542.4398803710938,
+                    479.7424011230469
+                  ],
+                  "bbox_xywh": [
+                    191.94403076171875,
+                    417.1474304199219,
+                    350.495849609375,
+                    62.594970703125
+                  ],
+                  "area_px": 21939.277437865734
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.5097119212150574,
+                  "bbox_xyxy": [
+                    0.10413169860839844,
+                    400.34722900390625,
+                    29.956222534179688,
+                    479.82354736328125
+                  ],
+                  "bbox_xywh": [
+                    0.10413169860839844,
+                    400.34722900390625,
+                    29.85209083557129,
+                    79.476318359375
+                  ],
+                  "area_px": 2372.5342749408446
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4816863238811493,
+                  "bbox_xyxy": [
+                    310.59735107421875,
+                    364.01361083984375,
+                    392.88128662109375,
+                    420.55157470703125
+                  ],
+                  "bbox_xywh": [
+                    310.59735107421875,
+                    364.01361083984375,
+                    82.283935546875,
+                    56.5379638671875
+                  ],
+                  "area_px": 4652.166174799204
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.465593159198761,
+                  "bbox_xyxy": [
+                    67.19514465332031,
+                    369.12005615234375,
+                    215.96131896972656,
+                    479.56268310546875
+                  ],
+                  "bbox_xywh": [
+                    67.19514465332031,
+                    369.12005615234375,
+                    148.76617431640625,
+                    110.442626953125
+                  ],
+                  "area_px": 16430.12709327042
+                },
+                {
+                  "label": "vase",
+                  "confidence": 0.3599609136581421,
+                  "bbox_xyxy": [
+                    401.7447204589844,
+                    254.59768676757812,
+                    416.1935119628906,
+                    277.7955627441406
+                  ],
+                  "bbox_xywh": [
+                    401.7447204589844,
+                    254.59768676757812,
+                    14.44879150390625,
+                    23.1978759765625
+                  ],
+                  "area_px": 335.18127331882715
+                },
+                {
+                  "label": "clock",
+                  "confidence": 0.3529428243637085,
+                  "bbox_xyxy": [
+                    524.7059326171875,
+                    231.49974060058594,
+                    543.4930419921875,
+                    251.01011657714844
+                  ],
+                  "bbox_xywh": [
+                    524.7059326171875,
+                    231.49974060058594,
+                    18.787109375,
+                    19.5103759765625
+                  ],
+                  "area_px": 366.5435674190521
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.3351311683654785,
+                  "bbox_xyxy": [
+                    585.4053955078125,
+                    410.4510498046875,
+                    629.3626708984375,
+                    479.7730712890625
+                  ],
+                  "bbox_xywh": [
+                    585.4053955078125,
+                    410.4510498046875,
+                    43.957275390625,
+                    69.322021484375
+                  ],
+                  "area_px": 3047.2071890234947
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.28379806876182556,
+                  "bbox_xyxy": [
+                    156.60769653320312,
+                    368.9259033203125,
+                    183.69320678710938,
+                    388.07489013671875
+                  ],
+                  "bbox_xywh": [
+                    156.60769653320312,
+                    368.9259033203125,
+                    27.08551025390625,
+                    19.14898681640625
+                  ],
+                  "area_px": 518.6600787676871
+                },
+                {
+                  "label": "potted plant",
+                  "confidence": 0.2551434338092804,
+                  "bbox_xyxy": [
+                    404.31390380859375,
+                    220.04269409179688,
+                    433.66009521484375,
+                    276.8522033691406
+                  ],
+                  "bbox_xywh": [
+                    404.31390380859375,
+                    220.04269409179688,
+                    29.34619140625,
+                    56.80950927734375
+                  ],
+                  "area_px": 1667.1427329480648
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [],
+            "C_labels": [
+              "bowl",
+              "chair",
+              "clock",
+              "dining table",
+              "potted plant",
+              "vase"
+            ],
+            "AB_union_labels": [],
+            "C_only_labels_by_name": [
+              "bowl",
+              "chair",
+              "clock",
+              "dining table",
+              "potted plant",
+              "vase"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -1815,6 +3184,57 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1LXtFkjw3qL/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward",
+          "movement_distance_m": 1.9952136278152466,
+          "relative_heading_degrees": 2.1373036488540365,
+          "relative_elevation_degrees": 0.1341073977087964,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "look_back_toward_start",
+          "human_readable": "step forward for 2.00 m; same level; C camera: look back toward start",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\08_1LXtFkjw3qL_002\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\08_1LXtFkjw3qL_002\\object_detection_b.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\08_1LXtFkjw3qL_002\\object_detection_c.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [],
+            "C_labels": [],
+            "AB_union_labels": [],
+            "C_only_labels_by_name": [],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -2042,6 +3462,121 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/1pXnuDYAj8r/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_right",
+          "movement_distance_m": 1.2348881959915161,
+          "relative_heading_degrees": -93.85670980046089,
+          "relative_elevation_degrees": 0.09371761659866322,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step right for 1.23 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\09_1pXnuDYAj8r_003\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\09_1pXnuDYAj8r_003\\object_detection_b.png",
+              "detection_count": 3,
+              "label_counts": {
+                "sink": 1,
+                "potted plant": 1,
+                "vase": 1
+              },
+              "detections": [
+                {
+                  "label": "sink",
+                  "confidence": 0.4741128087043762,
+                  "bbox_xyxy": [
+                    143.87762451171875,
+                    312.0956726074219,
+                    321.53564453125,
+                    349.4914855957031
+                  ],
+                  "bbox_xywh": [
+                    143.87762451171875,
+                    312.0956726074219,
+                    177.65802001953125,
+                    37.39581298828125
+                  ],
+                  "area_px": 6643.666092518717
+                },
+                {
+                  "label": "potted plant",
+                  "confidence": 0.4583452045917511,
+                  "bbox_xyxy": [
+                    32.281463623046875,
+                    226.3101806640625,
+                    104.87033081054688,
+                    316.902587890625
+                  ],
+                  "bbox_xywh": [
+                    32.281463623046875,
+                    226.3101806640625,
+                    72.5888671875,
+                    90.5924072265625
+                  ],
+                  "area_px": 6576.0002163648605
+                },
+                {
+                  "label": "vase",
+                  "confidence": 0.4483589828014374,
+                  "bbox_xyxy": [
+                    55.17535400390625,
+                    269.23065185546875,
+                    91.3448486328125,
+                    316.59478759765625
+                  ],
+                  "bbox_xywh": [
+                    55.17535400390625,
+                    269.23065185546875,
+                    36.16949462890625,
+                    47.3641357421875
+                  ],
+                  "area_px": 1713.1368533298373
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\09_1pXnuDYAj8r_003\\object_detection_c.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [
+              "potted plant",
+              "sink",
+              "vase"
+            ],
+            "C_labels": [],
+            "AB_union_labels": [
+              "potted plant",
+              "sink",
+              "vase"
+            ],
+            "C_only_labels_by_name": [],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -2269,6 +3804,381 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_left",
+          "movement_distance_m": 2.001844644546509,
+          "relative_heading_degrees": 86.28640133198556,
+          "relative_elevation_degrees": 0.6394156891072199,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step left for 2.00 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\10_759xd9YjKW5_001\\object_detection_a.png",
+              "detection_count": 7,
+              "label_counts": {
+                "oven": 2,
+                "bowl": 4,
+                "cup": 1
+              },
+              "detections": [
+                {
+                  "label": "oven",
+                  "confidence": 0.7340269088745117,
+                  "bbox_xyxy": [
+                    69.18487548828125,
+                    335.2149658203125,
+                    288.297119140625,
+                    479.5592041015625
+                  ],
+                  "bbox_xywh": [
+                    69.18487548828125,
+                    335.2149658203125,
+                    219.11224365234375,
+                    144.34423828125
+                  ],
+                  "area_px": 31627.589908093214
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.701812207698822,
+                  "bbox_xyxy": [
+                    519.9388427734375,
+                    79.30795288085938,
+                    580.9776611328125,
+                    109.45098876953125
+                  ],
+                  "bbox_xywh": [
+                    519.9388427734375,
+                    79.30795288085938,
+                    61.038818359375,
+                    30.143035888671875
+                  ],
+                  "area_px": 1839.8952924087644
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.4211914837360382,
+                  "bbox_xyxy": [
+                    25.22516632080078,
+                    358.10498046875,
+                    79.97645568847656,
+                    384.07159423828125
+                  ],
+                  "bbox_xywh": [
+                    25.22516632080078,
+                    358.10498046875,
+                    54.75128936767578,
+                    25.96661376953125
+                  ],
+                  "area_px": 1421.7055843942799
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.37295231223106384,
+                  "bbox_xyxy": [
+                    558.7445068359375,
+                    156.06149291992188,
+                    601.5113525390625,
+                    169.04666137695312
+                  ],
+                  "bbox_xywh": [
+                    558.7445068359375,
+                    156.06149291992188,
+                    42.766845703125,
+                    12.98516845703125
+                  ],
+                  "area_px": 555.3346958309412
+                },
+                {
+                  "label": "oven",
+                  "confidence": 0.3626754581928253,
+                  "bbox_xyxy": [
+                    70.5943603515625,
+                    280.97021484375,
+                    527.41943359375,
+                    477.8419189453125
+                  ],
+                  "bbox_xywh": [
+                    70.5943603515625,
+                    280.97021484375,
+                    456.8250732421875,
+                    196.8717041015625
+                  ],
+                  "area_px": 89935.93064551055
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.32047951221466064,
+                  "bbox_xyxy": [
+                    399.37286376953125,
+                    251.77610778808594,
+                    454.42242431640625,
+                    281.98583984375
+                  ],
+                  "bbox_xywh": [
+                    399.37286376953125,
+                    251.77610778808594,
+                    55.049560546875,
+                    30.209732055664062
+                  ],
+                  "area_px": 1663.0324739031494
+                },
+                {
+                  "label": "cup",
+                  "confidence": 0.26411059498786926,
+                  "bbox_xyxy": [
+                    521.864013671875,
+                    209.33013916015625,
+                    563.822265625,
+                    231.965576171875
+                  ],
+                  "bbox_xywh": [
+                    521.864013671875,
+                    209.33013916015625,
+                    41.958251953125,
+                    22.63543701171875
+                  ],
+                  "area_px": 949.7433692067862
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\10_759xd9YjKW5_001\\object_detection_b.png",
+              "detection_count": 6,
+              "label_counts": {
+                "chair": 4,
+                "couch": 1,
+                "dining table": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.8994336128234863,
+                  "bbox_xyxy": [
+                    0.9246749877929688,
+                    354.13018798828125,
+                    104.92288208007812,
+                    424.83978271484375
+                  ],
+                  "bbox_xywh": [
+                    0.9246749877929688,
+                    354.13018798828125,
+                    103.99820709228516,
+                    70.7095947265625
+                  ],
+                  "area_px": 7353.671075784601
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.8975037932395935,
+                  "bbox_xyxy": [
+                    120.5821533203125,
+                    355.63092041015625,
+                    230.3572998046875,
+                    479.72259521484375
+                  ],
+                  "bbox_xywh": [
+                    120.5821533203125,
+                    355.63092041015625,
+                    109.775146484375,
+                    124.0916748046875
+                  ],
+                  "area_px": 13622.181779175997
+                },
+                {
+                  "label": "couch",
+                  "confidence": 0.8053244948387146,
+                  "bbox_xyxy": [
+                    333.82177734375,
+                    289.1380920410156,
+                    434.8182373046875,
+                    372.9092102050781
+                  ],
+                  "bbox_xywh": [
+                    333.82177734375,
+                    289.1380920410156,
+                    100.9964599609375,
+                    83.7711181640625
+                  ],
+                  "area_px": 8460.586381539702
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.7679568529129028,
+                  "bbox_xyxy": [
+                    0.521697998046875,
+                    421.52374267578125,
+                    182.62533569335938,
+                    479.70269775390625
+                  ],
+                  "bbox_xywh": [
+                    0.521697998046875,
+                    421.52374267578125,
+                    182.1036376953125,
+                    58.178955078125
+                  ],
+                  "area_px": 10594.599357038736
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.6780941486358643,
+                  "bbox_xyxy": [
+                    184.87051391601562,
+                    287.58544921875,
+                    272.3289489746094,
+                    362.952392578125
+                  ],
+                  "bbox_xywh": [
+                    184.87051391601562,
+                    287.58544921875,
+                    87.45843505859375,
+                    75.366943359375
+                  ],
+                  "area_px": 6591.474921360612
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4237639307975769,
+                  "bbox_xyxy": [
+                    125.0546875,
+                    308.2206726074219,
+                    213.95626831054688,
+                    362.4169006347656
+                  ],
+                  "bbox_xywh": [
+                    125.0546875,
+                    308.2206726074219,
+                    88.90158081054688,
+                    54.19622802734375
+                  ],
+                  "area_px": 4818.130345599726
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\10_759xd9YjKW5_001\\object_detection_c.png",
+              "detection_count": 4,
+              "label_counts": {
+                "vase": 3,
+                "bottle": 1
+              },
+              "detections": [
+                {
+                  "label": "vase",
+                  "confidence": 0.8354681134223938,
+                  "bbox_xyxy": [
+                    167.44119262695312,
+                    330.4621276855469,
+                    210.84585571289062,
+                    426.1385192871094
+                  ],
+                  "bbox_xywh": [
+                    167.44119262695312,
+                    330.4621276855469,
+                    43.4046630859375,
+                    95.6763916015625
+                  ],
+                  "area_px": 4152.8015427440405
+                },
+                {
+                  "label": "vase",
+                  "confidence": 0.5676489472389221,
+                  "bbox_xyxy": [
+                    116.72097778320312,
+                    338.5657958984375,
+                    157.92416381835938,
+                    427.6656494140625
+                  ],
+                  "bbox_xywh": [
+                    116.72097778320312,
+                    338.5657958984375,
+                    41.20318603515625,
+                    89.099853515625
+                  ],
+                  "area_px": 3671.1978401094675
+                },
+                {
+                  "label": "bottle",
+                  "confidence": 0.42029502987861633,
+                  "bbox_xyxy": [
+                    55.02663803100586,
+                    354.7363586425781,
+                    111.06698608398438,
+                    450.8778991699219
+                  ],
+                  "bbox_xywh": [
+                    55.02663803100586,
+                    354.7363586425781,
+                    56.040348052978516,
+                    96.14154052734375
+                  ],
+                  "area_px": 5387.805393501883
+                },
+                {
+                  "label": "vase",
+                  "confidence": 0.4068470001220703,
+                  "bbox_xyxy": [
+                    412.47918701171875,
+                    295.3648376464844,
+                    497.20068359375,
+                    461.1993103027344
+                  ],
+                  "bbox_xywh": [
+                    412.47918701171875,
+                    295.3648376464844,
+                    84.72149658203125,
+                    165.83447265625
+                  ],
+                  "area_px": 14049.74470832944
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "bowl",
+              "cup",
+              "oven"
+            ],
+            "B_labels": [
+              "chair",
+              "couch",
+              "dining table"
+            ],
+            "C_labels": [
+              "bottle",
+              "vase"
+            ],
+            "AB_union_labels": [
+              "bowl",
+              "chair",
+              "couch",
+              "cup",
+              "dining table",
+              "oven"
+            ],
+            "C_only_labels_by_name": [
+              "bottle",
+              "vase"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -2496,6 +4406,125 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/5LpN3gDmAk7/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward_right",
+          "movement_distance_m": 1.0968035459518433,
+          "relative_heading_degrees": -34.56550759683226,
+          "relative_elevation_degrees": 0.3134369956581554,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "look_back_toward_start",
+          "human_readable": "step forward right for 1.10 m; same level; C camera: look back toward start",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\11_5LpN3gDmAk7_002\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\11_5LpN3gDmAk7_002\\object_detection_b.png",
+              "detection_count": 1,
+              "label_counts": {
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.865071713924408,
+                  "bbox_xyxy": [
+                    337.64776611328125,
+                    325.17877197265625,
+                    497.9722900390625,
+                    479.84149169921875
+                  ],
+                  "bbox_xywh": [
+                    337.64776611328125,
+                    325.17877197265625,
+                    160.32452392578125,
+                    154.6627197265625
+                  ],
+                  "area_px": 24796.22690922767
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\11_5LpN3gDmAk7_002\\object_detection_c.png",
+              "detection_count": 2,
+              "label_counts": {
+                "bed": 1,
+                "couch": 1
+              },
+              "detections": [
+                {
+                  "label": "bed",
+                  "confidence": 0.8903933763504028,
+                  "bbox_xyxy": [
+                    259.55029296875,
+                    279.91107177734375,
+                    545.2908935546875,
+                    466.26763916015625
+                  ],
+                  "bbox_xywh": [
+                    259.55029296875,
+                    279.91107177734375,
+                    285.7406005859375,
+                    186.3565673828125
+                  ],
+                  "area_px": 53249.637487098575
+                },
+                {
+                  "label": "couch",
+                  "confidence": 0.7104657292366028,
+                  "bbox_xyxy": [
+                    0.26180267333984375,
+                    284.8082275390625,
+                    125.2823486328125,
+                    380.139404296875
+                  ],
+                  "bbox_xywh": [
+                    0.26180267333984375,
+                    284.8082275390625,
+                    125.02054595947266,
+                    95.3311767578125
+                  ],
+                  "area_px": 11918.35576522071
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [
+              "chair"
+            ],
+            "C_labels": [
+              "bed",
+              "couch"
+            ],
+            "AB_union_labels": [
+              "chair"
+            ],
+            "C_only_labels_by_name": [
+              "bed",
+              "couch"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -2723,6 +4752,425 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward",
+          "movement_distance_m": 1.8128331899642944,
+          "relative_heading_degrees": -10.44354963247261,
+          "relative_elevation_degrees": 0.5714396096648162,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step forward for 1.81 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\12_2t7WUuJeko7_006\\object_detection_a.png",
+              "detection_count": 5,
+              "label_counts": {
+                "clock": 2,
+                "chair": 2,
+                "couch": 1
+              },
+              "detections": [
+                {
+                  "label": "clock",
+                  "confidence": 0.8020477890968323,
+                  "bbox_xyxy": [
+                    0.0198974609375,
+                    54.983642578125,
+                    65.71029663085938,
+                    267.58587646484375
+                  ],
+                  "bbox_xywh": [
+                    0.0198974609375,
+                    54.983642578125,
+                    65.69039916992188,
+                    212.60223388671875
+                  ],
+                  "area_px": 13965.925608435646
+                },
+                {
+                  "label": "clock",
+                  "confidence": 0.7303683161735535,
+                  "bbox_xyxy": [
+                    0.394805908203125,
+                    20.047698974609375,
+                    136.876953125,
+                    306.2901611328125
+                  ],
+                  "bbox_xywh": [
+                    0.394805908203125,
+                    20.047698974609375,
+                    136.48214721679688,
+                    286.2424621582031
+                  ],
+                  "area_px": 39066.98585997429
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.49315881729125977,
+                  "bbox_xyxy": [
+                    562.73291015625,
+                    289.7027587890625,
+                    627.83203125,
+                    351.9227294921875
+                  ],
+                  "bbox_xywh": [
+                    562.73291015625,
+                    289.7027587890625,
+                    65.09912109375,
+                    62.219970703125
+                  ],
+                  "area_px": 4050.4654072523117
+                },
+                {
+                  "label": "couch",
+                  "confidence": 0.4914468228816986,
+                  "bbox_xyxy": [
+                    602.7078857421875,
+                    313.56103515625,
+                    639.777099609375,
+                    374.18389892578125
+                  ],
+                  "bbox_xywh": [
+                    602.7078857421875,
+                    313.56103515625,
+                    37.0692138671875,
+                    60.62286376953125
+                  ],
+                  "area_px": 2247.2419023141265
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4640268087387085,
+                  "bbox_xyxy": [
+                    511.8701171875,
+                    285.78125,
+                    547.0936279296875,
+                    348.8330078125
+                  ],
+                  "bbox_xywh": [
+                    511.8701171875,
+                    285.78125,
+                    35.2235107421875,
+                    63.0517578125
+                  ],
+                  "area_px": 2220.9042686223984
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\12_2t7WUuJeko7_006\\object_detection_b.png",
+              "detection_count": 2,
+              "label_counts": {
+                "tv": 1,
+                "person": 1
+              },
+              "detections": [
+                {
+                  "label": "tv",
+                  "confidence": 0.6184443235397339,
+                  "bbox_xyxy": [
+                    164.20809936523438,
+                    230.60987854003906,
+                    340.3980712890625,
+                    364.8280029296875
+                  ],
+                  "bbox_xywh": [
+                    164.20809936523438,
+                    230.60987854003906,
+                    176.18997192382812,
+                    134.21812438964844
+                  ],
+                  "area_px": 23647.88756788103
+                },
+                {
+                  "label": "person",
+                  "confidence": 0.28161776065826416,
+                  "bbox_xyxy": [
+                    229.84909057617188,
+                    270.5060119628906,
+                    272.0827941894531,
+                    317.4330749511719
+                  ],
+                  "bbox_xywh": [
+                    229.84909057617188,
+                    270.5060119628906,
+                    42.23370361328125,
+                    46.92706298828125
+                  ],
+                  "area_px": 1981.9036696888506
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\12_2t7WUuJeko7_006\\object_detection_c.png",
+              "detection_count": 12,
+              "label_counts": {
+                "chair": 6,
+                "dining table": 2,
+                "person": 1,
+                "couch": 1,
+                "bowl": 1,
+                "vase": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.8064943552017212,
+                  "bbox_xyxy": [
+                    573.8245849609375,
+                    448.13067626953125,
+                    639.7279052734375,
+                    479.83709716796875
+                  ],
+                  "bbox_xywh": [
+                    573.8245849609375,
+                    448.13067626953125,
+                    65.9033203125,
+                    31.7064208984375
+                  ],
+                  "area_px": 2089.5584124326706
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.7280545830726624,
+                  "bbox_xyxy": [
+                    141.59689331054688,
+                    386.2206726074219,
+                    241.63397216796875,
+                    461.3404846191406
+                  ],
+                  "bbox_xywh": [
+                    141.59689331054688,
+                    386.2206726074219,
+                    100.03707885742188,
+                    75.11981201171875
+                  ],
+                  "area_px": 7514.766557971016
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.7214215397834778,
+                  "bbox_xyxy": [
+                    100.4317855834961,
+                    288.3690185546875,
+                    160.61495971679688,
+                    359.2666015625
+                  ],
+                  "bbox_xywh": [
+                    100.4317855834961,
+                    288.3690185546875,
+                    60.18317413330078,
+                    70.8975830078125
+                  ],
+                  "area_px": 4266.841583789326
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.6398054361343384,
+                  "bbox_xyxy": [
+                    382.763916015625,
+                    397.73699951171875,
+                    560.072998046875,
+                    479.58514404296875
+                  ],
+                  "bbox_xywh": [
+                    382.763916015625,
+                    397.73699951171875,
+                    177.30908203125,
+                    81.84814453125
+                  ],
+                  "area_px": 14512.419372797012
+                },
+                {
+                  "label": "person",
+                  "confidence": 0.5389426350593567,
+                  "bbox_xyxy": [
+                    219.21585083007812,
+                    226.6405029296875,
+                    266.3540954589844,
+                    340.4970703125
+                  ],
+                  "bbox_xywh": [
+                    219.21585083007812,
+                    226.6405029296875,
+                    47.13824462890625,
+                    113.8565673828125
+                  ],
+                  "area_px": 5366.998725898564
+                },
+                {
+                  "label": "couch",
+                  "confidence": 0.5260065197944641,
+                  "bbox_xyxy": [
+                    130.13308715820312,
+                    295.9993896484375,
+                    226.13565063476562,
+                    391.9791259765625
+                  ],
+                  "bbox_xywh": [
+                    130.13308715820312,
+                    295.9993896484375,
+                    96.0025634765625,
+                    95.979736328125
+                  ],
+                  "area_px": 9214.300729304552
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.45893657207489014,
+                  "bbox_xyxy": [
+                    483.93695068359375,
+                    419.1913757324219,
+                    524.7300415039062,
+                    447.4721984863281
+                  ],
+                  "bbox_xywh": [
+                    483.93695068359375,
+                    419.1913757324219,
+                    40.7930908203125,
+                    28.28082275390625
+                  ],
+                  "area_px": 1153.662171073258
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4113979637622833,
+                  "bbox_xyxy": [
+                    311.51007080078125,
+                    424.8079833984375,
+                    403.05810546875,
+                    479.8170166015625
+                  ],
+                  "bbox_xywh": [
+                    311.51007080078125,
+                    424.8079833984375,
+                    91.54803466796875,
+                    55.009033203125
+                  ],
+                  "area_px": 5035.968878731132
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.3290731906890869,
+                  "bbox_xyxy": [
+                    357.7960205078125,
+                    364.7827453613281,
+                    408.94415283203125,
+                    432.5553894042969
+                  ],
+                  "bbox_xywh": [
+                    357.7960205078125,
+                    364.7827453613281,
+                    51.14813232421875,
+                    67.77264404296875
+                  ],
+                  "area_px": 3466.4441654719412
+                },
+                {
+                  "label": "vase",
+                  "confidence": 0.3274691700935364,
+                  "bbox_xyxy": [
+                    444.4375,
+                    346.741943359375,
+                    480.111572265625,
+                    437.47113037109375
+                  ],
+                  "bbox_xywh": [
+                    444.4375,
+                    346.741943359375,
+                    35.674072265625,
+                    90.72918701171875
+                  ],
+                  "area_px": 3236.67957405746
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.3207232356071472,
+                  "bbox_xyxy": [
+                    147.86700439453125,
+                    324.9029541015625,
+                    223.44558715820312,
+                    401.2076416015625
+                  ],
+                  "bbox_xywh": [
+                    147.86700439453125,
+                    324.9029541015625,
+                    75.57858276367188,
+                    76.3046875
+                  ],
+                  "area_px": 5767.000139474869
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.2787306606769562,
+                  "bbox_xyxy": [
+                    62.7752685546875,
+                    450.71832275390625,
+                    290.5011291503906,
+                    479.698486328125
+                  ],
+                  "bbox_xywh": [
+                    62.7752685546875,
+                    450.71832275390625,
+                    227.72586059570312,
+                    28.98016357421875
+                  ],
+                  "area_px": 6599.532690143213
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "clock",
+              "couch"
+            ],
+            "B_labels": [
+              "person",
+              "tv"
+            ],
+            "C_labels": [
+              "bowl",
+              "chair",
+              "couch",
+              "dining table",
+              "person",
+              "vase"
+            ],
+            "AB_union_labels": [
+              "chair",
+              "clock",
+              "couch",
+              "person",
+              "tv"
+            ],
+            "C_only_labels_by_name": [
+              "bowl",
+              "dining table",
+              "vase"
+            ],
+            "shared_with_C_by_name": [
+              "chair",
+              "couch",
+              "person"
+            ],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -2950,6 +5398,220 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_back",
+          "movement_distance_m": 1.0847984552383423,
+          "relative_heading_degrees": 173.72072523701848,
+          "relative_elevation_degrees": 0.09506750167946512,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step back for 1.08 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\13_17DRP5sb8fy_000\\object_detection_a.png",
+              "detection_count": 4,
+              "label_counts": {
+                "tv": 1,
+                "chair": 3
+              },
+              "detections": [
+                {
+                  "label": "tv",
+                  "confidence": 0.7257018089294434,
+                  "bbox_xyxy": [
+                    188.98214721679688,
+                    231.48243713378906,
+                    273.4196472167969,
+                    286.6983642578125
+                  ],
+                  "bbox_xywh": [
+                    188.98214721679688,
+                    231.48243713378906,
+                    84.4375,
+                    55.21592712402344
+                  ],
+                  "area_px": 4662.294846534729
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.6558030247688293,
+                  "bbox_xyxy": [
+                    312.97467041015625,
+                    279.13360595703125,
+                    345.64666748046875,
+                    335.90911865234375
+                  ],
+                  "bbox_xywh": [
+                    312.97467041015625,
+                    279.13360595703125,
+                    32.6719970703125,
+                    56.7755126953125
+                  ],
+                  "area_px": 1854.9693844467402
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.46462276577949524,
+                  "bbox_xyxy": [
+                    222.83660888671875,
+                    283.00091552734375,
+                    308.857421875,
+                    364.78887939453125
+                  ],
+                  "bbox_xywh": [
+                    222.83660888671875,
+                    283.00091552734375,
+                    86.02081298828125,
+                    81.7879638671875
+                  ],
+                  "area_px": 7035.46714451164
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.283630907535553,
+                  "bbox_xyxy": [
+                    375.91192626953125,
+                    274.1466064453125,
+                    400.9559326171875,
+                    356.9129638671875
+                  ],
+                  "bbox_xywh": [
+                    375.91192626953125,
+                    274.1466064453125,
+                    25.04400634765625,
+                    82.766357421875
+                  ],
+                  "area_px": 2072.8011806458235
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\13_17DRP5sb8fy_000\\object_detection_b.png",
+              "detection_count": 2,
+              "label_counts": {
+                "chair": 1,
+                "tv": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.7016444206237793,
+                  "bbox_xyxy": [
+                    4.063385009765625,
+                    309.8665771484375,
+                    210.80062866210938,
+                    479.66937255859375
+                  ],
+                  "bbox_xywh": [
+                    4.063385009765625,
+                    309.8665771484375,
+                    206.73724365234375,
+                    169.80279541015625
+                  ],
+                  "area_px": 35104.56188755855
+                },
+                {
+                  "label": "tv",
+                  "confidence": 0.6941138505935669,
+                  "bbox_xyxy": [
+                    349.7822265625,
+                    270.5097961425781,
+                    538.7225341796875,
+                    427.3340759277344
+                  ],
+                  "bbox_xywh": [
+                    349.7822265625,
+                    270.5097961425781,
+                    188.9403076171875,
+                    156.82427978515625
+                  ],
+                  "area_px": 29630.4276644513
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\13_17DRP5sb8fy_000\\object_detection_c.png",
+              "detection_count": 2,
+              "label_counts": {
+                "refrigerator": 1,
+                "toilet": 1
+              },
+              "detections": [
+                {
+                  "label": "refrigerator",
+                  "confidence": 0.5538501143455505,
+                  "bbox_xyxy": [
+                    522.537353515625,
+                    200.954345703125,
+                    639.5609130859375,
+                    478.8238525390625
+                  ],
+                  "bbox_xywh": [
+                    522.537353515625,
+                    200.954345703125,
+                    117.0235595703125,
+                    277.8695068359375
+                  ],
+                  "area_px": 32517.27878598869
+                },
+                {
+                  "label": "toilet",
+                  "confidence": 0.407416433095932,
+                  "bbox_xyxy": [
+                    41.90818786621094,
+                    411.11309814453125,
+                    153.11251831054688,
+                    479.63397216796875
+                  ],
+                  "bbox_xywh": [
+                    41.90818786621094,
+                    411.11309814453125,
+                    111.20433044433594,
+                    68.5208740234375
+                  ],
+                  "area_px": 7619.817917237058
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "tv"
+            ],
+            "B_labels": [
+              "chair",
+              "tv"
+            ],
+            "C_labels": [
+              "refrigerator",
+              "toilet"
+            ],
+            "AB_union_labels": [
+              "chair",
+              "tv"
+            ],
+            "C_only_labels_by_name": [
+              "refrigerator",
+              "toilet"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -3177,6 +5839,245 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward_right",
+          "movement_distance_m": 1.338598608970642,
+          "relative_heading_degrees": -25.33551438646261,
+          "relative_elevation_degrees": -0.07404738719375746,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "look_back_toward_start",
+          "human_readable": "step forward right for 1.34 m; same level; C camera: look back toward start",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\14_17DRP5sb8fy_006\\object_detection_a.png",
+              "detection_count": 2,
+              "label_counts": {
+                "couch": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "couch",
+                  "confidence": 0.7495589256286621,
+                  "bbox_xyxy": [
+                    0.52691650390625,
+                    327.4691162109375,
+                    313.24969482421875,
+                    479.43341064453125
+                  ],
+                  "bbox_xywh": [
+                    0.52691650390625,
+                    327.4691162109375,
+                    312.7227783203125,
+                    151.96429443359375
+                  ],
+                  "area_px": 47522.69636075944
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.6598851680755615,
+                  "bbox_xyxy": [
+                    441.84271240234375,
+                    346.35009765625,
+                    639.2974243164062,
+                    479.6697998046875
+                  ],
+                  "bbox_xywh": [
+                    441.84271240234375,
+                    346.35009765625,
+                    197.4547119140625,
+                    133.3197021484375
+                  ],
+                  "area_px": 26324.603380188346
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\14_17DRP5sb8fy_006\\object_detection_b.png",
+              "detection_count": 4,
+              "label_counts": {
+                "bed": 2,
+                "sink": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "bed",
+                  "confidence": 0.5268883109092712,
+                  "bbox_xyxy": [
+                    0.226104736328125,
+                    383.6334228515625,
+                    159.08926391601562,
+                    479.36279296875
+                  ],
+                  "bbox_xywh": [
+                    0.226104736328125,
+                    383.6334228515625,
+                    158.8631591796875,
+                    95.7293701171875
+                  ],
+                  "area_px": 15207.870163097978
+                },
+                {
+                  "label": "sink",
+                  "confidence": 0.4394862651824951,
+                  "bbox_xyxy": [
+                    431.85052490234375,
+                    312.86865234375,
+                    510.14202880859375,
+                    355.982666015625
+                  ],
+                  "bbox_xywh": [
+                    431.85052490234375,
+                    312.86865234375,
+                    78.29150390625,
+                    43.114013671875
+                  ],
+                  "area_px": 3375.4609698057175
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.31981006264686584,
+                  "bbox_xyxy": [
+                    439.45361328125,
+                    360.2107849121094,
+                    514.3145141601562,
+                    475.8740539550781
+                  ],
+                  "bbox_xywh": [
+                    439.45361328125,
+                    360.2107849121094,
+                    74.86090087890625,
+                    115.66326904296875
+                  ],
+                  "area_px": 8658.65651915595
+                },
+                {
+                  "label": "bed",
+                  "confidence": 0.2573857009410858,
+                  "bbox_xyxy": [
+                    220.3587646484375,
+                    327.0650634765625,
+                    283.65576171875,
+                    414.0869140625
+                  ],
+                  "bbox_xywh": [
+                    220.3587646484375,
+                    327.0650634765625,
+                    63.2969970703125,
+                    87.0218505859375
+                  ],
+                  "area_px": 5508.221821591258
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\14_17DRP5sb8fy_006\\object_detection_c.png",
+              "detection_count": 3,
+              "label_counts": {
+                "tv": 1,
+                "couch": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "tv",
+                  "confidence": 0.8637354969978333,
+                  "bbox_xyxy": [
+                    213.88723754882812,
+                    225.7852325439453,
+                    317.1832580566406,
+                    349.47515869140625
+                  ],
+                  "bbox_xywh": [
+                    213.88723754882812,
+                    225.7852325439453,
+                    103.2960205078125,
+                    123.68992614746094
+                  ],
+                  "area_px": 12776.677147937939
+                },
+                {
+                  "label": "couch",
+                  "confidence": 0.5142722725868225,
+                  "bbox_xyxy": [
+                    381.84735107421875,
+                    303.9578857421875,
+                    613.2196655273438,
+                    463.3988037109375
+                  ],
+                  "bbox_xywh": [
+                    381.84735107421875,
+                    303.9578857421875,
+                    231.372314453125,
+                    159.44091796875
+                  ],
+                  "area_px": 36890.21420896053
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4735168218612671,
+                  "bbox_xyxy": [
+                    405.7181396484375,
+                    411.5330810546875,
+                    532.9637451171875,
+                    479.71923828125
+                  ],
+                  "bbox_xywh": [
+                    405.7181396484375,
+                    411.5330810546875,
+                    127.24560546875,
+                    68.1861572265625
+                  ],
+                  "area_px": 8676.388860881329
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "couch"
+            ],
+            "B_labels": [
+              "bed",
+              "chair",
+              "sink"
+            ],
+            "C_labels": [
+              "chair",
+              "couch",
+              "tv"
+            ],
+            "AB_union_labels": [
+              "bed",
+              "chair",
+              "couch",
+              "sink"
+            ],
+            "C_only_labels_by_name": [
+              "tv"
+            ],
+            "shared_with_C_by_name": [
+              "chair",
+              "couch"
+            ],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -3404,6 +6305,220 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_back",
+          "movement_distance_m": 1.0847984552383423,
+          "relative_heading_degrees": 173.72072523701848,
+          "relative_elevation_degrees": 0.09506750167946512,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step back for 1.08 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\15_17DRP5sb8fy_000\\object_detection_a.png",
+              "detection_count": 4,
+              "label_counts": {
+                "tv": 1,
+                "chair": 3
+              },
+              "detections": [
+                {
+                  "label": "tv",
+                  "confidence": 0.7257018089294434,
+                  "bbox_xyxy": [
+                    188.98214721679688,
+                    231.48243713378906,
+                    273.4196472167969,
+                    286.6983642578125
+                  ],
+                  "bbox_xywh": [
+                    188.98214721679688,
+                    231.48243713378906,
+                    84.4375,
+                    55.21592712402344
+                  ],
+                  "area_px": 4662.294846534729
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.6558030247688293,
+                  "bbox_xyxy": [
+                    312.97467041015625,
+                    279.13360595703125,
+                    345.64666748046875,
+                    335.90911865234375
+                  ],
+                  "bbox_xywh": [
+                    312.97467041015625,
+                    279.13360595703125,
+                    32.6719970703125,
+                    56.7755126953125
+                  ],
+                  "area_px": 1854.9693844467402
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.46462276577949524,
+                  "bbox_xyxy": [
+                    222.83660888671875,
+                    283.00091552734375,
+                    308.857421875,
+                    364.78887939453125
+                  ],
+                  "bbox_xywh": [
+                    222.83660888671875,
+                    283.00091552734375,
+                    86.02081298828125,
+                    81.7879638671875
+                  ],
+                  "area_px": 7035.46714451164
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.283630907535553,
+                  "bbox_xyxy": [
+                    375.91192626953125,
+                    274.1466064453125,
+                    400.9559326171875,
+                    356.9129638671875
+                  ],
+                  "bbox_xywh": [
+                    375.91192626953125,
+                    274.1466064453125,
+                    25.04400634765625,
+                    82.766357421875
+                  ],
+                  "area_px": 2072.8011806458235
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\15_17DRP5sb8fy_000\\object_detection_b.png",
+              "detection_count": 2,
+              "label_counts": {
+                "chair": 1,
+                "tv": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.7016444206237793,
+                  "bbox_xyxy": [
+                    4.063385009765625,
+                    309.8665771484375,
+                    210.80062866210938,
+                    479.66937255859375
+                  ],
+                  "bbox_xywh": [
+                    4.063385009765625,
+                    309.8665771484375,
+                    206.73724365234375,
+                    169.80279541015625
+                  ],
+                  "area_px": 35104.56188755855
+                },
+                {
+                  "label": "tv",
+                  "confidence": 0.6941138505935669,
+                  "bbox_xyxy": [
+                    349.7822265625,
+                    270.5097961425781,
+                    538.7225341796875,
+                    427.3340759277344
+                  ],
+                  "bbox_xywh": [
+                    349.7822265625,
+                    270.5097961425781,
+                    188.9403076171875,
+                    156.82427978515625
+                  ],
+                  "area_px": 29630.4276644513
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\15_17DRP5sb8fy_000\\object_detection_c.png",
+              "detection_count": 2,
+              "label_counts": {
+                "refrigerator": 1,
+                "toilet": 1
+              },
+              "detections": [
+                {
+                  "label": "refrigerator",
+                  "confidence": 0.5538501143455505,
+                  "bbox_xyxy": [
+                    522.537353515625,
+                    200.954345703125,
+                    639.5609130859375,
+                    478.8238525390625
+                  ],
+                  "bbox_xywh": [
+                    522.537353515625,
+                    200.954345703125,
+                    117.0235595703125,
+                    277.8695068359375
+                  ],
+                  "area_px": 32517.27878598869
+                },
+                {
+                  "label": "toilet",
+                  "confidence": 0.407416433095932,
+                  "bbox_xyxy": [
+                    41.90818786621094,
+                    411.11309814453125,
+                    153.11251831054688,
+                    479.63397216796875
+                  ],
+                  "bbox_xywh": [
+                    41.90818786621094,
+                    411.11309814453125,
+                    111.20433044433594,
+                    68.5208740234375
+                  ],
+                  "area_px": 7619.817917237058
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair",
+              "tv"
+            ],
+            "B_labels": [
+              "chair",
+              "tv"
+            ],
+            "C_labels": [
+              "refrigerator",
+              "toilet"
+            ],
+            "AB_union_labels": [
+              "chair",
+              "tv"
+            ],
+            "C_only_labels_by_name": [
+              "refrigerator",
+              "toilet"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -3631,6 +6746,196 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/29hnd4uzFmX/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_back_left",
+          "movement_distance_m": 1.0664652585983276,
+          "relative_heading_degrees": 141.19528244714772,
+          "relative_elevation_degrees": -0.30515721309547306,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step back left for 1.07 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\16_29hnd4uzFmX_000\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\16_29hnd4uzFmX_000\\object_detection_b.png",
+              "detection_count": 6,
+              "label_counts": {
+                "chair": 3,
+                "potted plant": 2,
+                "dining table": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.8286551833152771,
+                  "bbox_xyxy": [
+                    42.301727294921875,
+                    365.3721008300781,
+                    152.28948974609375,
+                    479.6991882324219
+                  ],
+                  "bbox_xywh": [
+                    42.301727294921875,
+                    365.3721008300781,
+                    109.98776245117188,
+                    114.32708740234375
+                  ],
+                  "area_px": 12574.580530943349
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.7756531834602356,
+                  "bbox_xyxy": [
+                    0.6452178955078125,
+                    324.1365966796875,
+                    57.96570587158203,
+                    342.04901123046875
+                  ],
+                  "bbox_xywh": [
+                    0.6452178955078125,
+                    324.1365966796875,
+                    57.32048797607422,
+                    17.91241455078125
+                  ],
+                  "area_px": 1026.7483428805135
+                },
+                {
+                  "label": "potted plant",
+                  "confidence": 0.7639108896255493,
+                  "bbox_xyxy": [
+                    383.80584716796875,
+                    333.9040222167969,
+                    416.97930908203125,
+                    386.4298400878906
+                  ],
+                  "bbox_xywh": [
+                    383.80584716796875,
+                    333.9040222167969,
+                    33.1734619140625,
+                    52.52581787109375
+                  ],
+                  "area_px": 1742.463218651712
+                },
+                {
+                  "label": "potted plant",
+                  "confidence": 0.7101492285728455,
+                  "bbox_xyxy": [
+                    88.14292907714844,
+                    295.89501953125,
+                    134.28091430664062,
+                    351.132080078125
+                  ],
+                  "bbox_xywh": [
+                    88.14292907714844,
+                    295.89501953125,
+                    46.13798522949219,
+                    55.237060546875
+                  ],
+                  "area_px": 2548.5266836322844
+                },
+                {
+                  "label": "dining table",
+                  "confidence": 0.5732734799385071,
+                  "bbox_xyxy": [
+                    0.758819580078125,
+                    335.9415283203125,
+                    161.39068603515625,
+                    478.92724609375
+                  ],
+                  "bbox_xywh": [
+                    0.758819580078125,
+                    335.9415283203125,
+                    160.63186645507812,
+                    142.9857177734375
+                  ],
+                  "area_px": 22968.062722366303
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.5453511476516724,
+                  "bbox_xyxy": [
+                    130.248779296875,
+                    331.385009765625,
+                    179.3619384765625,
+                    471.8450927734375
+                  ],
+                  "bbox_xywh": [
+                    130.248779296875,
+                    331.385009765625,
+                    49.1131591796875,
+                    140.4600830078125
+                  ],
+                  "area_px": 6898.438415154815
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\16_29hnd4uzFmX_000\\object_detection_c.png",
+              "detection_count": 1,
+              "label_counts": {
+                "sink": 1
+              },
+              "detections": [
+                {
+                  "label": "sink",
+                  "confidence": 0.42569833993911743,
+                  "bbox_xyxy": [
+                    363.0823974609375,
+                    398.5018310546875,
+                    521.0831909179688,
+                    460.459716796875
+                  ],
+                  "bbox_xywh": [
+                    363.0823974609375,
+                    398.5018310546875,
+                    158.00079345703125,
+                    61.9578857421875
+                  ],
+                  "area_px": 9789.395108185709
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [
+              "chair",
+              "dining table",
+              "potted plant"
+            ],
+            "C_labels": [
+              "sink"
+            ],
+            "AB_union_labels": [
+              "chair",
+              "dining table",
+              "potted plant"
+            ],
+            "C_only_labels_by_name": [
+              "sink"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -3858,6 +7163,182 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/2t7WUuJeko7/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward",
+          "movement_distance_m": 2.1354875564575195,
+          "relative_heading_degrees": -12.799894886688017,
+          "relative_elevation_degrees": -0.0289776989455179,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step forward for 2.14 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\17_2t7WUuJeko7_001\\object_detection_a.png",
+              "detection_count": 2,
+              "label_counts": {
+                "sink": 1,
+                "bowl": 1
+              },
+              "detections": [
+                {
+                  "label": "sink",
+                  "confidence": 0.5456461310386658,
+                  "bbox_xyxy": [
+                    276.95086669921875,
+                    373.339111328125,
+                    400.19415283203125,
+                    454.33148193359375
+                  ],
+                  "bbox_xywh": [
+                    276.95086669921875,
+                    373.339111328125,
+                    123.2432861328125,
+                    80.99237060546875
+                  ],
+                  "area_px": 9981.765905104578
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.4052310585975647,
+                  "bbox_xyxy": [
+                    569.7713623046875,
+                    339.95819091796875,
+                    626.3974609375,
+                    367.58123779296875
+                  ],
+                  "bbox_xywh": [
+                    569.7713623046875,
+                    339.95819091796875,
+                    56.6260986328125,
+                    27.623046875
+                  ],
+                  "area_px": 1564.185376882553
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\17_2t7WUuJeko7_001\\object_detection_b.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\17_2t7WUuJeko7_001\\object_detection_c.png",
+              "detection_count": 4,
+              "label_counts": {
+                "microwave": 1,
+                "bottle": 1,
+                "cup": 2
+              },
+              "detections": [
+                {
+                  "label": "microwave",
+                  "confidence": 0.7643704414367676,
+                  "bbox_xyxy": [
+                    60.52723693847656,
+                    306.17041015625,
+                    551.75634765625,
+                    479.79949951171875
+                  ],
+                  "bbox_xywh": [
+                    60.52723693847656,
+                    306.17041015625,
+                    491.22911071777344,
+                    173.62908935546875
+                  ],
+                  "area_px": 85291.66315882374
+                },
+                {
+                  "label": "bottle",
+                  "confidence": 0.672431230545044,
+                  "bbox_xyxy": [
+                    235.30538940429688,
+                    0.365509033203125,
+                    351.2341003417969,
+                    325.533203125
+                  ],
+                  "bbox_xywh": [
+                    235.30538940429688,
+                    0.365509033203125,
+                    115.9287109375,
+                    325.1676940917969
+                  ],
+                  "area_px": 37696.27161458135
+                },
+                {
+                  "label": "cup",
+                  "confidence": 0.5438511371612549,
+                  "bbox_xyxy": [
+                    196.5557861328125,
+                    238.6448974609375,
+                    250.2266845703125,
+                    332.5872802734375
+                  ],
+                  "bbox_xywh": [
+                    196.5557861328125,
+                    238.6448974609375,
+                    53.6708984375,
+                    93.9423828125
+                  ],
+                  "area_px": 5041.972086906433
+                },
+                {
+                  "label": "cup",
+                  "confidence": 0.5018612146377563,
+                  "bbox_xyxy": [
+                    365.6064147949219,
+                    250.01080322265625,
+                    460.9154357910156,
+                    342.34088134765625
+                  ],
+                  "bbox_xywh": [
+                    365.6064147949219,
+                    250.01080322265625,
+                    95.30902099609375,
+                    92.330078125
+                  ],
+                  "area_px": 8799.889354586601
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "bowl",
+              "sink"
+            ],
+            "B_labels": [],
+            "C_labels": [
+              "bottle",
+              "cup",
+              "microwave"
+            ],
+            "AB_union_labels": [
+              "bowl",
+              "sink"
+            ],
+            "C_only_labels_by_name": [
+              "bottle",
+              "cup",
+              "microwave"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -4085,6 +7566,81 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/17DRP5sb8fy/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_left",
+          "movement_distance_m": 1.0974547863006592,
+          "relative_heading_degrees": 94.93227334944113,
+          "relative_elevation_degrees": 0.0767440139928268,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "movement_forward",
+          "human_readable": "step left for 1.10 m; same level; C camera: movement forward",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\18_17DRP5sb8fy_001\\object_detection_a.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\18_17DRP5sb8fy_001\\object_detection_b.png",
+              "detection_count": 0,
+              "label_counts": {},
+              "detections": []
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\18_17DRP5sb8fy_001\\object_detection_c.png",
+              "detection_count": 1,
+              "label_counts": {
+                "toilet": 1
+              },
+              "detections": [
+                {
+                  "label": "toilet",
+                  "confidence": 0.31549838185310364,
+                  "bbox_xyxy": [
+                    429.8592529296875,
+                    426.26141357421875,
+                    478.9007568359375,
+                    479.58184814453125
+                  ],
+                  "bbox_xywh": [
+                    429.8592529296875,
+                    426.26141357421875,
+                    49.04150390625,
+                    53.3204345703125
+                  ],
+                  "area_px": 2614.914300262928
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [],
+            "B_labels": [],
+            "C_labels": [
+              "toilet"
+            ],
+            "AB_union_labels": [],
+            "C_only_labels_by_name": [
+              "toilet"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -4312,6 +7868,169 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_forward_left",
+          "movement_distance_m": 2.1683530807495117,
+          "relative_heading_degrees": 58.74778893816782,
+          "relative_elevation_degrees": -0.6167393085068903,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "diagonal_right_at_C",
+          "human_readable": "step forward left for 2.17 m; same level; C camera: diagonal right at C",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\19_759xd9YjKW5_006\\object_detection_a.png",
+              "detection_count": 1,
+              "label_counts": {
+                "bed": 1
+              },
+              "detections": [
+                {
+                  "label": "bed",
+                  "confidence": 0.5474457144737244,
+                  "bbox_xyxy": [
+                    300.2130126953125,
+                    394.8204650878906,
+                    529.294189453125,
+                    479.6355285644531
+                  ],
+                  "bbox_xywh": [
+                    300.2130126953125,
+                    394.8204650878906,
+                    229.0811767578125,
+                    84.8150634765625
+                  ],
+                  "area_px": 19429.5345479995
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\19_759xd9YjKW5_006\\object_detection_b.png",
+              "detection_count": 2,
+              "label_counts": {
+                "couch": 1,
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "couch",
+                  "confidence": 0.8928985595703125,
+                  "bbox_xyxy": [
+                    1.816253662109375,
+                    361.40087890625,
+                    405.5615539550781,
+                    479.58953857421875
+                  ],
+                  "bbox_xywh": [
+                    1.816253662109375,
+                    361.40087890625,
+                    403.74530029296875,
+                    118.18865966796875
+                  ],
+                  "area_px": 47718.11588886753
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.30602309107780457,
+                  "bbox_xyxy": [
+                    0.05792999267578125,
+                    305.3107604980469,
+                    53.114990234375,
+                    396.0439147949219
+                  ],
+                  "bbox_xywh": [
+                    0.05792999267578125,
+                    305.3107604980469,
+                    53.05706024169922,
+                    90.733154296875
+                  ],
+                  "area_px": 4814.034433448687
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\19_759xd9YjKW5_006\\object_detection_c.png",
+              "detection_count": 2,
+              "label_counts": {
+                "dining table": 1,
+                "bed": 1
+              },
+              "detections": [
+                {
+                  "label": "dining table",
+                  "confidence": 0.5461137294769287,
+                  "bbox_xyxy": [
+                    448.22760009765625,
+                    340.353515625,
+                    639.7455444335938,
+                    479.561279296875
+                  ],
+                  "bbox_xywh": [
+                    448.22760009765625,
+                    340.353515625,
+                    191.5179443359375,
+                    139.207763671875
+                  ],
+                  "area_px": 26660.7847340405
+                },
+                {
+                  "label": "bed",
+                  "confidence": 0.26484546065330505,
+                  "bbox_xyxy": [
+                    0.5292510986328125,
+                    131.7054443359375,
+                    136.59779357910156,
+                    478.042724609375
+                  ],
+                  "bbox_xywh": [
+                    0.5292510986328125,
+                    131.7054443359375,
+                    136.06854248046875,
+                    346.3372802734375
+                  ],
+                  "area_px": 47125.60893345624
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "bed"
+            ],
+            "B_labels": [
+              "chair",
+              "couch"
+            ],
+            "C_labels": [
+              "bed",
+              "dining table"
+            ],
+            "AB_union_labels": [
+              "bed",
+              "chair",
+              "couch"
+            ],
+            "C_only_labels_by_name": [
+              "dining table"
+            ],
+            "shared_with_C_by_name": [
+              "bed"
+            ],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     },
@@ -4539,6 +8258,204 @@
             "source": "/mnt/c/Users/Dylan/LabStuff/IndividualResearch/Matterport3DSimulator/data/v1/scans/759xd9YjKW5/house_segmentations/panorama_to_region.txt"
           },
           "code_map_source": "Matterport3D data_organization.md region label conventions"
+        },
+        "navigation_action": {
+          "action_label": "step_left",
+          "movement_distance_m": 2.0702271461486816,
+          "relative_heading_degrees": 75.28873808894367,
+          "relative_elevation_degrees": 0.04151441799116373,
+          "elevation_label": "same_level",
+          "hidden_c_camera_heading_label": "look_back_toward_start",
+          "human_readable": "step left for 2.07 m; same level; C camera: look back toward start",
+          "definition": "Discrete label derived from start-to-hidden-C relative heading, movement distance, relative elevation, and the selected C camera heading."
+        },
+        "object_detection": {
+          "detector": "Ultralytics YOLO COCO",
+          "model": "yolo11n.pt",
+          "device": "cpu",
+          "image_size": 640,
+          "confidence_threshold": 0.25,
+          "max_detections_per_view": 24,
+          "views": {
+            "A": {
+              "source_view": "A",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\20_759xd9YjKW5_005\\object_detection_a.png",
+              "detection_count": 1,
+              "label_counts": {
+                "chair": 1
+              },
+              "detections": [
+                {
+                  "label": "chair",
+                  "confidence": 0.6590391993522644,
+                  "bbox_xyxy": [
+                    400.43768310546875,
+                    339.17547607421875,
+                    482.09075927734375,
+                    401.46881103515625
+                  ],
+                  "bbox_xywh": [
+                    400.43768310546875,
+                    339.17547607421875,
+                    81.653076171875,
+                    62.2933349609375
+                  ],
+                  "area_px": 5086.442424565554
+                }
+              ]
+            },
+            "B": {
+              "source_view": "B",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\20_759xd9YjKW5_005\\object_detection_b.png",
+              "detection_count": 5,
+              "label_counts": {
+                "dining table": 1,
+                "microwave": 1,
+                "chair": 2,
+                "bowl": 1
+              },
+              "detections": [
+                {
+                  "label": "dining table",
+                  "confidence": 0.5416932702064514,
+                  "bbox_xyxy": [
+                    257.23541259765625,
+                    350.15618896484375,
+                    365.509765625,
+                    479.78839111328125
+                  ],
+                  "bbox_xywh": [
+                    257.23541259765625,
+                    350.15618896484375,
+                    108.27435302734375,
+                    129.6322021484375
+                  ],
+                  "area_px": 14035.84281913191
+                },
+                {
+                  "label": "microwave",
+                  "confidence": 0.537928581237793,
+                  "bbox_xyxy": [
+                    275.0802307128906,
+                    275.7052001953125,
+                    334.3426208496094,
+                    313.639892578125
+                  ],
+                  "bbox_xywh": [
+                    275.0802307128906,
+                    275.7052001953125,
+                    59.26239013671875,
+                    37.9346923828125
+                  ],
+                  "area_px": 2248.1005397066474
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.4724292755126953,
+                  "bbox_xyxy": [
+                    258.45263671875,
+                    372.20391845703125,
+                    333.8304443359375,
+                    479.71795654296875
+                  ],
+                  "bbox_xywh": [
+                    258.45263671875,
+                    372.20391845703125,
+                    75.3778076171875,
+                    107.5140380859375
+                  ],
+                  "area_px": 8104.172478988767
+                },
+                {
+                  "label": "bowl",
+                  "confidence": 0.4000782072544098,
+                  "bbox_xyxy": [
+                    421.19140625,
+                    249.5757598876953,
+                    443.79193115234375,
+                    263.95416259765625
+                  ],
+                  "bbox_xywh": [
+                    421.19140625,
+                    249.5757598876953,
+                    22.60052490234375,
+                    14.378402709960938
+                  ],
+                  "area_px": 324.959448502399
+                },
+                {
+                  "label": "chair",
+                  "confidence": 0.37776845693588257,
+                  "bbox_xyxy": [
+                    258.1883544921875,
+                    329.29376220703125,
+                    278.95184326171875,
+                    356.95660400390625
+                  ],
+                  "bbox_xywh": [
+                    258.1883544921875,
+                    329.29376220703125,
+                    20.76348876953125,
+                    27.662841796875
+                  ],
+                  "area_px": 574.3771049827337
+                }
+              ]
+            },
+            "C": {
+              "source_view": "C_hidden_oracle",
+              "annotated_path": "C:\\Users\\Dylan\\LabStuff\\IndividualResearch\\outputs\\mp3d_sample_modalities_20260624\\20_759xd9YjKW5_005\\object_detection_c.png",
+              "detection_count": 1,
+              "label_counts": {
+                "tv": 1
+              },
+              "detections": [
+                {
+                  "label": "tv",
+                  "confidence": 0.7328935265541077,
+                  "bbox_xyxy": [
+                    397.30712890625,
+                    272.5902099609375,
+                    528.429443359375,
+                    375.84063720703125
+                  ],
+                  "bbox_xywh": [
+                    397.30712890625,
+                    272.5902099609375,
+                    131.122314453125,
+                    103.25042724609375
+                  ],
+                  "area_px": 13538.43498878181
+                }
+              ]
+            }
+          },
+          "summary": {
+            "A_labels": [
+              "chair"
+            ],
+            "B_labels": [
+              "bowl",
+              "chair",
+              "dining table",
+              "microwave"
+            ],
+            "C_labels": [
+              "tv"
+            ],
+            "AB_union_labels": [
+              "bowl",
+              "chair",
+              "dining table",
+              "microwave"
+            ],
+            "C_only_labels_by_name": [
+              "tv"
+            ],
+            "shared_with_C_by_name": [],
+            "note": "C-only labels are compared by detector class name only. They are useful for quick review but are not ground-truth object identity matches."
+          },
+          "definition": "2D detected object labels and bounding boxes for View A, View B, and hidden View C."
         }
       }
     }
@@ -4548,6 +8465,8 @@
     "panorama_360": "generated as 12-heading sweeps; skybox panorama copied when available",
     "viewpoint_graph_distance": "generated",
     "depth_map": "generated as A/B/C perspective raw uint16 PNGs and colorized preview PNGs",
-    "room_label": "generated from house_segmentations/panorama_to_region.txt when available"
+    "room_label": "generated from house_segmentations/panorama_to_region.txt when available",
+    "navigation_action": "generated from curated movement metadata",
+    "object_detection": "generated with YOLO COCO detector as 2D boxes and labels"
   }
 }
