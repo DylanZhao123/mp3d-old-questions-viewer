@@ -364,21 +364,6 @@
       overflow-wrap: anywhere;
     }
 
-    .path-value {
-      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
-      font-size: 12px;
-      line-height: 1.45;
-    }
-
-    .raw-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--accent);
-      font-size: 13px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
     .hidden { display: none; }
 
     .empty {
@@ -482,7 +467,7 @@
 
           <h2 class="section-title">Room Label</h2>
           <div class="metric-panel">
-            <div class="figure-header"><span>Room Labels</span><span>MP3D region metadata</span></div>
+            <div class="figure-header"><span>Room Labels</span><span>MP3D semantic metadata</span></div>
             <div id="roomLabelMetrics" class="metrics"></div>
           </div>
 
@@ -562,7 +547,7 @@
 
     function roomText(room) {
       if (!room || !room.room_label) return "n/a";
-      return `${room.room_label} (${room.region_code}, region ${room.region_index})`;
+      return room.room_label;
     }
 
     function currentRecord() {
@@ -603,13 +588,11 @@
 
     function renderGraphDistance(record) {
       const graph = record.modalities.graphDistance;
-      const path = (graph.shortest_path_viewpoints || []).join(" -> ");
       el.graphDistanceMetrics.innerHTML = [
         metric("Euclidean distance", `${formatNumber(graph.euclidean_distance_m)} m`),
         metric("Shortest graph distance", `${formatNumber(graph.shortest_graph_distance_m)} m`),
         metric("Graph hops", graph.shortest_graph_hops ?? "n/a"),
-        metric("Generator movement distance", `${formatNumber(graph.generator_recorded_movement_distance_m)} m`),
-        metric("Shortest path viewpoints", `<span class="path-value">${path || "n/a"}</span>`)
+        metric("Generator movement distance", `${formatNumber(graph.generator_recorded_movement_distance_m)} m`)
       ].join("");
     }
 
@@ -617,11 +600,7 @@
       const room = record.modalities.room;
       el.roomLabelMetrics.innerHTML = [
         metric("Start room", roomText(room.start)),
-        metric("Hidden C room", roomText(room.hidden)),
-        metric("Start panorama index", room.start?.panorama_index ?? "n/a"),
-        metric("Hidden C panorama index", room.hidden?.panorama_index ?? "n/a"),
-        metric("Start source", `<span class="path-value">${room.start?.source || "n/a"}</span>`),
-        metric("Hidden C source", `<span class="path-value">${room.hidden?.source || "n/a"}</span>`)
+        metric("Hidden C room", roomText(room.hidden))
       ].join("");
     }
 
@@ -635,7 +614,6 @@
             ${metric("Valid pixels", `${formatNumber((stats.valid_pixel_ratio || 0) * 100, 1)}%`)}
             ${metric("Min / max", `${formatNumber(stats.min_m)} m / ${formatNumber(stats.max_m)} m`)}
             ${metric("Color scale", `${formatNumber(stats.color_scale_p02_m)} m to ${formatNumber(stats.color_scale_p98_m)} m`)}
-            ${metric("Raw depth", `<a class="raw-link" href="${data.raw}" target="_blank" rel="noopener">Open uint16 PNG</a>`)}
           </div>
         </figure>
       `;
