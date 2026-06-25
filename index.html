@@ -364,6 +364,12 @@
       overflow-wrap: anywhere;
     }
 
+    .path-value {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
     .raw-link {
       display: inline-block;
       margin-top: 8px;
@@ -460,16 +466,24 @@
         </section>
 
         <section id="modalitiesView" class="hidden">
-          <h2 class="section-title">Geometry And Labels</h2>
-          <div class="panel-grid">
+          <h2 class="section-title">Connectivity Graph</h2>
+          <div class="panel-grid single">
             <figure class="figure">
               <div class="figure-header"><span>Connectivity Graph</span><span>local top-down</span></div>
               <img id="connectivity" class="map-img" alt="Connectivity graph">
             </figure>
-            <div class="metric-panel">
-              <div class="figure-header"><span>Metadata</span><span>viewpoint level</span></div>
-              <div id="metrics" class="metrics"></div>
-            </div>
+          </div>
+
+          <h2 class="section-title">Viewpoint Graph Distance</h2>
+          <div class="metric-panel">
+            <div class="figure-header"><span>Graph Distance</span><span>start to hidden C</span></div>
+            <div id="graphDistanceMetrics" class="metrics"></div>
+          </div>
+
+          <h2 class="section-title">Room Label</h2>
+          <div class="metric-panel">
+            <div class="figure-header"><span>Room Labels</span><span>MP3D region metadata</span></div>
+            <div id="roomLabelMetrics" class="metrics"></div>
           </div>
 
           <h2 class="section-title">Depth Maps</h2>
@@ -532,7 +546,8 @@
       viewB: document.getElementById("viewB"),
       viewC: document.getElementById("viewC"),
       connectivity: document.getElementById("connectivity"),
-      metrics: document.getElementById("metrics"),
+      graphDistanceMetrics: document.getElementById("graphDistanceMetrics"),
+      roomLabelMetrics: document.getElementById("roomLabelMetrics"),
       depthGrid: document.getElementById("depthGrid"),
       start360: document.getElementById("start360"),
       hidden360: document.getElementById("hidden360"),
@@ -586,16 +601,27 @@
       return `<div class="metric"><div class="metric-label">${label}</div><div class="metric-value">${value}</div></div>`;
     }
 
-    function renderMetrics(record) {
+    function renderGraphDistance(record) {
       const graph = record.modalities.graphDistance;
+      const path = (graph.shortest_path_viewpoints || []).join(" -> ");
+      el.graphDistanceMetrics.innerHTML = [
+        metric("Euclidean distance", `${formatNumber(graph.euclidean_distance_m)} m`),
+        metric("Shortest graph distance", `${formatNumber(graph.shortest_graph_distance_m)} m`),
+        metric("Graph hops", graph.shortest_graph_hops ?? "n/a"),
+        metric("Generator movement distance", `${formatNumber(graph.generator_recorded_movement_distance_m)} m`),
+        metric("Shortest path viewpoints", `<span class="path-value">${path || "n/a"}</span>`)
+      ].join("");
+    }
+
+    function renderRoomLabels(record) {
       const room = record.modalities.room;
-      el.metrics.innerHTML = [
+      el.roomLabelMetrics.innerHTML = [
         metric("Start room", roomText(room.start)),
         metric("Hidden C room", roomText(room.hidden)),
-        metric("Euclidean distance", `${formatNumber(graph.euclidean_distance_m)} m`),
-        metric("Graph distance", `${formatNumber(graph.shortest_graph_distance_m)} m`),
-        metric("Graph hops", graph.shortest_graph_hops ?? "n/a"),
-        metric("Path", (graph.shortest_path_viewpoints || []).join(" -> "))
+        metric("Start panorama index", room.start?.panorama_index ?? "n/a"),
+        metric("Hidden C panorama index", room.hidden?.panorama_index ?? "n/a"),
+        metric("Start source", `<span class="path-value">${room.start?.source || "n/a"}</span>`),
+        metric("Hidden C source", `<span class="path-value">${room.hidden?.source || "n/a"}</span>`)
       ].join("");
     }
 
@@ -636,7 +662,8 @@
       el.hidden360.src = record.modalities.hidden360;
       el.startSkybox.src = record.modalities.startSkybox;
       el.hiddenSkybox.src = record.modalities.hiddenSkybox;
-      renderMetrics(record);
+      renderGraphDistance(record);
+      renderRoomLabels(record);
       el.depthGrid.innerHTML = [
         depthFigure("A", "View A Depth", record.modalities.depth.A),
         depthFigure("B", "View B Depth", record.modalities.depth.B),
